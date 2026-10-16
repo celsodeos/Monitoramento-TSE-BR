@@ -63,5 +63,6 @@ jobs:
             echo "Sem mudanças nos dados."
           else
             git commit -m "Coleta automática: $(date -u +%Y-%m-%d)"
+            git pull --rebase -X theirs origin main || true
             git push
           fi

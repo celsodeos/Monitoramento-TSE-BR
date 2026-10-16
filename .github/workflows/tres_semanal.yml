@@ -1,0 +1,50 @@
+name: Coleta semanal TREs (DataJud)
+
+on:
+  schedule:
+    - cron: "0 10 * * 0"   # domingos, 07h00 em Brasília (depois da coleta diária)
+  workflow_dispatch:        # permite rodar ou continuar manualmente pela aba Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: coleta
+  cancel-in-progress: false
+
+jobs:
+  tres:
+    runs-on: ubuntu-latest
+    timeout-minutes: 345
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Baixar pacotes do SIG/TSE
+        run: python coleta/baixar_sig.py --anos 2018 2022 2026
+
+      - name: Gerar lista de processos dos TREs
+        run: python analise/indicadores.py --sem-historico
+
+      - name: Consultar o DataJud (TREs)
+        run: python coleta/datajud_tres.py --threads 6 --minutos 300
+
+      - name: Registrar mudanças
+        run: |
+          git config user.name "coleta-automatica"
+          git config user.email "coleta-automatica@users.noreply.github.com"
+          git add dados/derivados/datajud_tres_status.csv dados/derivados/liminares_tres.csv
+          if git diff --cached --quiet; then
+            echo "Sem mudanças."
+          else
+            git commit -m "Coleta semanal TREs (DataJud): $(date -u +%Y-%m-%d)"
+            git pull --rebase -X theirs origin main || true
+            git push
+          fi

@@ -333,6 +333,19 @@ def main():
         "prioridade": 1, "eleicao": S.arq, "instancia": 3, "endpoint": "api_publica_tse", "numero_cnj": S.num,
         "numero_20dig": S.num.str.replace(r"[.-]", "", regex=True), "classe": S.classe, "tema": S.turno})
 
+    # lista para a coleta semanal dos TREs no DataJud (recorte de campanha, 2º grau);
+    # fica em dados/brutos (não versionado) porque é refeita a cada execução
+    tre = camp[camp.inst == 2]
+    UF_TR = {"AC": "01", "AL": "02", "AP": "03", "AM": "04", "BA": "05", "CE": "06", "DF": "07", "ES": "08", "GO": "09", "MA": "10",
+             "MT": "11", "MS": "12", "MG": "13", "PA": "14", "PB": "15", "PR": "16", "PE": "17", "PI": "18", "RJ": "19", "RN": "20",
+             "RS": "21", "RO": "22", "RR": "23", "SC": "24", "SE": "25", "SP": "26", "TO": "27"}
+    n20 = tre.num.str.replace(r"[.-]", "", regex=True)
+    uf = n20.str[14:16].map({v: k.lower() for k, v in UF_TR.items()})
+    lista_tre = pd.DataFrame({"prioridade": 2, "eleicao": tre.arq, "instancia": 2, "endpoint": "api_publica_tre-" + uf.fillna("xx"),
+                              "numero_cnj": tre.num, "numero_20dig": n20, "classe": tre.classe, "tema": tre.tema})
+    os.makedirs(BRUTOS, exist_ok=True)
+    lista_tre[uf.notna()].to_csv(os.path.join(BRUTOS, "numeros_datajud_tres.csv"), index=False)
+
     meta = {"carga_sig": str(carga), "gerado_em": pd.Timestamp.now(tz="America/Sao_Paulo").strftime("%Y-%m-%d %H:%M"),
             "processos_datajud": int(S.no_datajud.notna().sum())}
     for k, df in saidas.items():

@@ -73,6 +73,7 @@ Os arquivos de partes podem ser baixados diretamente em
 coleta/
   baixar_sig.py         baixa os pacotes do grupo Processual do TSE (processos, decisões, partes)
   coletar_datajud.py    consulta a API Pública do DataJud, processo a processo
+  datajud_tres.py       coleta semanal dos processos dos TREs no DataJud
 analise/
   indicadores.py        calcula os indicadores e os testes e grava as tabelas
   enviar_supabase.py    envia as tabelas ao banco no Supabase
@@ -137,6 +138,10 @@ https://wmtjybayqqpjiayjvswd.supabase.co/rest/v1/liminares?select=*&apikey=<chav
 ```
 
 A rotina diária envia cada nova carga ao banco (`analise/enviar_supabase.py`), desde que o repositório tenha os segredos `SUPABASE_URL` e `SUPABASE_SERVICE_ROLE_KEY` em **Settings → Secrets and variables → Actions**. Sem eles, esse passo é ignorado.
+
+### Coleta semanal dos TREs
+
+A rotina `.github/workflows/tres_semanal.yml` roda aos domingos às 7h (horário de Brasília) e consulta no DataJud os cerca de 28 mil processos de campanha dos TREs (`coleta/datajud_tres.py`). O resultado fica em `dados/derivados/datajud_tres_status.csv`, um processo por linha, e o resumo por eleição em `dados/derivados/liminares_tres.csv`. A cada semana são consultados os processos novos, todos os da eleição mais recente e os ainda não localizados. Se o tempo máximo da execução for atingido, a coleta para, salva o que obteve e continua na execução seguinte.
 
 ## Visualização
 
