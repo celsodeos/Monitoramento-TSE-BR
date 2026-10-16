@@ -45,6 +45,12 @@ jobs:
       - name: Calcular indicadores e gravar histórico
         run: python analise/indicadores.py
 
+      - name: Enviar ao Supabase (se configurado)
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: python analise/enviar_supabase.py
+
       - name: Registrar mudanças
         run: |
           git config user.name "coleta-automatica"

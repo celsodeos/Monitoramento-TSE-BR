@@ -292,8 +292,9 @@ def main():
     saidas[f"relatores_{y}"] = pd.DataFrame(rows)
 
     # processo a processo (1º e 2º turnos)
-    pp = S.rename(columns={"arq": "eleicao", "num": "numero_cnj", "t1": "dias_ate_1a_decisao"})
+    pp = S.drop(columns=["eleicao"]).rename(columns={"arq": "eleicao", "num": "numero_cnj", "t1": "dias_ate_1a_decisao"})
     pp["autuacao"] = pp.aut.dt.strftime("%Y-%m-%d %H:%M")
+    pp["dias_ate_1a_decisao"] = pp.dias_ate_1a_decisao.astype("Int64")
     pp["direcao"] = pp.dir.map({"BOL→PT": "Bolsonaro/Flávio contra PT/Lula", "PT→BOL": "PT/Lula contra Bolsonaro/Flávio"})
     saidas["processos_campanhas"] = pp[["eleicao", "turno", "presidente_tse", "direcao", "numero_cnj", "classe", "relator", "relator_efetivo",
                                         "autuacao", "dias_ate_1a_decisao", "ok3", "ok10", "no_datajud", "lim_dec", "lim_conc", "lim_1a", "lim_data"]]

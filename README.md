@@ -75,6 +75,7 @@ coleta/
   coletar_datajud.py    consulta a API Pública do DataJud, processo a processo
 analise/
   indicadores.py        calcula os indicadores e os testes e grava as tabelas
+  enviar_supabase.py    envia as tabelas ao banco no Supabase
 dados/
   brutos/               arquivos originais do TSE e respostas do DataJud (não versionados)
   derivados/            tabelas do estudo (CSV) e lista de processos para o DataJud
@@ -117,6 +118,25 @@ O script do DataJud usa a chave pública divulgada pelo CNJ e pode ser interromp
 ## Atualização automática
 
 A rotina `.github/workflows/coleta.yml` roda todo dia às 6h (horário de Brasília) e pode ser disparada à mão na aba **Actions**. Ela baixa os pacotes do TSE, consulta o DataJud, recalcula as tabelas e registra um commit quando algo mudou. Cada carga do TSE ganha uma pasta em `dados/historico/`. Para ver o que mudou entre duas cargas, basta comparar as pastas ou consultar o histórico de commits.
+
+## Banco de dados (Supabase)
+
+As mesmas tabelas ficam também num banco PostgreSQL no Supabase (projeto `monitoramento-tse-br`, região São Paulo), com uma linha em `cargas` para cada extração do TSE. Isso permite consultar o histórico com SQL e comparar cargas.
+
+| Tabela | Conteúdo |
+|---|---|
+| `cargas` | Cada extração (data da carga do TSE) |
+| `volume`, `tse_tres`, `campanhas`, `liminares`, `relatores` | As tabelas de `dados/derivados/`, por carga |
+| `processos_campanhas` | Um processo por linha, por carga |
+| `ultima_carga` (visão) | A carga mais recente |
+
+A leitura é pública (dados abertos), pela API REST do Supabase:
+
+```
+https://wmtjybayqqpjiayjvswd.supabase.co/rest/v1/liminares?select=*&apikey=<chave publicável>
+```
+
+A rotina diária envia cada nova carga ao banco (`analise/enviar_supabase.py`), desde que o repositório tenha os segredos `SUPABASE_URL` e `SUPABASE_SERVICE_ROLE_KEY` em **Settings → Secrets and variables → Actions**. Sem eles, esse passo é ignorado.
 
 ## Visualização
 
