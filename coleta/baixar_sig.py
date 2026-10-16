@@ -58,7 +58,12 @@ def main():
                         alvo = os.path.join(destino, os.path.basename(nome))
                         with z.open(nome) as src, open(alvo, "wb") as dst:
                             dst.write(src.read())
-                        print(f"  -> {os.path.relpath(alvo)}", flush=True)
+                        with open(alvo, "rb") as fh:
+                            cab = fh.readline().decode("latin1").strip()
+                        tam = os.path.getsize(alvo) / 1e6
+                        print(f"  -> {os.path.relpath(alvo)} ({tam:.1f} MB)", flush=True)
+                        # aparece nas anotações da execução no GitHub Actions
+                        print(f"::notice title={ano} {tipo}: {os.path.basename(nome)} ({tam:.1f} MB)::{cab[:900]}", flush=True)
     sys.exit(1 if erros else 0)
 
 

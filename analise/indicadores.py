@@ -57,7 +57,7 @@ TPU_LIMINAR = {339: "concedida", 892: "concedida em parte", 792: "não concedida
 
 
 def ler(ano, tipo, usecols=None):
-    arqs = sorted(glob.glob(os.path.join(BRUTOS, str(ano), tipo, "*.csv")))
+    arqs = sorted(glob.glob(os.path.join(BRUTOS, str(ano), tipo, "*.csv")), key=os.path.getsize, reverse=True)
     if not arqs:
         raise SystemExit(f"Faltam os dados brutos de {ano}/{tipo}. Rode: python coleta/baixar_sig.py --anos {ano}")
     df = pd.read_csv(arqs[0], sep=";", encoding="latin1", dtype=str, usecols=usecols)
@@ -325,4 +325,11 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        import traceback
+        tb = traceback.format_exc().strip().splitlines()
+        # aparece nas anotações da execução no GitHub Actions
+        print(f"::error title=indicadores.py::{type(e).__name__}: {e} | " + " | ".join(l.strip() for l in tb[-6:]))
+        raise

@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "0 9 * * *"   # 06h00 em Brasília (o cron do GitHub usa UTC)
   workflow_dispatch:       # permite rodar manualmente pela aba Actions
+  push:                    # roda também quando o código de coleta ou análise muda
+    branches: [main]
+    paths: ["coleta/**", "analise/**", ".github/workflows/coleta.yml"]
 
 permissions:
   contents: write
@@ -17,9 +20,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
