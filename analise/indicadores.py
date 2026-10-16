@@ -56,11 +56,37 @@ CASS_CL = ["AÇÃO DE INVESTIGAÇÃO JUDICIAL ELEITORAL", "AÇÃO DE IMPUGNAÇÃ
 TPU_LIMINAR = {339: "concedida", 892: "concedida em parte", 792: "não concedida"}
 
 
+# O pacote do Portal de Dados Abertos usa nomes de coluna codificados (NR_PROCESSO...);
+# a exportação do painel SIG usa rótulos ("Número do processo"...). Os dois formatos são aceitos.
+MAPA = {
+    "processo": {"ANO_ELEICAO": "Ano de eleição", "NR_PROCESSO": "Número do processo", "DT_AUTUACAO": "Data de autuação",
+                 "DT_DISTRIBUICAO": "Data de distribuição", "NR_INSTANCIA": "Instância", "NM_RELATOR": "Relator",
+                 "DS_CLASSE": "Classe", "DS_ASSUNTO_PRINCIPAL": "Assunto principal", "SG_UF_TRIBUNAL": "UF tribunal"},
+    "decisoes": {"NR_PROCESSO": "Número do processo", "NR_INSTANCIA": "Instância", "DT_DECISAO": "Data da decisão",
+                 "NM_AUTOR_DECISAO": "Autor da decisão", "DS_TIPO_DECISAO": "Tipo da decisão"},
+}
+
+
+def data(s):
+    s = s.fillna("").astype(str).str.strip()
+    iso = s.str.match(r"^\d{4}-\d{2}-\d{2}")
+    out = pd.to_datetime(s.where(iso), errors="coerce", format="mixed")
+    return out.fillna(pd.to_datetime(s.where(~iso), errors="coerce", dayfirst=True, format="mixed"))
+
+
 def ler(ano, tipo, usecols=None):
     arqs = sorted(glob.glob(os.path.join(BRUTOS, str(ano), tipo, "*.csv")), key=os.path.getsize, reverse=True)
     if not arqs:
         raise SystemExit(f"Faltam os dados brutos de {ano}/{tipo}. Rode: python coleta/baixar_sig.py --anos {ano}")
-    df = pd.read_csv(arqs[0], sep=";", encoding="latin1", dtype=str, usecols=usecols)
+    df = pd.read_csv(arqs[0], sep=";", encoding="latin1", dtype=str)
+    if tipo in MAPA and "NR_PROCESSO" in df.columns:
+        if "ST_RECURSAL" in df.columns:
+            df["Tipo de origem"] = np.where(df.ST_RECURSAL.fillna("").str.upper().str.startswith("S"), "Recursal", "Originário")
+        if "DT_GERACAO" in df.columns:
+            df["Data de carga"] = (df.DT_GERACAO.fillna("") + " " + df.get("HH_GERACAO", "").fillna("")).str.strip()
+        df = df.rename(columns=MAPA[tipo])
+    if usecols:
+        df = df[[c for c in usecols if c in df.columns]]
     df["arq"] = ano
     return df
 
@@ -83,12 +109,15 @@ def preparar():
     P = pd.concat([ler(y, "processo") for y in ANOS], ignore_index=True)
     D = pd.concat([ler(y, "decisoes", ["Número do processo", "Instância", "Tipo da decisão", "Data da decisão", "Autor da decisão"])
                    for y in ANOS], ignore_index=True)
-    carga = pd.to_datetime(P["Data de carga"], errors="coerce").max()
+    carga = data(P["Data de carga"]).max()
+    for col in ("Tipo de origem",):
+        print(f"::notice title=diagnóstico {col}::" + str(P[col].value_counts().to_dict()))
+    print("::notice title=diagnóstico datas::" + str(P["Data de autuação"].head(3).tolist()) + " " + str(D["Data da decisão"].head(3).tolist()) + " tipos=" + str(D["Tipo da decisão"].value_counts().head(8).to_dict()))
     P = P.rename(columns={"Assunto principal": "assunto", "Classe": "classe", "Instância": "inst", "Número do processo": "num",
                           "Tipo de origem": "origem", "Relator": "relator"})
     P["inst"] = P.inst.astype(int)
-    P["aut"] = pd.to_datetime(P["Data de autuação"])
-    P["dist"] = pd.to_datetime(P["Data de distribuição"], errors="coerce")
+    P["aut"] = data(P["Data de autuação"])
+    P["dist"] = data(P["Data de distribuição"])
     P["inicio"] = pd.to_datetime(np.where(P.origem == "Recursal", P.dist.fillna(P.aut), P.aut))
     P["eleicao"] = P.arq.map(lambda y: pd.Timestamp(T1[y]))
     P["janela"] = (P.aut >= P.arq.map(lambda y: pd.Timestamp(f"{y}-07-20"))) & (P.aut < P.eleicao + pd.Timedelta(days=1))
@@ -108,7 +137,7 @@ def preparar():
 
     D = D.rename(columns={"Número do processo": "num", "Instância": "inst", "Tipo da decisão": "tipo", "Autor da decisão": "autor"})
     D["inst"] = D.inst.astype(int)
-    D["data"] = pd.to_datetime(D["Data da decisão"], format="%d/%m/%Y", errors="coerce")
+    D["data"] = data(D["Data da decisão"]).dt.normalize()
     k = ["arq", "num", "inst"]
     dd = D[D.tipo.isin(["Decisão", "Sentença", "Acórdão"])]
     P = P.merge(dd.groupby(k).data.min().rename("d1"), on=k, how="left")
@@ -319,6 +348,8 @@ def main():
             if k != "numeros_datajud_tse":
                 shutil.copy(os.path.join(DERIV, f"{k}.csv"), h)
         shutil.copy(os.path.join(DERIV, "meta.json"), h)
+    print("::notice title=resultado::" + " | ".join(f"{r.ano} {r.tribunal} {r.processos}/{r.ate_3_dias}" for r in saidas["tse_tres"].itertuples())
+          + " || vol " + str(saidas["volume"].values.tolist()) + " || camp " + str(saidas["campanhas"][["id", "processos", "ate_3_dias"]].values.tolist()))
     for k in ("volume", "tse_tres", "campanhas", "liminares"):
         print(f"\n{k}\n", saidas[k].to_string(index=False))
     print("\n", meta)
