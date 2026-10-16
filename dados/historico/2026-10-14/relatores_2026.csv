@@ -1,0 +1,7 @@
+id,relator,campanha_re,processos,ate_3_dias,pct_ate_3_dias,ate_10_dias,pct_ate_10_dias,no_datajud,liminar_decidida,liminar_concedida
+André Mendonça|Lula,André Mendonça,Lula,35,1,0.0286,6,0.1714,4,0,0
+André Mendonça|Flávio Bolsonaro,André Mendonça,Flávio Bolsonaro,53,1,0.0189,10,0.1887,9,0,0
+Estela Aranha|Lula,Estela Aranha,Lula,80,21,0.2625,37,0.4625,64,29,2
+Estela Aranha|Flávio Bolsonaro,Estela Aranha,Flávio Bolsonaro,38,9,0.2368,22,0.5789,30,5,0
+Nunes Marques|Lula,Nunes Marques,Lula,64,3,0.0469,6,0.0938,50,10,6
+Nunes Marques|Flávio Bolsonaro,Nunes Marques,Flávio Bolsonaro,74,0,0.0,2,0.027,69,6,1

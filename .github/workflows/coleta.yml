@@ -1,0 +1,58 @@
+name: Coleta diária (SIG/TSE + DataJud)
+
+on:
+  schedule:
+    - cron: "0 9 * * *"   # 06h00 em Brasília (o cron do GitHub usa UTC)
+  workflow_dispatch:       # permite rodar manualmente pela aba Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: coleta
+  cancel-in-progress: false
+
+jobs:
+  coleta:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Baixar pacotes do SIG/TSE
+        run: python coleta/baixar_sig.py --anos 2018 2022 2026
+
+      - name: Gerar lista de processos para o DataJud
+        run: python analise/indicadores.py --sem-historico
+
+      - name: Consultar o DataJud
+        run: |
+          mkdir -p dados/brutos/datajud
+          python coleta/coletar_datajud.py \
+            --entrada dados/derivados/numeros_datajud_tse.csv \
+            --saida dados/brutos/datajud/tse.jsonl.gz \
+            --falhas dados/brutos/datajud/falhas.csv \
+            --threads 4
+
+      - name: Calcular indicadores e gravar histórico
+        run: python analise/indicadores.py
+
+      - name: Registrar mudanças
+        run: |
+          git config user.name "coleta-automatica"
+          git config user.email "coleta-automatica@users.noreply.github.com"
+          git add dados/derivados dados/historico docs/dados
+          if git diff --cached --quiet; then
+            echo "Sem mudanças nos dados."
+          else
+            git commit -m "Coleta automática: $(date -u +%Y-%m-%d)"
+            git push
+          fi

@@ -1,0 +1,6 @@
+# dados brutos do TSE e respostas do DataJud: grandes demais para versionar;
+# são baixados de novo a cada coleta (coleta/baixar_sig.py e coleta/coletar_datajud.py)
+dados/brutos/
+__pycache__/
+*.pyc
+.DS_Store
