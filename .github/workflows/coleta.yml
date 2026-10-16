@@ -33,8 +33,10 @@ jobs:
       - name: Baixar pacotes do SIG/TSE
         run: python coleta/baixar_sig.py --anos 2018 2022 2026
 
-      - name: Gerar lista de processos para o DataJud
-        run: python analise/indicadores.py --sem-historico
+      - name: Gerar listas de processos para o DataJud
+        run: |
+          python analise/indicadores.py --sem-historico
+          python analise/plataformas.py
 
       - name: Consultar o DataJud
         run: |
@@ -44,9 +46,16 @@ jobs:
             --saida dados/brutos/datajud/tse.jsonl.gz \
             --falhas dados/brutos/datajud/falhas.csv \
             --threads 4
+          python coleta/coletar_datajud.py \
+            --entrada dados/derivados/numeros_datajud_plataformas.csv \
+            --saida dados/brutos/datajud/plataformas.jsonl.gz \
+            --falhas dados/brutos/datajud/falhas_plataformas.csv \
+            --threads 4
 
       - name: Calcular indicadores e gravar histórico
-        run: python analise/indicadores.py
+        run: |
+          python analise/indicadores.py
+          python analise/plataformas.py
 
       - name: Enviar ao Supabase (se configurado)
         env:

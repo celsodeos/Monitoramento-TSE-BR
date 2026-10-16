@@ -77,6 +77,7 @@ coleta/
 analise/
   indicadores.py        calcula os indicadores e os testes e grava as tabelas
   enviar_supabase.py    envia as tabelas ao banco no Supabase
+  plataformas.py        ações contra plataformas digitais e meios de comunicação
 dados/
   brutos/               arquivos originais do TSE e respostas do DataJud (não versionados)
   derivados/            tabelas do estudo (CSV) e lista de processos para o DataJud
@@ -99,6 +100,9 @@ docs/
 | `liminares.csv` | Liminar apreciada e concedida, por campanha (DataJud) |
 | `processos_campanhas.csv` | Um processo por linha: ações entre as campanhas, 1º e 2º turnos |
 | `numeros_datajud_tse.csv` | Lista de processos consultada no DataJud |
+| `plataformas.csv` | Processos com plataforma digital no polo passivo, por empresa, eleição e instância |
+| `plataformas_tse.csv` | TSE: liminares e desfechos por plataforma (DataJud) |
+| `midia.csv`, `midia_empresas.csv` | Processos contra veículos de comunicação e os veículos mais acionados |
 | `meta.json` | Data da carga do TSE e da geração das tabelas |
 
 ## Como reproduzir
