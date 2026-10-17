@@ -296,8 +296,19 @@ let __rt; window.addEventListener('resize', () => { clearTimeout(__rt); __rt = s
     </div>
   </section>
 
-  <section id="imprensa">
-    <h2>Na imprensa</h2>
+  <section class="notes" id="metodo">
+    <h2>Método e fontes</h2>
+    <ul>
+      <li>Fonte principal: Portal de Dados Abertos do TSE, grupo Processual (arquivos de processos eleitorais, decisões e partes), extraídos em 14 e 15/10/2026. Liminares: API Pública do DataJud/CNJ, consultada em outubro de 2026, com cobertura de cerca de 64% dos processos de 2026.</li>
+      <li>Prazo: da autuação ao primeiro ato decisório (decisão, sentença ou acórdão), sem despachos. Processos sem decisão contam como não decididos.</li>
+      <li>Campanhas identificadas pelas partes principais: candidatos, coligação ou federação nacional, partido nacional e CNPJ de campanha.</li>
+      <li>Testes: Fisher exato (comparação bruta) e Mantel-Haenszel estratificado por relator efetivo e classe processual. p abaixo de 0,05 aparece em destaque.</li>
+      <li>Normas: Lei 9.504/1997, arts. 8º, 58, § 2º, e 96, §§ 3º e 4º; Res.-TSE 23.547/2017 (2018) e 23.608/2019, art. 2º, II e § 4º; Portaria TSE nº 235/2026.</li>
+    </ul>
+  </section>
+
+  <section id="repercussao">
+    <h2>Repercussão</h2>
     <div class="press">
       <a class="press-card" href="https://oglobo.globo.com/blogs/lauro-jardim/post/2026/10/na-eleicao-mais-judicializada-tse-esta-mais-lento-e-enviesado-aponta-estudo.ghtml">
         <div class="press-img press-img--vazio"><span>O Globo</span></div>
@@ -314,17 +325,6 @@ let __rt; window.addEventListener('resize', () => { clearTimeout(__rt); __rt = s
         </div>
       </a>
     </div>
-  </section>
-
-  <section class="notes" id="metodo">
-    <h2>Método e fontes</h2>
-    <ul>
-      <li>Fonte principal: Portal de Dados Abertos do TSE, grupo Processual (arquivos de processos eleitorais, decisões e partes), extraídos em 14 e 15/10/2026. Liminares: API Pública do DataJud/CNJ, consultada em outubro de 2026, com cobertura de cerca de 64% dos processos de 2026.</li>
-      <li>Prazo: da autuação ao primeiro ato decisório (decisão, sentença ou acórdão), sem despachos. Processos sem decisão contam como não decididos.</li>
-      <li>Campanhas identificadas pelas partes principais: candidatos, coligação ou federação nacional, partido nacional e CNPJ de campanha.</li>
-      <li>Testes: Fisher exato (comparação bruta) e Mantel-Haenszel estratificado por relator efetivo e classe processual. p abaixo de 0,05 aparece em destaque.</li>
-      <li>Normas: Lei 9.504/1997, arts. 8º, 58, § 2º, e 96, §§ 3º e 4º; Res.-TSE 23.547/2017 (2018) e 23.608/2019, art. 2º, II e § 4º; Portaria TSE nº 235/2026.</li>
-    </ul>
   </section>
 
   <section class="card" id="autoria">
