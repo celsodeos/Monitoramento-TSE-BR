@@ -1,0 +1,14 @@
+{
+  "title": "Monitoramento-TSE-BR: judicialização das eleições e resposta do TSE em eleições presidenciais (v1.0 — dados do artigo sobre o 1º turno)",
+  "description": "Dados brutos (SIG/TSE, carga de 14/10/2026; DataJud/CNJ, 15/10/2026), tabelas derivadas, planilhas e código que fundamentam o artigo \"Como explicar a letargia do TSE nas eleições mais judicializadas da história do Brasil?\". Contencioso de propaganda e campanha no 1º turno das eleições gerais de 2018, 2022 e 2026: volume, velocidade de decisão no TSE e nos TREs, ações entre as campanhas presidenciais, relatores e liminares.",
+  "upload_type": "dataset",
+  "language": "por",
+  "creators": [
+    {"name": "Santos, Celso de Oliveira", "affiliation": "Universidade do Estado do Rio de Janeiro (UERJ)", "orcid": "0000-0002-8759-0538"}
+  ],
+  "keywords": ["Tribunal Superior Eleitoral", "justiça eleitoral", "eleições 2026", "judicialização", "dados abertos", "DataJud"],
+  "license": "cc-by-4.0",
+  "related_identifiers": [
+    {"identifier": "https://celsodeos.github.io/Monitoramento-TSE-BR/v1/", "relation": "isSupplementTo", "resource_type": "other"}
+  ]
+}

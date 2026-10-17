@@ -150,6 +150,16 @@ A rotina diária envia cada nova carga ao banco (`analise/enviar_supabase.py`), 
 
 A rotina `.github/workflows/tres_semanal.yml` roda aos domingos às 7h (horário de Brasília) e consulta no DataJud os cerca de 28 mil processos de campanha dos TREs (`coleta/datajud_tres.py`). O resultado fica em `dados/derivados/datajud_tres_status.csv`, um processo por linha, e o resumo por eleição em `dados/derivados/liminares_tres.csv`. A cada semana são consultados os processos novos, todos os da eleição mais recente e os ainda não localizados. Se o tempo máximo da execução for atingido, a coleta para, salva o que obteve e continua na execução seguinte.
 
+## Versões congeladas
+
+Os dados do TSE mudam a cada carga. Para que os resultados publicados possam ser conferidos, cada artigo tem uma versão congelada, com os arquivos brutos usados, as tabelas e as somas de verificação (SHA-256):
+
+| Versão | Artigo | Dados | Página |
+|---|---|---|---|
+| `v1.0-artigo1` | *Como explicar a letargia do TSE nas eleições mais judicializadas da história do Brasil?* (1º turno) | carga do TSE de 14/10/2026; DataJud de 15/10/2026 — [`versoes/v1.0/`](versoes/v1.0/) | [v1](https://celsodeos.github.io/Monitoramento-TSE-BR/v1/) |
+
+Os brutos da v1.0 reproduzem exatamente as tabelas do artigo com o código da tag `v1.0-artigo1` (instruções em `versoes/v1.0/LEIAME.md`).
+
 ## Visualização
 
 A página em `docs/` apresenta os gráficos e as tabelas do estudo e abre em qualquer navegador, sem login. Ela lê as tabelas de `docs/dados/`, então se atualiza junto com a coleta. Os números citados no texto da página referem-se à carga de 14/10/2026.

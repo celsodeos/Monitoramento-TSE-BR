@@ -1,0 +1,2 @@
+e23d6b1e6de7603b50890a3b9d4caa7df62aba2c77f9164b71c3fc17a9782739  Monitoramento-TSE-BR_v1.0_brutos.zip
+952fa7776ade955900bc99bcd1889ed32c0b15b73b9e2469cc0a32b2892beda3  Monitoramento-TSE-BR_v1.0_derivados.zip
