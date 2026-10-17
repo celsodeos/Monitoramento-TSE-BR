@@ -1,11 +1,11 @@
 ano,empresa,processos_tse,no_datajud,liminar_concedida,liminar_negada,procedencia_total_ou_parcial,improcedencia,perda_do_objeto,sem_desfecho
 2018,"Google (Google, YouTube)",14,3,2,1,0,0,0,1
-2018,"Meta (Facebook, Instagram, WhatsApp)",61,12,12,0,2,1,0,5
+2018,"Meta (Facebook, Instagram, WhatsApp)",61,13,12,1,2,1,0,5
 2018,X (Twitter),11,2,2,0,0,0,0,1
 2022,"Google (Google, YouTube)",3,3,1,0,1,0,0,1
-2022,"Meta (Facebook, Instagram, WhatsApp)",8,7,1,0,0,0,1,2
+2022,"Meta (Facebook, Instagram, WhatsApp)",8,8,1,0,0,0,1,3
 2022,X (Twitter),4,4,1,0,0,0,2,1
 2026,"Google (Google, YouTube)",2,2,0,0,0,0,0,2
-2026,"Meta (Facebook, Instagram, WhatsApp)",47,30,0,0,0,0,0,29
+2026,"Meta (Facebook, Instagram, WhatsApp)",47,34,1,0,0,0,0,33
 2026,TikTok (ByteDance),4,3,0,0,0,0,0,3
 2026,X (Twitter),4,1,0,0,0,0,0,1
