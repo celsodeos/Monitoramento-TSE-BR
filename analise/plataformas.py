@@ -10,6 +10,7 @@ Uso:
     python analise/plataformas.py
 Saídas (dados/derivados e docs/dados):
     plataformas.csv            processos por empresa, eleição e instância
+    plataformas_servico.csv    Meta e Google por serviço (quando identificável) e eleição
     plataformas_tse.csv        TSE: liminar e desfecho por empresa e eleição (DataJud)
     midia.csv                  processos contra veículos de comunicação, por eleição e instância
     midia_empresas.csv         veículos mais acionados por eleição
@@ -81,6 +82,27 @@ def main():
            .assign(instancia=lambda d: d.inst.map(INST)).rename(columns={"arq": "ano"}))
     tot = bt.drop_duplicates(["arq", "num", "inst"]).groupby("arq").size()
     saidas = {"plataformas": tab[["ano", "empresa", "instancia", "processos"]]}
+
+    # serviço: a parte costuma ser a pessoa jurídica brasileira (Facebook Serviços Online do Brasil
+    # responde por Facebook e Instagram; Google Brasil Internet por Google e YouTube). O serviço só é
+    # identificável pelo nome da própria parte ou pela menção ao serviço em outra parte do mesmo processo.
+    srv = bt[bt.empresa.isin([PLATAFORMAS[0][0], PLATAFORMAS[1][0]])][["arq", "num", "inst", "empresa", "nm"]].copy()
+    outros = (k.groupby(["arq", "num", "inst"]).nm.apply(lambda v: " | ".join(v)).rename("todas").reset_index())
+    srv = srv.merge(outros, on=["arq", "num", "inst"], how="left")
+    linhas = []
+    for r in srv.itertuples():
+        cands = ([("WhatsApp", "WHATSAPP"), ("Instagram", "INSTAGRAM"), ("Facebook", "FACEBOOK")]
+                 if r.empresa == PLATAFORMAS[0][0] else [("YouTube", "YOUTUBE")])
+        proprio = [lab for lab, pat in cands if pat in r.nm and not (lab == "Facebook" and "FACEBOOK SERVICOS" in r.nm)]
+        outra = [lab for lab, pat in cands
+                 if any(pat in p_ and not p_.startswith("FACEBOOK SERVICOS") for p_ in r.todas.split(" | ") if p_ != r.nm)]
+        achou = proprio or outra
+        for lab in (achou or ["não identificado"]):
+            linhas.append({"ano": r.arq, "grupo": r.empresa, "instancia": INST[r.inst], "num": r.num, "servico": lab,
+                           "identificado_por": "nome da parte" if proprio else ("outra parte do processo" if outra else "")})
+    S = pd.DataFrame(linhas).drop_duplicates(["ano", "num", "instancia", "servico"])
+    saidas["plataformas_servico"] = (S.groupby(["ano", "grupo", "instancia", "servico", "identificado_por"]).size()
+                                     .rename("processos").reset_index())
 
     md = k[k.midia].drop_duplicates(["arq", "num", "inst"])
     saidas["midia"] = (md.groupby(["arq", "inst"]).size().rename("processos").reset_index()
