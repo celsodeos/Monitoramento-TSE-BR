@@ -171,7 +171,7 @@ A página em `docs/` apresenta os gráficos e as tabelas do estudo e abre em qua
 ## Próximas etapas
 
 - Verificação, no PJe, de uma amostra estratificada de 80 processos: pedido liminar, distribuição por prevenção, destino da liminar e referendo do Plenário.
-- Inclusão do 2º turno de 2018, 2022 e 2026.
+- Liminares do 2º turno de 2026, à medida que o DataJud registrar os andamentos.
 - Ações contra meios de comunicação e plataformas digitais.
 
 ## Como citar
