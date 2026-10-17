@@ -48,6 +48,7 @@ jobs:
         run: |
           python analise/indicadores.py
           python analise/plataformas.py
+          python analise/segundo_turno.py
 
       - name: Enviar ao Supabase (se configurado)
         continue-on-error: true   # uma falha no banco não impede o registro dos dados no repositório

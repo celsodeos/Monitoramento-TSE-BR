@@ -4,7 +4,7 @@
 
 Estudo e base de dados sobre o contencioso de propaganda e campanha no Tribunal Superior Eleitoral (TSE) e nos Tribunais Regionais Eleitorais (TREs) no 1º turno das eleições gerais de 2018, 2022 e 2026. O repositório reúne o código de coleta e tratamento, os dados derivados, a página pública de visualização e o histórico datado de cada extração, para que os resultados possam ser conferidos e reproduzidos.
 
-**Página pública:** <https://celsodeos.github.io/Monitoramento-TSE-BR/>
+**Páginas públicas:** [1º turno](https://celsodeos.github.io/Monitoramento-TSE-BR/) · [2º turno](https://celsodeos.github.io/Monitoramento-TSE-BR/segundo-turno/)
 
 Autor: **Celso de Oliveira Santos** · Projeto Monitor Eleitoral
 
@@ -78,12 +78,14 @@ analise/
   indicadores.py        calcula os indicadores e os testes e grava as tabelas
   enviar_supabase.py    envia as tabelas ao banco no Supabase
   plataformas.py        ações contra plataformas digitais e meios de comunicação
+  segundo_turno.py      indicadores do 2º turno (velocidade, gabinetes, liminares)
 dados/
   brutos/               arquivos originais do TSE e respostas do DataJud (não versionados)
   derivados/            tabelas do estudo (CSV) e lista de processos para o DataJud
   historico/AAAA-MM-DD/ fotografia de cada carga do TSE, para acompanhar mudanças
 docs/
-  index.html            página pública (GitHub Pages)
+  index.html            página pública do 1º turno (GitHub Pages)
+  segundo-turno/        página pública do 2º turno
   dados/                cópia das tabelas lida pela página
 .github/workflows/
   coleta.yml            rotina diária de coleta e cálculo
@@ -103,6 +105,7 @@ docs/
 | `plataformas.csv` | Processos com plataforma digital no polo passivo, por empresa, eleição e instância |
 | `plataformas_tse.csv` | TSE: liminares e desfechos por plataforma (DataJud) |
 | `midia.csv`, `midia_empresas.csv` | Processos contra veículos de comunicação e os veículos mais acionados |
+| `2t_volume.csv`, `2t_velocidade.csv`, `2t_relatores.csv`, `2t_liminares.csv`, `2t_meta.json` | 2º turno: volume, velocidade (só ações já observáveis), distribuição e velocidade por gabinete, liminares |
 | `meta.json` | Data da carga do TSE e da geração das tabelas |
 
 ## Como reproduzir
