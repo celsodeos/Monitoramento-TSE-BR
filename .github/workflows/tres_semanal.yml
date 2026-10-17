@@ -48,6 +48,6 @@ jobs:
             echo "Sem mudanças."
           else
             git commit -m "Coleta semanal TREs (DataJud): $(date -u +%Y-%m-%d)"
-            git pull --rebase -X theirs origin main || true
+            git pull --rebase --autostash -X theirs origin main
             git push
           fi
