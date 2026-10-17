@@ -156,9 +156,9 @@ Os dados do TSE mudam a cada carga. Para que os resultados publicados possam ser
 
 | Versão | Artigo | Dados | Página |
 |---|---|---|---|
-| `v1.0-artigo1` | *Como explicar a letargia do TSE nas eleições mais judicializadas da história do Brasil?* (1º turno) | carga do TSE de 14/10/2026; DataJud de 15/10/2026 — [`versoes/v1.0/`](versoes/v1.0/) | [v1](https://celsodeos.github.io/Monitoramento-TSE-BR/v1/) |
+| `v1.0-1T` | *Como explicar a letargia do TSE nas eleições mais judicializadas da história do Brasil?* (1º turno) | carga do TSE de 14/10/2026; DataJud de 15/10/2026 — [`versoes/v1.0/`](versoes/v1.0/) | [v1](https://celsodeos.github.io/Monitoramento-TSE-BR/v1/) |
 
-Os brutos da v1.0 reproduzem exatamente as tabelas do artigo com o código da tag `v1.0-artigo1` (instruções em `versoes/v1.0/LEIAME.md`).
+Os brutos da v1.0 reproduzem exatamente as tabelas do artigo com o código da tag `v1.0-1T` (instruções em `versoes/v1.0/LEIAME.md`).
 
 ## Visualização
 
