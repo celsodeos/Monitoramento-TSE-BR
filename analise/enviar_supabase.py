@@ -11,12 +11,16 @@ Uso:
     python analise/enviar_supabase.py
 Só usa a biblioteca padrão do Python.
 """
-import csv, json, math, os, sys, urllib.request
+import csv, json, os, sys, urllib.error, urllib.request
 
 RAIZ = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 DERIV = os.path.join(RAIZ, "dados", "derivados")
-URL = os.environ.get("SUPABASE_URL", "").rstrip("/")
-CHAVE = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
+URL = os.environ.get("SUPABASE_URL", "").strip().rstrip("/")
+CHAVE = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "").strip()
+# chaves antigas (JWT, "eyJ...") vão também no Authorization; as novas ("sb_secret_...") só no apikey
+CABECALHOS = {"apikey": CHAVE, "Content-Type": "application/json"}
+if CHAVE.startswith("eyJ"):
+    CABECALHOS["Authorization"] = f"Bearer {CHAVE}"
 
 TABELAS = {  # arquivo -> (tabela, colunas extras fixas)
     "volume.csv": ("volume", {}),
@@ -31,8 +35,7 @@ TABELAS = {  # arquivo -> (tabela, colunas extras fixas)
 def req(metodo, caminho, corpo=None, prefer="return=minimal"):
     r = urllib.request.Request(f"{URL}/rest/v1/{caminho}", method=metodo,
                                data=None if corpo is None else json.dumps(corpo).encode(),
-                               headers={"apikey": CHAVE, "Authorization": f"Bearer {CHAVE}",
-                                        "Content-Type": "application/json", "Prefer": prefer})
+                               headers=CABECALHOS | {"Prefer": prefer})
     with urllib.request.urlopen(r, timeout=120) as resp:
         txt = resp.read().decode()
         return json.loads(txt) if txt else None
@@ -71,4 +74,7 @@ if __name__ == "__main__":
     try:
         main()
     except urllib.error.HTTPError as e:
-        print("Erro do Supabase:", e.code, e.read().decode()[:500]); sys.exit(1)
+        msg = e.read().decode()[:500]
+        print(f"::error title=Supabase::HTTP {e.code}: {msg}"); sys.exit(1)
+    except Exception as e:
+        print(f"::error title=Supabase::{type(e).__name__}: {e}"); sys.exit(1)

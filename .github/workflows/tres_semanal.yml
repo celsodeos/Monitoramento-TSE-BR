@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "0 10 * * 0"   # domingos, 07h00 em Brasília (depois da coleta diária)
   workflow_dispatch:        # permite rodar ou continuar manualmente pela aba Actions
+  push:                     # roda também quando o código da coleta dos TREs muda
+    branches: [main]
+    paths: ["coleta/datajud_tres.py", "coleta/datajud_lote.py", ".github/workflows/tres_semanal.yml"]
 
 permissions:
   contents: write

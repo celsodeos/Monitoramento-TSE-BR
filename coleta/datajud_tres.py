@@ -14,12 +14,13 @@ Uso:
     python coleta/datajud_tres.py --threads 6 --minutos 300
 Gera também dados/derivados/liminares_tres.csv (resumo por eleição).
 """
-import argparse, csv, os, sys, threading, time
+import argparse, csv, os, sys, time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from coletar_datajud import consultar, CHAVE_PADRAO  # noqa: E402
+from coletar_datajud import CHAVE_PADRAO  # noqa: E402
+from datajud_lote import consultar_lote, LOTE  # noqa: E402
 
 RAIZ = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 LISTA = os.path.join(RAIZ, "dados", "brutos", "numeros_datajud_tres.csv")
@@ -79,36 +80,39 @@ def main():
     pend.sort(key=lambda r: (r["eleicao"] != recente, (r["eleicao"], r["numero_cnj"]) in estado))  # novos e recentes primeiro
     print(f"{len(lista)} processos na lista | {len(pend)} a consultar nesta execução", flush=True)
 
-    trava, t0, feitos, achados, erros = threading.Lock(), time.time(), 0, 0, 0
-    parar = threading.Event()
+    t0, feitos, achados, erros = time.time(), 0, 0, 0
+    por_ep = {}
+    for r in pend:
+        por_ep.setdefault(r["endpoint"], []).append(r)
+    lotes = [rs[i:i + LOTE] for rs in por_ep.values() for i in range(0, len(rs), LOTE)]
+    print(f"{len(lotes)} lotes de até {LOTE} processos", flush=True)
 
-    def tarefa(r):
-        if parar.is_set():
-            return r, None, "interrompido"
-        res, err = consultar(r["endpoint"], r["numero_20dig"], a.chave)
-        return r, res, err
+    def tarefa(rs):
+        if time.time() - t0 > a.minutos * 60:
+            return rs, None, "interrompido"
+        res, err = consultar_lote(rs[0]["endpoint"], [r["numero_20dig"] for r in rs], a.chave)
+        return rs, res, err
 
     with ThreadPoolExecutor(max_workers=a.threads) as ex:
-        futs = [ex.submit(tarefa, r) for r in pend]
-        for fu in as_completed(futs):
-            r, res, err = fu.result()
+        futs = [ex.submit(tarefa, rs) for rs in lotes]
+        for k, fu in enumerate(as_completed(futs), 1):
+            rs, res, err = fu.result()
             if err == "interrompido":
                 continue
-            with trava:
-                feitos += 1
-                if err:
-                    erros += 1
-                else:
-                    reg = {k: r.get(k, "") for k in ("eleicao", "numero_cnj", "endpoint", "classe", "tema")}
-                    reg.update(resumir((res or {}).get("hits", {}).get("hits", [])))
-                    reg["consultado_em"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
-                    achados += reg["encontrado"] == "sim"
-                    estado[(r["eleicao"], r["numero_cnj"])] = reg
-                if feitos % 500 == 0:
-                    print(f"{feitos}/{len(pend)} consultados | encontrados={achados} | erros={erros} | {(time.time()-t0)/60:.0f} min", flush=True)
-                if time.time() - t0 > a.minutos * 60 and not parar.is_set():
-                    print("Tempo máximo atingido: salvando e encerrando; a próxima execução continua.", flush=True)
-                    parar.set()
+            if err:
+                erros += 1; continue
+            agora_iso = datetime.now(timezone.utc).isoformat(timespec="seconds")
+            for r in rs:
+                reg = {c: r.get(c, "") for c in ("eleicao", "numero_cnj", "endpoint", "classe", "tema")}
+                reg.update(resumir([{"_source": h.get("_source", {})} for h in res.get(r["numero_20dig"], [])]))
+                reg["consultado_em"] = agora_iso
+                achados += reg["encontrado"] == "sim"; feitos += 1
+                estado[(r["eleicao"], r["numero_cnj"])] = reg
+            if k % 20 == 0:
+                print(f"{k}/{len(lotes)} lotes | {feitos} processos | encontrados={achados} | lotes com erro={erros} | "
+                      f"{(time.time()-t0)/60:.0f} min", flush=True)
+    if time.time() - t0 > a.minutos * 60:
+        print("Tempo máximo atingido: o que foi obtido está salvo; a próxima execução continua.", flush=True)
 
     os.makedirs(os.path.dirname(ESTADO), exist_ok=True)
     linhas = sorted(estado.values(), key=lambda r: (r["eleicao"], r["numero_cnj"]))
@@ -131,7 +135,7 @@ def main():
                     "pct_liminar_decidida": round(len(dec) / len(enc), 4) if enc else ""})
     with open(RESUMO, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(res[0])); w.writeheader(); w.writerows(res)
-    print(f"Fim: {feitos} consultados, {achados} encontrados, {erros} erros. Resumo em {os.path.relpath(RESUMO, RAIZ)}")
+    print(f"Fim: {feitos} consultados, {achados} encontrados, {erros} lotes com erro. Resumo em {os.path.relpath(RESUMO, RAIZ)}")
     print("::notice title=DataJud TREs::" + " | ".join(f"{r['ano']}: {r['no_datajud']}/{r['processos_tres']} no DataJud, "
                                                       f"{r['liminar_decidida']} com liminar apreciada" for r in res))
 

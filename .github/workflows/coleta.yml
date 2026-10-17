@@ -38,19 +38,11 @@ jobs:
           python analise/indicadores.py --sem-historico
           python analise/plataformas.py
 
-      - name: Consultar o DataJud
+      - name: Consultar o DataJud (em lotes)
         run: |
           mkdir -p dados/brutos/datajud
-          python coleta/coletar_datajud.py \
-            --entrada dados/derivados/numeros_datajud_tse.csv \
-            --saida dados/brutos/datajud/tse.jsonl.gz \
-            --falhas dados/brutos/datajud/falhas.csv \
-            --threads 4
-          python coleta/coletar_datajud.py \
-            --entrada dados/derivados/numeros_datajud_plataformas.csv \
-            --saida dados/brutos/datajud/plataformas.jsonl.gz \
-            --falhas dados/brutos/datajud/falhas_plataformas.csv \
-            --threads 4
+          python coleta/datajud_lote.py --entrada dados/derivados/numeros_datajud_tse.csv --saida dados/brutos/datajud/tse.jsonl.gz
+          python coleta/datajud_lote.py --entrada dados/derivados/numeros_datajud_plataformas.csv --saida dados/brutos/datajud/plataformas.jsonl.gz
 
       - name: Calcular indicadores e gravar histórico
         run: |
@@ -58,6 +50,7 @@ jobs:
           python analise/plataformas.py
 
       - name: Enviar ao Supabase (se configurado)
+        continue-on-error: true   # uma falha no banco não impede o registro dos dados no repositório
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}

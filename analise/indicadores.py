@@ -80,8 +80,16 @@ def ler(ano, tipo, usecols=None):
         raise SystemExit(f"Faltam os dados brutos de {ano}/{tipo}. Rode: python coleta/baixar_sig.py --anos {ano}")
     df = pd.read_csv(arqs[0], sep=";", encoding="latin1", dtype=str)
     if tipo in MAPA and "NR_PROCESSO" in df.columns:
-        if "ST_RECURSAL" in df.columns:
-            df["Tipo de origem"] = np.where(df.ST_RECURSAL.fillna("").str.upper().str.startswith("S"), "Recursal", "Originário")
+        if "ST_RECURSAL" in df.columns or "NR_INSTANCIA_ORIGEM" in df.columns:
+            # recursal: indicador do TSE (S/SIM/1/TRUE/RECURSAL) ou instância de origem inferior à atual
+            st = df.get("ST_RECURSAL", pd.Series("", index=df.index)).fillna("").astype(str).str.strip().str.upper()
+            rec = st.isin(["S", "SIM", "1", "TRUE", "T", "RECURSAL"])
+            if "NR_INSTANCIA_ORIGEM" in df.columns:
+                io = pd.to_numeric(df.NR_INSTANCIA_ORIGEM, errors="coerce")
+                ia = pd.to_numeric(df.NR_INSTANCIA, errors="coerce")
+                rec = rec | (io.notna() & ia.notna() & (io < ia))
+            print("::notice title=diagnóstico recursal::ST_RECURSAL=" + str(st.value_counts().head(6).to_dict()) + f" recursais={int(rec.sum())}")
+            df["Tipo de origem"] = np.where(rec, "Recursal", "Originário")
         if "DT_GERACAO" in df.columns:
             df["Data de carga"] = (df.DT_GERACAO.fillna("") + " " + df.get("HH_GERACAO", "").fillna("")).str.strip()
         df = df.rename(columns=MAPA[tipo])
