@@ -1,5 +1,7 @@
 # Judicialização das Eleições e Resposta do TSE em Eleições Presidenciais
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23441914.svg)](https://doi.org/10.5281/zenodo.23441914)
+
 **Como explicar a letargia do TSE nas eleições mais judicializadas da história do Brasil?**
 
 Estudo e base de dados sobre o contencioso de propaganda e campanha no Tribunal Superior Eleitoral (TSE) e nos Tribunais Regionais Eleitorais (TREs) no 1º turno das eleições gerais de 2018, 2022 e 2026. O repositório reúne o código de coleta e tratamento, os dados derivados, a página pública de visualização e o histórico datado de cada extração, para que os resultados possam ser conferidos e reproduzidos.
@@ -154,9 +156,9 @@ A rotina `.github/workflows/tres_semanal.yml` roda aos domingos às 7h (horário
 
 Os dados do TSE mudam a cada carga. Para que os resultados publicados possam ser conferidos, cada artigo tem uma versão congelada, com os arquivos brutos usados, as tabelas e as somas de verificação (SHA-256):
 
-| Versão | Artigo | Dados | Página |
+| Versão | Artigo | Dados | Página e DOI |
 |---|---|---|---|
-| `v1.0-1T` | *Como explicar a letargia do TSE nas eleições mais judicializadas da história do Brasil?* (1º turno) | carga do TSE de 14/10/2026; DataJud de 15/10/2026 — [`versoes/v1.0/`](versoes/v1.0/) | [v1](https://celsodeos.github.io/Monitoramento-TSE-BR/v1/) |
+| `v1.0-1T` | *Como explicar a letargia do TSE nas eleições mais judicializadas da história do Brasil?* (1º turno) | carga do TSE de 14/10/2026; DataJud de 15/10/2026 — [`versoes/v1.0/`](versoes/v1.0/) | [v1](https://celsodeos.github.io/Monitoramento-TSE-BR/v1/) · DOI [10.5281/zenodo.23441914](https://doi.org/10.5281/zenodo.23441914) |
 
 Os brutos da v1.0 reproduzem exatamente as tabelas do artigo com o código da tag `v1.0-1T` (instruções em `versoes/v1.0/LEIAME.md`).
 
@@ -186,7 +188,7 @@ A página em `docs/` apresenta os gráficos e as tabelas do estudo e abre em qua
 
 ## Como citar
 
-> SANTOS, Celso de Oliveira. *Como explicar a letargia do TSE nas eleições mais judicializadas da história do Brasil?* Monitor Eleitoral, 2026. Dados e código disponíveis em: <https://github.com/celsodeos/Monitoramento-TSE-BR>.
+> SANTOS, Celso de Oliveira. *Como explicar a letargia do TSE nas eleições mais judicializadas da história do Brasil?* Monitor Eleitoral, 2026. Dados e código (v1.0-1T): Zenodo, 2026. DOI: <https://doi.org/10.5281/zenodo.23441914>.
 
 ## Autor
 
