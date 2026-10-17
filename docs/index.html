@@ -111,6 +111,9 @@ html, body { margin: 0; background: var(--color-bg); color: var(--color-fg); fon
 .lt .hero .foot { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); max-width: 70ch; }
 @media (prefers-reduced-motion: no-preference) { .lt .meter i { transition: width var(--cds-dur-slow) var(--cds-ease-out); } }
 @media (max-width: 560px) { .lt .duo { grid-template-columns: 1fr; } .lt .vsx { display: none; } }
+.lt .texto p { font-size: var(--cds-font-size-body); line-height: 1.6; max-width: 72ch; }
+.lt .texto h3 { margin-top: var(--cds-gap-sm); }
+.lt .texto p.muted { font-size: var(--cds-font-size-caption); line-height: 1.5; }
 [data-dash-source-state=empty] { color: transparent; }
 [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
 
@@ -157,6 +160,25 @@ let __rt; window.addEventListener('resize', () => { clearTimeout(__rt); __rt = s
     <p class="take muted">Contencioso de propaganda e campanha no 1º turno das eleições de 2018, 2022 e 2026. Dados do Portal de Dados Abertos do TSE (grupo Processual) e da API Pública do DataJud/CNJ, extraídos em 14 e 15/10/2026. Página complementar: <a href="segundo-turno/">o 2º turno</a>.</p>
     <p class="muted" id="carga">Números do texto referentes à carga de 14/10/2026.</p>
   </header>
+
+  <section id="auxiliares">
+    <h2>Quem julga a propaganda no TSE</h2>
+    <div class="card texto">
+      <p>Nos tribunais eleitorais (tanto regionais como no TSE), as representações, as reclamações e os pedidos de direito de resposta são de competência dos juízes auxiliares designados para este fim, e os recursos devem ser julgados pelo plenário da Corte, conforme a inteligência dos parágrafos 3º e 4º do art. 96 da Lei das Eleições (9.504/97). No entanto, a presidência e a vice-presidência da Corte avocaram esta competência em desconformidade com a Resolução TSE nº 23.608/2019, que determina que os juízes auxiliares sejam designados dentre os membros substitutos do Tribunal (art. 2º, II e § 4º), e sem deliberação colegiada registrada.</p>
+      <p>Por meio da Portaria TSE nº 235, de 20 de maio de 2026 (publicada no DJE de 22 de maio), o então recém-empossado Nunes Marques designou o ministro André Mendonça, já ocupando o cargo de vice, para uma das três vagas de juiz auxiliar na equipe de propaganda, e, no mesmo ato, incluiu a si mesmo na distribuição dos processos referentes à matéria. Até ali, somente a ministra Estela Aranha, designada em 2025 durante a presidência da ministra Cármen Lúcia no TSE, encontrava-se formalmente designada para a equipe, já que a ministra Vera Lúcia Santana Araújo, que também havia sido designada no fim de 2025 na gestão da ministra Cármen Lúcia, deixou o TSE em fevereiro de 2026.</p>
+      <p>Somente em 7 de outubro, após a votação do primeiro turno, é que o presidente da Corte designou o ministro substituto Marco Aurélio Bellizze Oliveira, que passou a integrar a escala de sorteios juntamente com a ministra Estela Aranha, o ministro André Mendonça e o próprio Nunes Marques. O traço distintivo da gestão do TSE para as eleições de 2026 não é necessariamente a atuação de membros titulares do TSE nos processos relacionados à campanha, mas sim a inclusão da Presidência e da Vice-Presidência na distribuição.</p>
+      <h3>Relatores das representações, direitos de resposta e notícias de irregularidade no 1º turno</h3>
+      <div class="tbl"><table id="t-aux">
+        <thead><tr><th>Eleição</th><th class="l">Presidente do TSE</th><th class="l">Vice-presidente</th><th>Ações</th><th>Com o presidente ou o vice como relator</th><th>%</th><th class="l">Principais relatores</th></tr></thead>
+        <tbody>
+          <tr><td>2018</td><td class="l">Rosa Weber</td><td class="l">Luís Roberto Barroso</td><td>289</td><td>2</td><td>0,7%</td><td class="l">Sergio Banhos (95), Carlos Horbach (83), Isabel Gallotti (68)</td></tr>
+          <tr><td>2022</td><td class="l">Alexandre de Moraes</td><td class="l">Ricardo Lewandowski</td><td>200</td><td>5</td><td>2,5%</td><td class="l">Cármen Lúcia (57), Maria Claudia Bucchianeri (53), Paulo de Tarso Sanseverino (37)</td></tr>
+          <tr><td>2026</td><td class="l">Nunes Marques</td><td class="l">André Mendonça</td><td>598</td><td class="sig">398</td><td class="sig">66,6%</td><td class="l">Nunes Marques (209), André Mendonça (189), Estela Aranha (141)</td></tr>
+        </tbody>
+      </table></div>
+      <p class="muted">Ações originárias do TSE (representação, representação especial, direito de resposta e notícia de irregularidade em propaganda) autuadas de 20/07 ao dia do 1º turno; relator atual segundo o SIG/TSE, carga de 14/10/2026. Presidência e vice-presidência na data do 1º turno. Fontes normativas: Lei 9.504/1997, art. 96, §§ 3º e 4º; Res.-TSE 23.608/2019, art. 2º, II e § 4º (e, em 2018, Res.-TSE 23.547/2017, art. 2º); Portaria TSE nº 235/2026 (DJE-TSE nº 81, de 22/05/2026).</p>
+    </div>
+  </section>
 
   <section id="volume">
     <h2>1. A judicialização cresceu, sobretudo no TSE</h2>
