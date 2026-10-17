@@ -70,6 +70,9 @@ def main():
     x["empresa"] = None
     for lab, pat in PLATAFORMAS:
         x.loc[x.empresa.isna() & x.nm.str.contains(pat, regex=True, na=False), "empresa"] = lab
+    # perfis, canais e páginas de usuários ("responsável pelo perfil @x no TikTok") não são a empresa
+    usuario = x.nm.str.contains(r"PERFIL|CANAL|RESPONSAV|@|HTTP|PAGINA|ADMINISTRADOR|URL", regex=True, na=False)
+    x.loc[usuario, "empresa"] = None
     x["midia"] = x.empresa.isna() & x.nm.str.contains(MIDIA, regex=True, na=False) & ~x.nm.str.contains(NAO_MIDIA, regex=True, na=False)
     k = x.merge(J, left_on=["arq", "NR_PROCESSO", "inst"], right_on=["arq", "num", "inst"])
 
