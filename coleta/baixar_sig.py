@@ -39,6 +39,7 @@ def baixar(url, tentativas=4):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--anos", nargs="+", default=["2018", "2022", "2026"])
+    ap.add_argument("--guardar-zip", default="", help="pasta onde guardar também os .zip originais (versões congeladas)")
     ap.add_argument("--tipos", nargs="+", default=["processo", "decisoes", "partes"], choices=list(ARQUIVOS))
     a = ap.parse_args()
     erros = 0
@@ -52,6 +53,10 @@ def main():
                 dados = baixar(url)
             except Exception as e:
                 print(f"  ERRO: {e}", flush=True); erros += 1; continue
+            if a.guardar_zip:
+                pz = os.path.join(a.guardar_zip, ano); os.makedirs(pz, exist_ok=True)
+                with open(os.path.join(pz, ARQUIVOS[tipo].format(ano=ano)), "wb") as fz:
+                    fz.write(dados)
             with zipfile.ZipFile(io.BytesIO(dados)) as z:
                 for nome in z.namelist():
                     if nome.lower().endswith(".csv"):

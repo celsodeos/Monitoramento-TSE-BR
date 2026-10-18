@@ -1,0 +1,69 @@
+name: Congelar versão do 2º turno (v2.0-2T)
+
+# Roda uma vez, quando este arquivo é enviado ao repositório (ou manualmente).
+# Baixa os pacotes do TSE, guarda os .zip originais, recalcula as tabelas do 2º turno
+# e grava tudo em versoes/v2.0-2T/ e na página congelada docs/segundo-turno/v2/.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/congelar_2t.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: coleta
+  cancel-in-progress: false
+
+jobs:
+  congelar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      - name: Baixar pacotes do SIG/TSE e guardar os originais
+        run: python coleta/baixar_sig.py --anos 2018 2022 2026 --guardar-zip versoes/v2.0-2T/brutos
+
+      - name: Calcular as tabelas
+        run: |
+          python analise/indicadores.py --sem-historico
+          python analise/segundo_turno.py
+
+      - name: Montar a versão congelada
+        run: |
+          V=versoes/v2.0-2T
+          mkdir -p $V/derivados docs/segundo-turno/v2/dados
+          for f in 2t_volume.csv 2t_velocidade.csv 2t_relatores.csv 2t_meta.json processos_campanhas.csv meta.json; do
+            cp dados/derivados/$f $V/derivados/
+          done
+          for f in 2t_volume.csv 2t_velocidade.csv 2t_relatores.csv 2t_liminares.csv 2t_meta.json; do
+            cp dados/derivados/$f docs/segundo-turno/v2/dados/
+          done
+          (cd $V && find brutos derivados -type f | sort | xargs sha256sum > SHA256SUMS.txt)
+          python - <<'PY'
+          import json, os
+          m = json.load(open("versoes/v2.0-2T/derivados/2t_meta.json"))
+          t = open("versoes/v2.0-2T/LEIAME.md", encoding="utf-8").read()
+          t = t.replace("{{CARGA}}", m["carga_sig"]).replace("{{AUTUACAO_ATE}}", m["autuacao_ate"]).replace("{{N}}", str(m["processos_atual"]))
+          open("versoes/v2.0-2T/LEIAME.md", "w", encoding="utf-8").write(t)
+          PY
+          ls -la $V/brutos/*/ $V/derivados
+          # o GitHub recusa arquivos acima de 100 MB
+          if find $V -type f -size +95M | grep .; then echo "::error::arquivo acima de 95 MB"; exit 1; fi
+          echo "::notice title=Versão congelada::carga $(python -c "import json;print(json.load(open('$V/derivados/2t_meta.json'))['carga_sig'])")"
+
+      - name: Registrar
+        run: |
+          git config user.name "coleta-automatica"
+          git config user.email "coleta-automatica@users.noreply.github.com"
+          git add versoes/v2.0-2T docs/segundo-turno/v2
+          git commit -m "Versão congelada v2.0-2T (dados do 2º turno)"
+          git pull --rebase --autostash -X theirs origin main
+          git push
