@@ -2,7 +2,7 @@
 
 **Estudo:** SANTOS, Celso de Oliveira. *Estatísticas – Judicialização das Eleições e Resposta do TSE: 2º turno.* Monitor Eleitoral, 2026.
 
-Versão congelada dos dados do 2º turno das eleições presidenciais de 2018, 2022 e 2026. Os pacotes do TSE são substituídos diariamente na fonte; os arquivos abaixo são os que estavam disponíveis na data indicada e não serão alterados. **O 2º turno de 2026 ainda estava em curso** (votação em 25/10/2026): os números de 2026 descrevem as ações autuadas até {{AUTUACAO_ATE}} ({{N}} ações), com a carga do TSE de {{CARGA}}.
+Versão congelada dos dados do 2º turno das eleições presidenciais de 2018, 2022 e 2026. Os pacotes do TSE são substituídos diariamente na fonte; os arquivos abaixo são os que estavam disponíveis na data indicada e não serão alterados. **O 2º turno de 2026 ainda estava em curso** (votação em 25/10/2026): os números de 2026 descrevem as ações autuadas até 2026-10-16 (222 ações), com a carga do TSE de 2026-10-18 05:30:24.
 
 A versão do 1º turno (v1.0-1T) continua em `versoes/v1.0/`, DOI 10.5281/zenodo.23441914.
 
