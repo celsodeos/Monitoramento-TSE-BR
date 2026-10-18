@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Estatísticas – Judicialização das Eleições e Resposta do TSE: 2º turno</title>
-<meta name="description" content="Ações entre as campanhas presidenciais no TSE no 2º turno de 2018, 2022 e 2026: volume, velocidade, distribuição entre gabinetes e liminares. Autor: Celso de Oliveira Santos.">
+<meta name="description" content="Ações entre as campanhas presidenciais no TSE no 2º turno de 2018, 2022 e 2026: volume, velocidade e distribuição entre gabinetes. Autor: Celso de Oliveira Santos.">
 <meta name="author" content="Celso de Oliveira Santos">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -124,7 +124,7 @@ html, body { margin: 0; background: var(--color-bg); color: var(--color-fg); fon
       <span class="logo" role="img" aria-label="Logotipo do projeto"></span>
       <span class="who"><b>Celso de Oliveira Santos</b></span>
     </div>
-    <p class="take muted">Ações entre as duas campanhas presidenciais no TSE, autuadas do dia seguinte ao 1º turno até o dia do 2º turno, em 2018, 2022 e 2026. Dados do Portal de Dados Abertos do TSE (grupo Processual) e da API Pública do DataJud/CNJ. Página complementar ao estudo sobre o 1º turno: <a href="../">ver o 1º turno</a>.</p>
+    <p class="take muted">Ações entre as duas campanhas presidenciais no TSE, autuadas do dia seguinte ao 1º turno até o dia do 2º turno, em 2018, 2022 e 2026. Dados do Portal de Dados Abertos do TSE (grupo Processual). Página complementar ao estudo sobre o 1º turno: <a href="../">ver o 1º turno</a>.</p>
     <p class="aviso" id="aviso">O 2º turno de 2026 está em curso. Os números mudam a cada carga do TSE.</p>
   </header>
 
@@ -176,20 +176,6 @@ html, body { margin: 0; background: var(--color-bg); color: var(--color-fg); fon
     </div>
   </section>
 
-  <section id="liminares">
-    <h2>5. Liminares</h2>
-    <p class="muted">Proporção de ações com decisão sobre o pedido liminar, entre as localizadas no DataJud (códigos TPU 339, 892 e 792). Eleições em que o DataJud tem menos de 10 ações de algum dos lados não aparecem no gráfico.</p>
-    <div class="card">
-      <p class="aviso" id="lim-aviso" hidden></p>
-      <div class="legend" id="lg-lim"></div>
-      <div class="chart dash-skeleton" id="c-lim"></div>
-      <div class="tbl"><table id="t-lim">
-        <thead><tr><th>Eleição</th><th class="l">Presidente do TSE</th><th class="l">Autora da ação</th><th>Ações</th><th>No DataJud</th><th>Liminar apreciada</th><th>%</th><th>Concedida</th><th>p (Fisher)</th></tr></thead>
-        <tbody></tbody>
-      </table></div>
-    </div>
-  </section>
-
   <section id="sintese" class="syn">
     <h2>Síntese</h2>
     <div class="tiles">
@@ -226,11 +212,11 @@ html, body { margin: 0; background: var(--color-bg); color: var(--color-fg); fon
   <section class="notes" id="metodo">
     <h2>Método e fontes</h2>
     <ul>
-      <li>Fonte principal: Portal de Dados Abertos do TSE, grupo Processual (processos, decisões e partes), atualizado diariamente por rotina automática. Liminares: API Pública do DataJud/CNJ, que costuma registrar os andamentos com dias ou semanas de atraso.</li>
+      <li>Fonte principal: Portal de Dados Abertos do TSE, grupo Processual (processos, decisões e partes), atualizado diariamente por rotina automática.</li>
       <li>Período: do dia seguinte ao 1º turno até o dia do 2º turno (CF, art. 77; Lei 9.504/1997, art. 2º, § 1º): 08 a 28/10/2018, 03 a 30/10/2022 e 05 a 25/10/2026.</li>
       <li>Prazo: da autuação ao primeiro ato decisório, sem despachos. Em 2026, o cálculo considera só as ações que já tinham o número de dias exigido na data da carga, para não contar como "não decidida" uma ação recém-chegada.</li>
       <li>Testes: Fisher exato (comparação bruta), Mantel-Haenszel estratificado por relator efetivo e classe e qui-quadrado de independência entre relator e campanha. Com poucos casos por estrato, como em 2018, o Mantel-Haenszel é pouco confiável.</li>
-      <li>Dados e código: <a href="https://github.com/celsodeos/Monitoramento-TSE-BR">github.com/celsodeos/Monitoramento-TSE-BR</a>.</li>
+      <li>Dados e código: <a href="https://github.com/celsodeos/Monitoramento-TSE-BR">github.com/celsodeos/Monitoramento-TSE-BR</a>. Repositório no Zenodo: DOI <a href="https://doi.org/10.5281/zenodo.23441914">10.5281/zenodo.23441914</a> (versão congelada v1.0-1T, do 1º turno; a versão do 2º turno será registrada no mesmo repositório ao fim da coleta).</li>
     </ul>
   </section>
 
@@ -244,7 +230,7 @@ html, body { margin: 0; background: var(--color-bg); color: var(--color-fg); fon
           <span>ORCID: <a href="https://orcid.org/0000-0002-8759-0538">0000-0002-8759-0538</a></span>
           <span>Contato: <span class="mail">osantoscelso@gmail.com</span></span>
         </div>
-        <p class="muted">Estudo: “Como explicar a letargia do TSE nas eleições mais judicializadas da história do Brasil?”. Dados abertos do TSE e do DataJud/CNJ, tratados pelo autor.</p>
+        <p class="muted">Estudo: “Como explicar a letargia do TSE nas eleições mais judicializadas da história do Brasil?”. Dados abertos do TSE, tratados pelo autor. Dados e código: DOI <a href="https://doi.org/10.5281/zenodo.23441914">10.5281/zenodo.23441914</a>.</p>
       </div>
       <span class="logo lg" role="img" aria-label="Logotipo do projeto"></span>
     </div>
@@ -494,16 +480,7 @@ let __rt; window.addEventListener('resize', () => { clearTimeout(__rt); __rt = s
     dumbbell(document.getElementById('c-gab'), gg.map((g) => ({ ...g, label: g.label + ((okg(g.lula) == null || okg(g.fl) == null) ? ' (poucas ações)' : '') })), (g) => okg(g.lula), (g) => okg(g.fl), 'Contra Lula', 'Contra Flávio',
       (g, k) => { const x = k === 'a' ? g.lula : g.fl; return `${pctBR(+x.pct_ate_3_dias)} (${x.ate_3_dias} de ${x.observaveis_3d})`; });
     table('t-gab', R, [['relator'], ['campanha_re'], ['processos'], ['observaveis_3d'], ['ate_3_dias'], ['pct_ate_3_dias', pc], ['sem_decisao']], (r) => r.id);
-    // 5 liminares
-    const la = [...new Set(L.map((x) => +x.ano))].filter((a) => L.filter((x) => +x.ano === a).every((x) => +x.no_datajud >= 10));
-    legend(document.getElementById('lg-lim'), [[LABS[0], C2.bol], [LABS[1], C2.pt]]);
-    dumbbell(document.getElementById('c-lim'), la.map((a) => ({ label: `${a} · ${L.find((x) => +x.ano === a).presidente_tse}`, bol: L.find((x) => x.id === a + '-bol'), pt: L.find((x) => x.id === a + '-pt') })),
-      (g) => +g.bol.pct_decidida, (g) => +g.pt.pct_decidida, 'Bolsonaro / Flávio', 'PT / Lula',
-      (g, k) => { const r = k === 'a' ? g.bol : g.pt; return `${pctBR(+r.pct_decidida)} (${r.liminar_decidida} de ${r.no_datajud}; ${r.liminar_concedida} concedidas)`; });
-    table('t-lim', L, [['ano'], ['presidente_tse'], ['autor'], ['processos'], ['no_datajud'], ['liminar_decidida'], ['pct_decidida', pc], ['liminar_concedida'], ['p_fisher', pBR, sig]], (r) => r.id);
-    const atual = M ? M.ano_atual : 2026, la2 = L.filter((x) => +x.ano === atual);
-    const av = document.getElementById('lim-aviso');
-    if (la2.length && la2.some((x) => +x.no_datajud < 10)) { av.hidden = false; av.textContent = `${atual}: o DataJud ainda localiza poucas ações do 2º turno (${la2.map((x) => x.no_datajud).join(' e ')}). A coleta diária tenta de novo todos os dias.`; } else av.hidden = true;
+    const atual = M ? M.ano_atual : 2026;
     // síntese
     const vt = (a) => V.filter((x) => +x.ano === a).reduce((s, x) => s + +x.processos, 0);
     setText('k1', int(vt(atual))); setText('k1b', int(vt(2022))); setText('k1c', int(vt(2018)));
