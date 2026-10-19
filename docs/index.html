@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Estatísticas – Judicialização das Eleições e Resposta do TSE em Eleições Presidenciais</title>
-<meta name="description" content="Como explicar a letargia do TSE nas eleições mais judicializadas da história do Brasil? Dados do TSE e do DataJud/CNJ sobre 2018, 2022 e 2026. Autor: Celso de Oliveira Santos.">
+<title>Estatísticas Públicas – Contencioso de propaganda e campanha no 1º turno das eleições brasileiras (2018, 2022 e 2026)</title>
+<meta name="description" content="Contencioso de propaganda e campanha no 1º turno das eleições brasileiras de 2018, 2022 e 2026. Dados do TSE e do DataJud/CNJ sobre 2018, 2022 e 2026. Autor: Celso de Oliveira Santos.">
 <meta name="author" content="Celso de Oliveira Santos">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -128,6 +128,9 @@ html, body { margin: 0; background: var(--color-bg); color: var(--color-fg); fon
 .lt .press-txt { display: grid; gap: var(--cds-gap-xs); padding: var(--cds-pad-lg); align-content: start; }
 .lt .press-meta { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); text-transform: uppercase; letter-spacing: .04em; }
 .lt .press-tit { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-heading); line-height: 1.3; text-wrap: balance; }
+
+/* caixas de texto com a mesma largura das visualizações */
+.lt p, .lt li, .lt .hero .foot, .lt .texto p { max-width: none; }
 </style>
 </head>
 <body>
@@ -162,13 +165,12 @@ let __rt; window.addEventListener('resize', () => { clearTimeout(__rt); __rt = s
 
 <div class="lt">
   <header class="head">
-    <h1 id="topo">Estatísticas – Judicialização das Eleições e Resposta do TSE em Eleições Presidenciais</h1>
-    <p class="sub">Como explicar a letargia do TSE nas eleições mais judicializadas da história do Brasil?</p>
+    <h1 id="topo">Estatísticas Públicas – Contencioso de propaganda e campanha no 1º turno das eleições brasileiras (2018, 2022 e 2026)</h1>
     <div class="byline">
       <span class="logo" role="img" aria-label="Logotipo do projeto"></span>
       <span class="who"><b>Celso de Oliveira Santos</b></span>
     </div>
-    <p class="take muted">Contencioso de propaganda e campanha no 1º turno das eleições de 2018, 2022 e 2026. Dados do Portal de Dados Abertos do TSE (grupo Processual) e da API Pública do DataJud/CNJ, extraídos em 14 e 15/10/2026. Página complementar: <a href="segundo-turno/">o 2º turno</a>. Versão congelada que acompanha o artigo: <a href="v1/">v1.0, carga de 14/10/2026</a> (DOI <a href="https://doi.org/10.5281/zenodo.23441914">10.5281/zenodo.23441914</a>).</p>
+    <p class="take muted">Dados do Portal de Dados Abertos do TSE (grupo Processual) e da API Pública do DataJud/CNJ, extraídos em 14 e 15/10/2026. Página complementar: <a href="segundo-turno/">o 2º turno</a>. Versão congelada que acompanha o artigo: <a href="v1/">v1.0, carga de 14/10/2026</a> (DOI <a href="https://doi.org/10.5281/zenodo.23441914">10.5281/zenodo.23441914</a>).</p>
     <p class="muted" id="carga">Números do texto referentes à carga de 14/10/2026.</p>
   </header>
 

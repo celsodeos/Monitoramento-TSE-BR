@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>[v2.0-2T] Estatísticas – Judicialização das Eleições e Resposta do TSE: 2º turno</title>
+<title>Estatísticas Públicas – Contencioso de propaganda e campanha no 2º turno das eleições brasileiras (2018, 2022 e 2026)</title>
 <meta name="description" content="Ações entre as campanhas presidenciais no TSE no 2º turno de 2018, 2022 e 2026: volume, velocidade e distribuição entre gabinetes. Autor: Celso de Oliveira Santos.">
 <meta name="author" content="Celso de Oliveira Santos">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -112,20 +112,22 @@ html, body { margin: 0; background: var(--color-bg); color: var(--color-fg); fon
 
 .lt .aviso { background: var(--color-panel); border: 1px solid var(--color-border-line); border-left: 4px solid var(--color-warn); border-radius: var(--cds-radius); padding: var(--cds-pad-sm) var(--cds-pad-lg); font-size: var(--cds-font-size-caption); margin: 0; }
 .lt .dyn { font-variant-numeric: tabular-nums; }
+
+/* caixas de texto com a mesma largura das visualizações */
+.lt p, .lt li, .lt .hero .foot, .lt .texto p { max-width: none; }
 </style>
 </head>
 <body>
 <main class="page">
 <div class="lt">
   <header class="head">
-    <h1 id="topo">Estatísticas – Judicialização das Eleições e Resposta do TSE: 2º turno</h1>
-    <p class="sub">Como explicar a letargia do TSE nas eleições mais judicializadas da história do Brasil?</p>
+    <h1 id="topo">Estatísticas Públicas – Contencioso de propaganda e campanha no 2º turno das eleições brasileiras (2018, 2022 e 2026)</h1>
     <div class="byline">
       <span class="logo" role="img" aria-label="Logotipo do projeto"></span>
       <span class="who"><b>Celso de Oliveira Santos</b></span>
     </div>
-    <p class="take muted">Ações entre as duas campanhas presidenciais no TSE, autuadas do dia seguinte ao 1º turno até o dia do 2º turno, em 2018, 2022 e 2026. Dados do Portal de Dados Abertos do TSE (grupo Processual). Página complementar ao estudo sobre o 1º turno: <a href="../../">ver o 1º turno</a>.</p>
-    <p class="aviso"><b>Versão congelada v.1.0-2T</b>, com os dados usados no texto sobre o 2º turno. O 2º turno de 2026 estava em curso: os números de 2026 vão até a carga indicada abaixo e não serão atualizados. DOI <a href="https://doi.org/10.5281/zenodo.23455041">10.5281/zenodo.23455041</a> · <a href="../">versão atualizada diariamente</a>.</p>
+    <p class="take muted">Ações entre as duas campanhas presidenciais no TSE, autuadas do dia seguinte ao 1º turno até o dia do 2º turno. Dados do Portal de Dados Abertos do TSE (grupo Processual). Página complementar ao estudo sobre o 1º turno: <a href="../../">ver o 1º turno</a>.</p>
+    <p class="aviso"><b>Versão congelada v.1.0-2T</b>, com os dados usados no texto sobre o 2º turno. O 2º turno de 2026 estava em curso: os números de 2026 vão até a carga indicada abaixo e não serão atualizados nesta página; os dados finais, após a eleição, terão página própria. DOI <a href="https://doi.org/10.5281/zenodo.23455041">10.5281/zenodo.23455041</a>.</p>
     <p class="aviso" id="aviso" hidden></p>
   </header>
 
@@ -239,12 +241,12 @@ html, body { margin: 0; background: var(--color-bg); color: var(--color-fg); fon
 </div>
 <script>
 window.dash = (function () {
-  const RAW = {"2t_volume": "id,ano,presidente_tse,autor,processos,sem_decisao\n2018-bol,2018,Rosa Weber,Bolsonaro / Flávio,38,0\n2018-pt,2018,Rosa Weber,PT / Lula,20,0\n2022-bol,2022,Alexandre de Moraes,Bolsonaro / Flávio,134,2\n2022-pt,2022,Alexandre de Moraes,PT / Lula,110,1\n2026-bol,2026,Nunes Marques,Bolsonaro / Flávio,113,76\n2026-pt,2026,Nunes Marques,PT / Lula,81,69\n", "2t_velocidade": "id,ano,presidente_tse,autor,processos,observaveis_3d,ate_3_dias,pct_ate_3_dias,observaveis_10d,ate_10_dias,pct_ate_10_dias,p_fisher_3d,p_mh_3d,p_fisher_10d,p_mh_10d\n2018-bol,2018,Rosa Weber,Bolsonaro / Flávio,38,38,22,0.5789,38,27,0.7105,0.256,0.012,0.338,0.004\n2018-pt,2018,Rosa Weber,PT / Lula,20,20,15,0.75,20,17,0.85,0.256,0.012,0.338,0.004\n2022-bol,2022,Alexandre de Moraes,Bolsonaro / Flávio,134,134,26,0.194,134,81,0.6045,2.3e-06,1.1e-07,0.021,0.09\n2022-pt,2022,Alexandre de Moraes,PT / Lula,110,110,53,0.4818,110,82,0.7455,2.3e-06,1.1e-07,0.021,0.09\n2026-bol,2026,Nunes Marques,Bolsonaro / Flávio,113,91,25,0.2747,4,1,0.25,0.302,0.88,1.0,\n2026-pt,2026,Nunes Marques,PT / Lula,81,49,9,0.1837,1,0,0.0,0.302,0.88,1.0,\n", "2t_relatores": "id,relator,campanha_re,processos,observaveis_3d,ate_3_dias,pct_ate_3_dias,sem_decisao\nAndré Mendonça|Lula,André Mendonça,Lula,46,37,11,0.2973,27\nAndré Mendonça|Flávio Bolsonaro,André Mendonça,Flávio Bolsonaro,10,3,3,1.0,7\nEstela Aranha|Lula,Estela Aranha,Lula,29,26,7,0.2692,20\nEstela Aranha|Flávio Bolsonaro,Estela Aranha,Flávio Bolsonaro,23,10,3,0.3,17\nMarco Aurelio Bellizze Oliveira|Lula,Marco Aurelio Bellizze Oliveira,Lula,19,13,4,0.3077,14\nMarco Aurelio Bellizze Oliveira|Flávio Bolsonaro,Marco Aurelio Bellizze Oliveira,Flávio Bolsonaro,9,4,2,0.5,7\nNunes Marques|Lula,Nunes Marques,Lula,15,12,1,0.0833,14\nNunes Marques|Flávio Bolsonaro,Nunes Marques,Flávio Bolsonaro,38,31,0,0.0,38\nRicardo Villas Bôas Cueva|Lula,Ricardo Villas Bôas Cueva,Lula,4,3,2,0.6667,1\nRicardo Villas Bôas Cueva|Flávio Bolsonaro,Ricardo Villas Bôas Cueva,Flávio Bolsonaro,1,1,1,1.0,0\n", "2t_liminares": "id,ano,presidente_tse,autor,processos,no_datajud,liminar_decidida,liminar_concedida,pct_decidida,p_fisher,p_mh\n2018-bol,2018,Rosa Weber,Bolsonaro / Flávio,38,3,2,1,0.6667,1.0,0.48\n2018-pt,2018,Rosa Weber,PT / Lula,20,3,1,0,0.3333,1.0,0.48\n2022-bol,2022,Alexandre de Moraes,Bolsonaro / Flávio,134,84,18,15,0.2143,0.112,0.22\n2022-pt,2022,Alexandre de Moraes,PT / Lula,110,78,26,16,0.3333,0.112,0.22\n2026-bol,2026,Nunes Marques,Bolsonaro / Flávio,113,0,0,0,,,\n2026-pt,2026,Nunes Marques,PT / Lula,81,0,0,0,,,\n"};
+  const RAW = {"2t_volume": "id,ano,presidente_tse,autor,processos,sem_decisao\n2018-bol,2018,Rosa Weber,Bolsonaro / Flávio,38,0\n2018-pt,2018,Rosa Weber,PT / Lula,20,0\n2022-bol,2022,Alexandre de Moraes,Bolsonaro / Flávio,133,2\n2022-pt,2022,Alexandre de Moraes,PT / Lula,110,1\n2026-bol,2026,Nunes Marques,Bolsonaro / Flávio,125,86\n2026-pt,2026,Nunes Marques,PT / Lula,97,75\n", "2t_velocidade": "id,ano,presidente_tse,autor,processos,observaveis_3d,ate_3_dias,pct_ate_3_dias,observaveis_10d,ate_10_dias,pct_ate_10_dias,p_fisher_3d,p_mh_3d,p_fisher_10d,p_mh_10d\n2018-bol,2018,Rosa Weber,Bolsonaro / Flávio,38,38,22,0.5789,38,27,0.7105,0.256,0.012,0.338,0.004\n2018-pt,2018,Rosa Weber,PT / Lula,20,20,15,0.75,20,17,0.85,0.256,0.012,0.338,0.004\n2022-bol,2022,Alexandre de Moraes,Bolsonaro / Flávio,133,133,26,0.1955,133,81,0.609,2.5e-06,1.1e-07,0.028,0.09\n2022-pt,2022,Alexandre de Moraes,PT / Lula,110,110,53,0.4818,110,82,0.7455,2.5e-06,1.1e-07,0.028,0.09\n2026-bol,2026,Nunes Marques,Bolsonaro / Flávio,125,113,29,0.2566,22,14,0.6364,0.39,0.69,0.279,0.157\n2026-pt,2026,Nunes Marques,PT / Lula,97,81,16,0.1975,4,1,0.25,0.39,0.69,0.279,0.157\n", "2t_relatores": "id,relator,campanha_re,processos,observaveis_3d,ate_3_dias,pct_ate_3_dias,sem_decisao\nAndré Mendonça|Lula,André Mendonça,Lula,48,45,13,0.2889,29\nAndré Mendonça|Flávio Bolsonaro,André Mendonça,Flávio Bolsonaro,12,10,3,0.3,9\nEstela Aranha|Lula,Estela Aranha,Lula,30,28,7,0.25,20\nEstela Aranha|Flávio Bolsonaro,Estela Aranha,Flávio Bolsonaro,26,22,8,0.3636,12\nMarco Aurelio Bellizze Oliveira|Lula,Marco Aurelio Bellizze Oliveira,Lula,22,21,5,0.2381,16\nMarco Aurelio Bellizze Oliveira|Flávio Bolsonaro,Marco Aurelio Bellizze Oliveira,Flávio Bolsonaro,16,10,4,0.4,12\nNunes Marques|Lula,Nunes Marques,Lula,21,15,1,0.0667,20\nNunes Marques|Flávio Bolsonaro,Nunes Marques,Flávio Bolsonaro,42,38,0,0.0,42\nRicardo Villas Bôas Cueva|Lula,Ricardo Villas Bôas Cueva,Lula,4,4,3,0.75,1\nRicardo Villas Bôas Cueva|Flávio Bolsonaro,Ricardo Villas Bôas Cueva,Flávio Bolsonaro,1,1,1,1.0,0\n", "2t_liminares": "id,ano,presidente_tse,autor,processos,no_datajud,liminar_decidida,liminar_concedida,pct_decidida,p_fisher,p_mh\n2018-bol,2018,Rosa Weber,Bolsonaro / Flávio,38,0,0,0,,,\n2018-pt,2018,Rosa Weber,PT / Lula,20,0,0,0,,,\n2022-bol,2022,Alexandre de Moraes,Bolsonaro / Flávio,133,0,0,0,,,\n2022-pt,2022,Alexandre de Moraes,PT / Lula,110,0,0,0,,,\n2026-bol,2026,Nunes Marques,Bolsonaro / Flávio,125,0,0,0,,,\n2026-pt,2026,Nunes Marques,PT / Lula,97,0,0,0,,,\n"};
   const DATA = {}; for (const k in RAW) DATA[k] = d3.csvParse(RAW[k].trim());
   const fns = [];
   const api = {
     colors: ['var(--s1)', 'var(--s2)', 'var(--cds-chart-muted)'],
-    meta: {"carga_sig": "2026-10-16 06:01:19", "gerado_em": "2026-10-17 02:27", "ano_atual": 2026, "segundo_turno_atual": "2026-10-25", "em_curso": true, "autuacao_ate": "2026-10-15", "p_distribuicao_relatores": 5e-07, "processos_atual": 194},
+    meta: {"carga_sig": "2026-10-18 05:30:24", "gerado_em": "2026-10-18 12:23", "ano_atual": 2026, "segundo_turno_atual": "2026-10-25", "em_curso": true, "autuacao_ate": "2026-10-16", "p_distribuicao_relatores": 9.62e-06, "processos_atual": 222},
     data: (id) => DATA[id] ? { status: 'ok', data: DATA[id] } : { status: 'missing', data: [] },
     onData: (fn) => { fns.push(fn); fn(); },
     _redraw: () => fns.forEach((f) => f())
