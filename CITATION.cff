@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "Se usar estes dados ou este código, cite-os como abaixo."
 title: "Monitoramento-TSE-BR: judicialização das eleições e resposta do TSE em eleições presidenciais"
 version: "v.1.0-2T"
+doi: "10.5281/zenodo.23455041"
 date-released: "2026-10-18"
 authors:
   - family-names: "Santos"
