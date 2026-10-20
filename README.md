@@ -1,8 +1,8 @@
-# Judicialização das Eleições e Resposta do TSE em Eleições Presidenciais
+# Estatísticas Públicas – Contencioso de propaganda e campanha no 1º e no 2º turno das eleições brasileiras (2018, 2022 e 2026)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23441914.svg)](https://doi.org/10.5281/zenodo.23441914)
 
-**Como explicar a letargia do TSE nas eleições mais judicializadas da história do Brasil?**
+
 
 Estudo e base de dados sobre o contencioso de propaganda e campanha no Tribunal Superior Eleitoral (TSE) e nos Tribunais Regionais Eleitorais (TREs) no 1º turno das eleições gerais de 2018, 2022 e 2026. O repositório reúne o código de coleta e tratamento, os dados derivados, a página pública de visualização e o histórico datado de cada extração, para que os resultados possam ser conferidos e reproduzidos.
 
