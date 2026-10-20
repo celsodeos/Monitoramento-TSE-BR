@@ -1,7 +1,7 @@
 id,ano,presidente_tse,autor,processos,observaveis_3d,ate_3_dias,pct_ate_3_dias,observaveis_10d,ate_10_dias,pct_ate_10_dias,p_fisher_3d,p_mh_3d,p_fisher_10d,p_mh_10d
 2018-bol,2018,Rosa Weber,Bolsonaro / Flávio,38,38,22,0.5789,38,27,0.7105,0.256,0.012,0.338,0.004
 2018-pt,2018,Rosa Weber,PT / Lula,20,20,15,0.75,20,17,0.85,0.256,0.012,0.338,0.004
-2022-bol,2022,Alexandre de Moraes,Bolsonaro / Flávio,133,133,26,0.1955,133,81,0.609,2.5e-06,1.1e-07,0.028,0.09
-2022-pt,2022,Alexandre de Moraes,PT / Lula,110,110,53,0.4818,110,82,0.7455,2.5e-06,1.1e-07,0.028,0.09
-2026-bol,2026,Nunes Marques,Bolsonaro / Flávio,141,113,29,0.2566,22,15,0.6818,0.74,0.637,0.264,0.166
-2026-pt,2026,Nunes Marques,PT / Lula,107,81,19,0.2346,4,1,0.25,0.74,0.637,0.264,0.166
+2022-bol,2022,Alexandre de Moraes,Bolsonaro / Flávio,134,134,26,0.194,134,81,0.6045,2.3e-06,1.1e-07,0.021,0.09
+2022-pt,2022,Alexandre de Moraes,PT / Lula,110,110,53,0.4818,110,82,0.7455,2.3e-06,1.1e-07,0.021,0.09
+2026-bol,2026,Nunes Marques,Bolsonaro / Flávio,162,141,29,0.2057,51,28,0.549,0.874,0.852,0.531,0.664
+2026-pt,2026,Nunes Marques,PT / Lula,132,110,21,0.1909,12,8,0.6667,0.874,0.852,0.531,0.664

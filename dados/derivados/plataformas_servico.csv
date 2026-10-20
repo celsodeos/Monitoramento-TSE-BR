@@ -26,15 +26,15 @@ ano,grupo,instancia,servico,identificado_por,processos
 2022,"Meta (Facebook, Instagram, WhatsApp)",Zonas eleitorais,WhatsApp,nome da parte,1
 2022,"Meta (Facebook, Instagram, WhatsApp)",Zonas eleitorais,não identificado,,20
 2026,"Google (Google, YouTube)",TREs,YouTube,outra parte do processo,1
-2026,"Google (Google, YouTube)",TREs,não identificado,,10
+2026,"Google (Google, YouTube)",TREs,não identificado,,11
 2026,"Google (Google, YouTube)",TSE,não identificado,,2
 2026,"Meta (Facebook, Instagram, WhatsApp)",TREs,Facebook,nome da parte,2
 2026,"Meta (Facebook, Instagram, WhatsApp)",TREs,Facebook,outra parte do processo,6
-2026,"Meta (Facebook, Instagram, WhatsApp)",TREs,Instagram,nome da parte,4
-2026,"Meta (Facebook, Instagram, WhatsApp)",TREs,Instagram,outra parte do processo,31
+2026,"Meta (Facebook, Instagram, WhatsApp)",TREs,Instagram,nome da parte,3
+2026,"Meta (Facebook, Instagram, WhatsApp)",TREs,Instagram,outra parte do processo,33
 2026,"Meta (Facebook, Instagram, WhatsApp)",TREs,WhatsApp,nome da parte,6
 2026,"Meta (Facebook, Instagram, WhatsApp)",TREs,WhatsApp,outra parte do processo,7
-2026,"Meta (Facebook, Instagram, WhatsApp)",TREs,não identificado,,969
+2026,"Meta (Facebook, Instagram, WhatsApp)",TREs,não identificado,,962
 2026,"Meta (Facebook, Instagram, WhatsApp)",TSE,Facebook,nome da parte,1
 2026,"Meta (Facebook, Instagram, WhatsApp)",TSE,Facebook,outra parte do processo,1
 2026,"Meta (Facebook, Instagram, WhatsApp)",TSE,Instagram,nome da parte,1
@@ -42,4 +42,4 @@ ano,grupo,instancia,servico,identificado_por,processos
 2026,"Meta (Facebook, Instagram, WhatsApp)",TSE,não identificado,,43
 2026,"Meta (Facebook, Instagram, WhatsApp)",Zonas eleitorais,Instagram,nome da parte,1
 2026,"Meta (Facebook, Instagram, WhatsApp)",Zonas eleitorais,Instagram,outra parte do processo,1
-2026,"Meta (Facebook, Instagram, WhatsApp)",Zonas eleitorais,não identificado,,38
+2026,"Meta (Facebook, Instagram, WhatsApp)",Zonas eleitorais,não identificado,,37
