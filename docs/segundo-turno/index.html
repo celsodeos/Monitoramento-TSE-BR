@@ -115,6 +115,15 @@ html, body { margin: 0; background: var(--color-bg); color: var(--color-fg); fon
 
 /* caixas de texto com a mesma largura das visualizações */
 .lt p, .lt li, .lt .hero .foot, .lt .texto p { max-width: none; }
+
+/* todos os gabinetes, por gestão */
+.lt .gg-trio { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--cds-gap-md); }
+@media (max-width: 860px) { .lt .gg-trio { grid-template-columns: 1fr; } }
+.lt .gg-trio .card { align-content: start; }
+.lt .gg-trio .chart { min-height: 0; }
+.lt tr.gg-pres td { background: var(--gg-hl); font-weight: 600; }
+:root { --gg-hl: #fff4e8; }
+@media (prefers-color-scheme: dark) { :root { --gg-hl: #2a2219; } }
 </style>
 </head>
 <body>
@@ -177,6 +186,14 @@ html, body { margin: 0; background: var(--color-bg); color: var(--color-fg); fon
         <tbody></tbody>
       </table></div>
     </div>
+  </section>
+
+  <section id="todos-gabinetes">
+    <h2>5. Todos os gabinetes, por gestão</h2>
+    <p class="muted">Parcela das ações de cada campanha recebida por gabinete no 2º turno, nas gestões de Rosa Weber (2018), Alexandre de Moraes (2022) e Nunes Marques (2026). A linha destacada é o gabinete do presidente do TSE. Gabinetes com menos de 3 ações estão somados em “Outros gabinetes”. Gabinete: autor da primeira decisão registrada no SIG; sem decisão, o relator atual. Dados da versão congelada v.1.0-2T (carga do TSE de 18/10/2026).</p>
+    <div class="legend" id="lg-gg"></div>
+    <div class="gg-trio" id="gg-trio"></div>
+    <div class="tbl"><table id="t-gg"></table></div>
   </section>
 
   <section id="sintese" class="syn">
@@ -506,5 +523,67 @@ let __rt; window.addEventListener('resize', () => { clearTimeout(__rt); __rt = s
 
 </script>
 </main>
+<script>
+(function () {
+  const D = [{"ano": 2018, "presidente": "Rosa Weber", "n_bol": 38, "n_pt": 20, "gabinetes": [{"relator": "Carlos Horbach", "pres": false, "bol": 6, "pt": 8}, {"relator": "Jorge Mussi", "pres": false, "bol": 4, "pt": 3}, {"relator": "Luis Felipe Salomão", "pres": false, "bol": 15, "pt": 4}, {"relator": "Og Fernandes", "pres": false, "bol": 0, "pt": 1}, {"relator": "Sergio Silveira Banhos", "pres": false, "bol": 13, "pt": 4}]}, {"ano": 2022, "presidente": "Alexandre de Moraes", "n_bol": 133, "n_pt": 110, "gabinetes": [{"relator": "Alexandre de Moraes", "pres": true, "bol": 24, "pt": 20}, {"relator": "André Mendonça", "pres": false, "bol": 2, "pt": 0}, {"relator": "Benedito Gonçalves", "pres": false, "bol": 3, "pt": 4}, {"relator": "Carlos Horbach", "pres": false, "bol": 0, "pt": 5}, {"relator": "Cármen Lúcia", "pres": false, "bol": 32, "pt": 10}, {"relator": "Floriano de Azevedo Marques", "pres": false, "bol": 1, "pt": 0}, {"relator": "Isabel Gallotti", "pres": false, "bol": 17, "pt": 9}, {"relator": "Maria Claudia Bucchianeri", "pres": false, "bol": 18, "pt": 34}, {"relator": "Paulo de Tarso Vieira Sanseverino", "pres": false, "bol": 36, "pt": 28}]}, {"ano": 2026, "presidente": "Nunes Marques", "n_bol": 125, "n_pt": 97, "gabinetes": [{"relator": "André Mendonça", "pres": false, "bol": 48, "pt": 12}, {"relator": "Estela Aranha", "pres": false, "bol": 30, "pt": 26}, {"relator": "Marco Aurelio Bellizze Oliveira", "pres": false, "bol": 22, "pt": 16}, {"relator": "Nunes Marques", "pres": true, "bol": 21, "pt": 42}, {"relator": "Ricardo Villas Bôas Cueva", "pres": false, "bol": 4, "pt": 1}]}];
+  const PCT = (v) => (v * 100).toFixed(1).replace('.', ',') + '%';
+  const LAB = { bol: 'Ações de Bolsonaro / Flávio contra o PT', pt: 'Ações do PT / Lula contra Bolsonaro / Flávio' };
+  const COR = { bol: 'var(--s1)', pt: 'var(--s2)' };
+  function tipOf(box) { let t = box.querySelector('.tip'); if (!t) { t = document.createElement('div'); t.className = 'tip'; t.hidden = true; box.appendChild(t); } return t; }
+  function show(box, t, ev, txt) { t.textContent = txt; t.hidden = false; const r = box.getBoundingClientRect(); let x = ev.clientX - r.left + 12; if (x + t.offsetWidth > r.width) x = ev.clientX - r.left - t.offsetWidth - 12; t.style.left = Math.max(0, x) + 'px'; t.style.top = (ev.clientY - r.top + 12) + 'px'; }
+  function linhas(d) {
+    const ok = (g) => g.pres || g.bol + g.pt >= 3;
+    const r = d.gabinetes.filter(ok), s = d.gabinetes.filter((g) => !ok(g));
+    r.sort((p, q) => (q.pres - p.pres) || (q.bol + q.pt - p.bol - p.pt));
+    if (s.length) r.push({ relator: 'Outros gabinetes', pres: false, bol: d3.sum(s, (g) => g.bol), pt: d3.sum(s, (g) => g.pt) });
+    if (!d.gabinetes.some((g) => g.pres)) r.unshift({ relator: d.presidente, pres: true, bol: 0, pt: 0 });
+    return r;
+  }
+  function draw() {
+    const lg = document.getElementById('lg-gg'); lg.replaceChildren();
+    ['bol', 'pt'].forEach((k) => { const s = document.createElement('span'); const i = document.createElement('i'); i.style.background = COR[k]; s.append(i, LAB[k]); lg.appendChild(s); });
+    const box = document.getElementById('gg-trio'); box.replaceChildren();
+    const vmax = Math.max(0.5, d3.max(D, (d) => d3.max(linhas(d), (g) => Math.max(g.bol / d.n_bol, g.pt / d.n_pt))));
+    D.forEach((d) => {
+      const card = document.createElement('div'); card.className = 'card';
+      const h = document.createElement('h3'); h.textContent = `${d.ano} · ${d.presidente}`;
+      const p = document.createElement('p'); p.className = 'muted'; p.style.fontSize = 'var(--cds-font-size-caption)';
+      p.textContent = `${d.n_bol} ações de Bolsonaro / Flávio · ${d.n_pt} do PT / Lula`;
+      const el = document.createElement('div'); el.className = 'chart';
+      card.append(h, p, el); box.appendChild(card);
+      const L = linhas(d), W = el.clientWidth || 320, rowH = 50, m = { t: 4, r: 48, b: 22 };
+      const H = m.t + L.length * rowH + m.b, x = d3.scaleLinear([0, vmax], [0, W - m.r]);
+      const svg = d3.select(el).append('svg').attr('width', W).attr('height', H).attr('viewBox', `0 0 ${W} ${H}`).style('display', 'block').style('overflow', 'visible');
+      [0, .25, .5].filter((v) => v <= vmax).forEach((v) => {
+        svg.append('line').attr('x1', x(v)).attr('x2', x(v)).attr('y1', m.t).attr('y2', H - m.b).style('stroke', 'var(--cds-chart-grid)');
+        svg.append('text').attr('x', x(v)).attr('y', H - 6).attr('text-anchor', v === 0 ? 'start' : 'middle').style('fill', 'var(--color-fg-muted)').style('font-size', '11px').text(Math.round(v * 100) + '%');
+      });
+      const tip = tipOf(el);
+      L.forEach((g, i) => {
+        const y0 = m.t + i * rowH;
+        if (g.pres) svg.append('rect').attr('x', -6).attr('y', y0).attr('width', W + 6).attr('height', rowH - 4).attr('rx', 6).style('fill', 'var(--gg-hl)');
+        svg.append('text').attr('x', 0).attr('y', y0 + 14).style('fill', 'var(--color-fg)').style('font-size', '12.5px').style('font-weight', g.pres ? 600 : 400).text(g.relator + (g.pres ? ' (presidente)' : ''));
+        [['bol', g.bol, d.n_bol], ['pt', g.pt, d.n_pt]].forEach(([k, n, N], j) => {
+          const v = N ? n / N : 0, y = y0 + 20 + j * 12, w = Math.max(x(v) - x(0), n ? 2 : 0);
+          svg.append('rect').attr('x', 0).attr('y', y).attr('width', w).attr('height', 9).attr('rx', 2).style('fill', COR[k]);
+          svg.append('text').attr('x', w + 4).attr('y', y + 8).style('fill', 'var(--color-fg-muted)').style('font-size', '10.5px').style('font-variant-numeric', 'tabular-nums').text(`${n} (${PCT(v)})`);
+          svg.append('rect').attr('x', 0).attr('y', y - 2).attr('width', W).attr('height', 12).style('fill', 'transparent')
+            .on('mousemove', (ev) => show(el, tip, ev, `${g.relator} · ${LAB[k]}: ${n} de ${N} (${PCT(v)})`)).on('mouseleave', () => { tip.hidden = true; });
+        });
+      });
+    });
+    const t = document.getElementById('t-gg'); t.replaceChildren();
+    const hr = t.createTHead().insertRow();
+    ['Eleição', 'Presidente do TSE', 'Gabinete', 'Ações de Bolsonaro / Flávio', '%', 'Ações do PT / Lula', '%'].forEach((s, i) => { const c = document.createElement('th'); c.textContent = s; if (i < 3) c.className = 'l'; hr.appendChild(c); });
+    const tb = t.createTBody();
+    D.forEach((d) => linhas(d).forEach((g) => {
+      const r = tb.insertRow(); if (g.pres) r.className = 'gg-pres';
+      [d.ano, d.presidente, g.relator + (g.pres ? ' (presidente)' : ''), g.bol, PCT(g.bol / d.n_bol), g.pt, PCT(g.pt / d.n_pt)].forEach((v, i) => { const c = r.insertCell(); c.textContent = v; if (i < 3) c.className = 'l'; });
+    }));
+  }
+  function start() { if (window.d3) { draw(); let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(draw, 150); }); } else setTimeout(start, 100); }
+  start();
+})();
+</script>
 </body>
 </html>
