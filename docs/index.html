@@ -117,7 +117,7 @@ html, body { margin: 0; background: var(--color-bg); color: var(--color-fg); fon
 [data-dash-source-state=empty] { color: transparent; }
 [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
 
-.lt .press { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: var(--cds-gap-md); }
+.lt .press { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: var(--cds-gap-md); }
 .lt .press-card { display: grid; grid-template-rows: auto 1fr; background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); overflow: hidden; color: var(--color-fg); text-decoration: none; transition: border-color .2s; }
 .lt .press-card:hover, .lt .press-card:focus-visible { border-color: var(--color-fg-muted); }
 .lt .press-img { position: relative; aspect-ratio: 16 / 9; background: var(--color-border-line); overflow: hidden; }
@@ -329,17 +329,31 @@ let __rt; window.addEventListener('resize', () => { clearTimeout(__rt); __rt = s
   <section id="repercussao">
     <h2>Repercussão</h2>
     <div class="press">
+      <a class="press-card" href="https://oglobo.globo.com/blogs/lauro-jardim/post/2026/10/quase-metade-das-acoes-de-lula-contra-flavio-no-2o-turno-estavam-com-nunes-marques-e-sem-decisao.ghtml">
+        <div class="press-img press-img--vazio"><span>O Globo</span></div>
+        <div class="press-txt">
+          <span class="press-meta">O Globo · coluna Lauro Jardim · 21/10/2026 · 2º turno</span>
+          <span class="press-tit">Quase metade das ações de Lula contra Flávio no 2º turno estavam com Nunes Marques e sem decisão</span>
+        </div>
+      </a>
+      <a class="press-card" href="https://www.brasil247.com/brasil/nunes-marques-concentra-quase-metade-das-acoes-de-lula-contra-flavio-bolsonaro-e-nao-decide-nenhuma/">
+        <div class="press-img"><img src="https://www.brasil247.com/wp-content/uploads/2026/08/55470453051_b38749b199_k.jpg?w=760&amp;quality=88&amp;strip=all" alt="Ministro Kassio Nunes Marques no TSE" loading="lazy" referrerpolicy="no-referrer"><span class="press-cred">Foto: Luiz Roberto/TSE</span></div>
+        <div class="press-txt">
+          <span class="press-meta">Brasil 247 · 21/10/2026 · 2º turno</span>
+          <span class="press-tit">Nunes Marques concentra quase metade das ações de Lula contra Flávio Bolsonaro e não decide nenhuma</span>
+        </div>
+      </a>
       <a class="press-card" href="https://oglobo.globo.com/blogs/lauro-jardim/post/2026/10/na-eleicao-mais-judicializada-tse-esta-mais-lento-e-enviesado-aponta-estudo.ghtml">
         <div class="press-img press-img--vazio"><span>O Globo</span></div>
         <div class="press-txt">
-          <span class="press-meta">O Globo · coluna Lauro Jardim · 16/10/2026</span>
+          <span class="press-meta">O Globo · coluna Lauro Jardim · 16/10/2026 · 1º turno</span>
           <span class="press-tit">Na eleição mais judicializada, TSE está mais lento e enviesado, aponta estudo</span>
         </div>
       </a>
       <a class="press-card" href="https://www.brasil247.com/brasil/sob-nunes-marques-tse-e-mais-lento-e-favorece-acoes-contra-lula-aponta-estudo/">
         <div class="press-img"><img src="https://www.brasil247.com/wp-content/uploads/2026/10/nunes-marques.jpg?w=760&amp;quality=88&amp;strip=all" alt="Ministro Kassio Nunes Marques, presidente do TSE" loading="lazy" referrerpolicy="no-referrer"><span class="press-cred">Foto: Gustavo Moreno/STF</span></div>
         <div class="press-txt">
-          <span class="press-meta">Brasil 247 · 16/10/2026</span>
+          <span class="press-meta">Brasil 247 · 16/10/2026 · 1º turno</span>
           <span class="press-tit">Sob Nunes Marques, TSE é mais lento e favorece ações contra Lula, aponta estudo</span>
         </div>
       </a>
