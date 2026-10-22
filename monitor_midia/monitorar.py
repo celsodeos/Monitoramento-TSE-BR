@@ -66,7 +66,7 @@ PRIMARIO = re.compile("|".join(f"(?:{v})" for v in ANCORAS.values()))
 # Termos que identificam o estudo: com eles a ocorrência é "confirmada".
 TERMOS_ID = {
     "UERJ": r"\buer(?:j|ge|gi|g)\b|\bu e r j\b",
-    "Celso": r"\bcelso\b",
+    "Celso": r"\bcelso\b(?! garcia)",
 }
 # Termos associados: ocorrência "provável".
 TERMOS_FORTES = {
@@ -151,7 +151,11 @@ def buscar(segs: list[tuple[float, str]]) -> list[dict]:
             if PESQUISA_VOTO.search(norm(trecho(t - 20, t + 20))):
                 fortes = [f for f in fortes if f not in ("estudo", "levantamento")]
         if ids or fortes or (trib and tese):
-            forca = "confirmada" if ids else "provável" if fortes else "fraca"
+            # UERJ/Celso confirmam só junto do presidente do TSE ou de termo do estudo (evita "Avenida Celso Garcia",
+            # comentarista "professor da UERJ" falando de outro assunto)
+            presidente = any(x in trib for x in ("Nunes Marques", "Kassio"))
+            forca = ("confirmada" if ids and (fortes or presidente) else
+                     "provável" if ids or fortes else "fraca")
             brutos.append({"t": t, "forca": forca, "termos": trib + tese + ids + fortes})
     for k in AUTONOMOS:
         for m in RE[k].finditer(texto):
