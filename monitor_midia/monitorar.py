@@ -48,7 +48,20 @@ def norm(s: str) -> str:
 
 
 # Expressões sobre texto normalizado (minúsculas, sem acento).
-PRIMARIO = re.compile(r"\bnunes marques?\b|\bkassio\b|\bk?c?ass?c?io nunes\b")
+# Âncoras: toda ocorrência precisa de uma delas; os demais termos são procurados a até 60 s.
+ANCORAS_TRIBUNAL = {   # o tribunal e o seu presidente
+    "Nunes Marques": r"\bnunes marques?\b",
+    "Kassio": r"\bk?c?ass?c?io(?: nunes)?\b",       # Kassio, Kassio Nunes, Cássio, Cásio (legenda automática)
+    "TSE": r"\btse\b",
+    "Tribunal Superior Eleitoral": r"\btribunal superior eleitoral\b",
+}
+ANCORAS_TESE = {       # palavras da tese do estudo
+    "letargia": r"\bletargi\w*",
+    "lento": r"\blent(?:o|a|os|as|idao)\b",
+    "enviesado": r"\benvies\w*",
+}
+ANCORAS = {**ANCORAS_TRIBUNAL, **ANCORAS_TESE}
+PRIMARIO = re.compile("|".join(f"(?:{v})" for v in ANCORAS.values()))
 # Termos que identificam o estudo: com eles a ocorrência é "confirmada".
 TERMOS_ID = {
     "UERJ": r"\buer(?:j|ge|gi|g)\b|\bu e r j\b",
@@ -62,16 +75,12 @@ TERMOS_FORTES = {
     "judicializadas": r"\bjudicializad\w*",
     "Lauro Jardim": r"\blauro jardim\b",
 }
-TERMOS_FRACOS = {
-    "TSE": r"\btse\b|\btribunal superior eleitoral\b",
-    "lento": r"\blent(?:o|a|os|as|idao)\b",
-}
 # Termos que contam sozinhos, mesmo sem "Nunes Marques" por perto.
 AUTONOMOS = {
     "Celso de Oliveira Santos": r"\bcelso de oliveira santos\b",
     "Monitor Eleitoral": r"\bmonitor eleitoral\b",
 }
-RE = {k: re.compile(v) for k, v in {**TERMOS_ID, **TERMOS_FORTES, **TERMOS_FRACOS, **AUTONOMOS}.items()}
+RE = {k: re.compile(v) for k, v in {**ANCORAS, **TERMOS_ID, **TERMOS_FORTES, **AUTONOMOS}.items()}
 NIVEL = {"confirmada": 3, "provável": 2, "fraca": 1}
 
 CAMPOS = ["data_coleta", "canal", "data_video", "titulo", "video_id", "minuto",
@@ -130,12 +139,14 @@ def buscar(segs: list[tuple[float, str]]) -> list[dict]:
     brutos = []
     for m in PRIMARIO.finditer(texto):
         t = tempo(m.start())
-        ids = termos_em(t - JANELA_S, t + JANELA_S, TERMOS_ID)
-        fortes = termos_em(t - JANELA_S, t + JANELA_S, TERMOS_FORTES)
-        fracos = termos_em(t - JANELA_S, t + JANELA_S, TERMOS_FRACOS)
-        if ids or fortes or fracos:
+        t0, t1 = t - JANELA_S, t + JANELA_S
+        ids = termos_em(t0, t1, TERMOS_ID)
+        fortes = termos_em(t0, t1, TERMOS_FORTES)
+        trib = termos_em(t0, t1, ANCORAS_TRIBUNAL)
+        tese = termos_em(t0, t1, ANCORAS_TESE)
+        if ids or fortes or (trib and tese):
             forca = "confirmada" if ids else "provável" if fortes else "fraca"
-            brutos.append({"t": t, "forca": forca, "termos": ["Nunes Marques"] + ids + fortes + fracos})
+            brutos.append({"t": t, "forca": forca, "termos": trib + tese + ids + fortes})
     for k in AUTONOMOS:
         for m in RE[k].finditer(texto):
             brutos.append({"t": tempo(m.start()), "forca": "confirmada", "termos": [k]})
@@ -228,10 +239,11 @@ def gravar(ocorrencias: list[dict]):
 
 def relatorio_md(ocorrencias: list[dict]) -> str:
     linhas = [f"# Menções em vídeo — {dt.date.today().isoformat()}", "",
-              "Ocorrências encontradas nas legendas, a até 60 s de \"Nunes Marques\". "
+              "Ocorrências encontradas nas legendas, a até 60 s de uma âncora (Nunes Marques, Kassio, TSE, "
+              "Tribunal Superior Eleitoral, letargia, lento, enviesado). "
               "**Confirmada**: com UERJ, Celso, \"Celso de Oliveira Santos\" ou \"Monitor Eleitoral\". "
               "**Provável**: com estudo, levantamento, judicialização ou Lauro Jardim. "
-              "**Fraca**: só com TSE ou lento. Conferir sempre no vídeo antes de usar.", ""]
+              "**Fraca**: tribunal/presidente junto de letargia, lento ou enviesado. Conferir sempre no vídeo antes de usar.", ""]
     fracas = [o for o in ocorrencias if o["forca"] == "fraca"]
     for o in sorted((o for o in ocorrencias if o["forca"] != "fraca"),
                     key=lambda o: (-NIVEL[o["forca"]], o["canal"], o["data_video"])):
@@ -240,7 +252,7 @@ def relatorio_md(ocorrencias: list[dict]) -> str:
                    f"- Termos: {o['termos']}",
                    f"- Trecho (legenda): “{o['trecho']}”", ""]
     if fracas:
-        linhas += [f"## Fracas ({len(fracas)}) — só \"Nunes Marques\" com TSE/lento", "",
+        linhas += [f"## Fracas ({len(fracas)}) — tribunal + letargia/lento/enviesado", "",
                    "| Canal | Vídeo | Minuto |", "|---|---|---|"]
         linhas += [f"| {o['canal']} | {o['titulo'][:70].replace('|', '/')} | [{o['minuto']}]({o['link']}) |"
                    for o in sorted(fracas, key=lambda o: (o["canal"], o["data_video"]))]
