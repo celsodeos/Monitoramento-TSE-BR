@@ -76,6 +76,7 @@ TERMOS_FORTES = {
     "judicializadas": r"\bjudicializad\w*",
     "Lauro Jardim": r"\blauro jardim\b",
 }
+PESQUISA_VOTO = re.compile(r"margem de erro|nivel de confianca|registrad\w* (?:no|na|sob|com)|\bbr ?-? ?\d{4,5}\b|intenc\w* de voto")
 # Termos que contam sozinhos, mesmo sem "Nunes Marques" por perto.
 AUTONOMOS = {
     "Celso de Oliveira Santos": r"\bcelso de oliveira santos\b",
@@ -145,6 +146,10 @@ def buscar(segs: list[tuple[float, str]]) -> list[dict]:
         fortes = termos_em(t0, t1, TERMOS_FORTES)
         trib = termos_em(t0, t1, ANCORAS_TRIBUNAL)
         tese = termos_em(t0, t1, ANCORAS_TESE)
+        if "estudo" in fortes or "levantamento" in fortes:
+            # "levantamento registrado no TSE com o número BR…, margem de erro…": é pesquisa de intenção de voto
+            if PESQUISA_VOTO.search(norm(trecho(t - 20, t + 20))):
+                fortes = [f for f in fortes if f not in ("estudo", "levantamento")]
         if ids or fortes or (trib and tese):
             forca = "confirmada" if ids else "provável" if fortes else "fraca"
             brutos.append({"t": t, "forca": forca, "termos": trib + tese + ids + fortes})
