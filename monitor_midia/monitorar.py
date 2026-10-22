@@ -24,6 +24,7 @@ import json
 import os
 import re
 import sys
+import time
 import unicodedata
 from pathlib import Path
 
@@ -162,6 +163,7 @@ def minuto(t: float) -> str:
 # ---------------------------------------------------------------- YouTube
 def ydl_opts(cookies: str | None) -> dict:
     o = {"quiet": True, "no_warnings": True, "skip_download": True,
+         "sleep_interval_requests": 1,   # ritmo mais lento: reduz o bloqueio "confirme que não é um bot"
          "extractor_args": {"youtube": {"lang": ["pt"]}}}
     if cookies:
         o["cookiefile"] = cookies
@@ -230,11 +232,18 @@ def relatorio_md(ocorrencias: list[dict]) -> str:
               "**Confirmada**: com UERJ, Celso, \"Celso de Oliveira Santos\" ou \"Monitor Eleitoral\". "
               "**Provável**: com estudo, levantamento, judicialização ou Lauro Jardim. "
               "**Fraca**: só com TSE ou lento. Conferir sempre no vídeo antes de usar.", ""]
-    for o in sorted(ocorrencias, key=lambda o: (-NIVEL[o["forca"]], o["canal"], o["data_video"])):
+    fracas = [o for o in ocorrencias if o["forca"] == "fraca"]
+    for o in sorted((o for o in ocorrencias if o["forca"] != "fraca"),
+                    key=lambda o: (-NIVEL[o["forca"]], o["canal"], o["data_video"])):
         linhas += [f"## [{o['forca'].upper()}] {o['canal']} — {o['titulo']}",
                    f"- Data do vídeo: {o['data_video']} · minuto **{o['minuto']}** · [abrir no ponto]({o['link']})",
                    f"- Termos: {o['termos']}",
                    f"- Trecho (legenda): “{o['trecho']}”", ""]
+    if fracas:
+        linhas += [f"## Fracas ({len(fracas)}) — só \"Nunes Marques\" com TSE/lento", "",
+                   "| Canal | Vídeo | Minuto |", "|---|---|---|"]
+        linhas += [f"| {o['canal']} | {o['titulo'][:70].replace('|', '/')} | [{o['minuto']}]({o['link']}) |"
+                   for o in sorted(fracas, key=lambda o: (o["canal"], o["data_video"]))]
     return "\n".join(linhas)
 
 
@@ -276,9 +285,13 @@ def main():
                 except Exception as e:
                     status, r, occ = "erro", {}, []
                     erro = f"{type(e).__name__}: {str(e)[:200]}"
-                    problemas.append(f"{c['nome']} {vid}: {erro}")
+                    if re.search(r"começará|will begin|premieres in|upcoming", erro, re.I):
+                        status = "agendado"      # live ainda não começou: tenta de novo sem gastar tentativa
+                    else:
+                        problemas.append(f"{c['nome']} {vid}: {erro}")
+                time.sleep(2)
                 estado[vid] = {"status": status, "canal": c["nome"], "visto": hoje,
-                               "tentativas": st.get("tentativas", 0) + 1}
+                               "tentativas": st.get("tentativas", 0) + (status != "agendado")}
                 if status == "erro": estado[vid]["erro"] = erro
                 for o in occ:
                     novas.append({"data_coleta": hoje, "canal": r["canal"], "data_video": r["data"],
