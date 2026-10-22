@@ -1,0 +1,26 @@
+# Canais monitorados pela rotina de menções em vídeo (monitor_midia/monitorar.py).
+# Cada canal pode ser indicado por "handle" (o @ do YouTube) ou por "video_semente"
+# (o id de qualquer vídeo do canal; a rotina descobre o canal a partir dele).
+# Os handles marcados "conferir" foram escritos sem acesso ao YouTube: se a primeira
+# execução registrar "canal não encontrado", corrija o @ aqui.
+canais:
+  - nome: Reinaldo Azevedo
+    video_semente: s6s-jia_naA     # vídeo de 21/10/2026 que citou o estudo
+  - nome: ICL Notícias
+    handle: "@ICLNoticias"         # conferir
+  - nome: TV 247
+    handle: "@TV247"               # conferir
+  - nome: Meio
+    handle: "@canalmeio"           # conferir
+  - nome: UOL
+    handle: "@UOL"                 # conferir
+  - nome: CNN Brasil
+    handle: "@CNNbrasil"           # conferir
+  - nome: GloboNews
+    handle: "@GloboNews"           # conferir
+  - nome: Jovem Pan News
+    handle: "@jovempannews"        # conferir
+  - nome: BandNews TV
+    handle: "@BandNewsTV"          # conferir
+  - nome: BandNews FM
+    handle: "@BandNewsFM"          # conferir
