@@ -12,6 +12,7 @@ Saídas (nada em docs/, as páginas públicas não são tocadas):
 Uso:
   python monitor_midia/monitorar.py                 # todos os canais, vídeos dos últimos 3 dias
   python monitor_midia/monitorar.py --dias 7
+  python monitor_midia/monitorar.py --desde 2026-10-14 --por-aba 200   # varredura retroativa
   python monitor_midia/monitorar.py --video s6s-jia_naA   # analisa um vídeo só (teste)
   python monitor_midia/monitorar.py --cookies cookies.txt  # se o YouTube pedir login
 """
@@ -187,16 +188,15 @@ def listar_canal(ydl, canal: dict, por_aba: int) -> tuple[str, list[str]]:
         base = info.get("channel_url") or f"https://www.youtube.com/channel/{info['channel_id']}"
     else:
         base = f"https://www.youtube.com/{canal['handle']}"
-    ids = []
+    ids = {}
     lista = yt_dlp.YoutubeDL({**ydl.params, "extract_flat": "in_playlist", "playlistend": por_aba})
     for aba in ("videos", "streams"):
         try:
             pl = lista.extract_info(f"{base}/{aba}", download=False)
-            for e in (pl.get("entries") or [])[:por_aba]:
-                if e and e.get("id"): ids.append(e["id"])
+            ids[aba] = [e["id"] for e in (pl.get("entries") or [])[:por_aba] if e and e.get("id")]
         except yt_dlp.utils.DownloadError:
             pass          # canal sem aba de lives, por exemplo
-    return base, list(dict.fromkeys(ids))
+    return base, ids
 
 
 def data_video(info: dict) -> dt.date | None:
@@ -206,13 +206,13 @@ def data_video(info: dict) -> dt.date | None:
     return None
 
 
-def analisar_video(ydl, vid: str, canal_nome: str, dias: int | None):
+def analisar_video(ydl, vid: str, canal_nome: str, limite: dt.date | None):
     """Retorna (status, info_resumida, ocorrências)."""
     info = ydl.extract_info(f"https://www.youtube.com/watch?v={vid}", download=False)
     d = data_video(info)
     resumo = {"titulo": info.get("title", ""), "data": d.isoformat() if d else "",
               "canal": canal_nome or info.get("channel", "")}
-    if dias is not None and d and d < dt.date.today() - dt.timedelta(days=dias):
+    if limite is not None and d and d < limite:
         return "antigo", resumo, []
     if info.get("is_live") or info.get("live_status") in ("is_live", "is_upcoming"):
         return "sem_legenda", resumo, []
@@ -230,6 +230,8 @@ def carregar_estado() -> dict:
 
 
 def gravar(ocorrencias: list[dict]):
+    if not ocorrencias:
+        return
     novo = not MENCOES.exists()
     with MENCOES.open("a", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=CAMPOS)
@@ -263,6 +265,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--canais", default=str(RAIZ / "canais.yml"))
     ap.add_argument("--dias", type=int, default=3, help="idade máxima dos vídeos")
+    ap.add_argument("--desde", type=dt.date.fromisoformat, help="data inicial (AAAA-MM-DD); substitui --dias")
     ap.add_argument("--por-aba", type=int, default=20, help="vídeos recentes lidos por aba (vídeos e lives)")
     ap.add_argument("--video", help="analisa só este vídeo e imprime o resultado")
     ap.add_argument("--cookies", default=os.environ.get("YT_COOKIES_FILE"))
@@ -279,44 +282,64 @@ def main():
             return
 
         estado = carregar_estado()
+        limite = a.desde or (dt.date.today() - dt.timedelta(days=a.dias))
         canais = yaml.safe_load(Path(a.canais).read_text())["canais"]
-        novas, problemas = [], []
+        novas, problemas, bloqueios, lidos, gravadas = [], [], 0, 0, 0
         for c in canais:
+            if bloqueios >= 5:
+                problemas.append(f"{c['nome']}: não lido (YouTube bloqueou a sessão; fica para a próxima execução)")
+                continue
             try:
-                base, ids = listar_canal(ydl, c, a.por_aba)
+                base, abas = listar_canal(ydl, c, a.por_aba)
             except Exception as e:
                 problemas.append(f"{c['nome']}: canal não encontrado ({type(e).__name__}: {str(e)[:160]})")
                 continue
-            print(f"{c['nome']}: {len(ids)} vídeos listados ({base})")
-            for vid in ids:
-                st = estado.get(vid, {})
-                if st.get("status") in ("ok", "antigo") or st.get("tentativas", 0) >= MAX_TENTATIVAS:
-                    continue
-                try:
-                    status, r, occ = analisar_video(ydl, vid, c["nome"], a.dias)
-                except Exception as e:
-                    status, r, occ = "erro", {}, []
-                    erro = f"{type(e).__name__}: {str(e)[:200]}"
-                    if re.search(r"começará|will begin|premieres in|upcoming", erro, re.I):
-                        status = "agendado"      # live ainda não começou: tenta de novo sem gastar tentativa
-                    else:
-                        problemas.append(f"{c['nome']} {vid}: {erro}")
-                time.sleep(2)
-                estado[vid] = {"status": status, "canal": c["nome"], "visto": hoje,
-                               "tentativas": st.get("tentativas", 0) + (status != "agendado")}
-                if status == "erro": estado[vid]["erro"] = erro
-                for o in occ:
-                    novas.append({"data_coleta": hoje, "canal": r["canal"], "data_video": r["data"],
-                                  "titulo": r["titulo"], "video_id": vid, "minuto": minuto(o["t"]),
-                                  "link": f"https://www.youtube.com/watch?v={vid}&t={max(0, int(o['t']) - 5)}s",
-                                  "forca": o["forca"], "termos": ", ".join(o["termos"]),
-                                  "trecho": o["trecho"]})
+            print(f"{c['nome']}: " + ", ".join(f"{len(v)} em {k}" for k, v in abas.items()) + f" ({base})", flush=True)
+            for aba, ids in abas.items():
+                antigos_seguidos = 0
+                for vid in ids:
+                    if antigos_seguidos >= 6 or bloqueios >= 5:
+                        break                  # a aba está em ordem cronológica: daqui para trás é tudo antigo
+                    st = estado.get(vid, {})
+                    if st.get("status") == "ok" or st.get("tentativas", 0) >= MAX_TENTATIVAS:
+                        continue
+                    if st.get("status") == "antigo" and st.get("data") and st["data"] < limite.isoformat():
+                        antigos_seguidos += 1
+                        continue
+                    try:
+                        status, r, occ = analisar_video(ydl, vid, c["nome"], limite)
+                    except Exception as e:
+                        status, r, occ = "erro", {}, []
+                        erro = f"{type(e).__name__}: {str(e)[:200]}"
+                        if re.search(r"começará|will begin|premieres in|upcoming", erro, re.I):
+                            status = "agendado"      # live ainda não começou: tenta de novo sem gastar tentativa
+                        else:
+                            problemas.append(f"{c['nome']} {vid}: {erro}")
+                            if re.search(r"não é um bot|not a bot|sign in to confirm", erro, re.I):
+                                bloqueios += 1
+                    antigos_seguidos = antigos_seguidos + 1 if status == "antigo" else 0
+                    if status in ("ok", "antigo"): bloqueios = 0
+                    time.sleep(2)
+                    estado[vid] = {"status": status, "canal": c["nome"], "visto": hoje,
+                                   "data": r.get("data", ""),
+                                   "tentativas": st.get("tentativas", 0) + (status != "agendado")}
+                    if status == "erro": estado[vid]["erro"] = erro
+                    lidos += 1
+                    if lidos % 25 == 0:          # salva o progresso (varreduras longas)
+                        gravar(novas[gravadas:]); gravadas = len(novas)
+                        ESTADO.write_text(json.dumps(estado, ensure_ascii=False, indent=1, sort_keys=True))
+                    for o in occ:
+                        novas.append({"data_coleta": hoje, "canal": r["canal"], "data_video": r["data"],
+                                      "titulo": r["titulo"], "video_id": vid, "minuto": minuto(o["t"]),
+                                      "link": f"https://www.youtube.com/watch?v={vid}&t={max(0, int(o['t']) - 5)}s",
+                                      "forca": o["forca"], "termos": ", ".join(o["termos"]),
+                                      "trecho": o["trecho"]})
 
     ESTADO.write_text(json.dumps(estado, ensure_ascii=False, indent=1, sort_keys=True))
     resumo = [f"Ocorrências novas: {len(novas)} ({sum(o['forca']=='confirmada' for o in novas)} confirmadas, "
               f"{sum(o['forca']=='provável' for o in novas)} prováveis)"]
+    gravar(novas[gravadas:])
     if novas:
-        gravar(novas)
         RELATORIOS.mkdir(exist_ok=True)
         md = relatorio_md(novas)
         arq = RELATORIOS / f"{hoje}.md"

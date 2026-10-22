@@ -8,6 +8,12 @@ on:
       dias:
         description: "Idade máxima dos vídeos, em dias"
         default: "3"
+      desde:
+        description: "Varredura retroativa: data inicial AAAA-MM-DD (vazio = usa 'dias')"
+        default: ""
+      por_aba:
+        description: "Vídeos recentes lidos por aba de cada canal"
+        default: "20"
 
 permissions:
   contents: write
@@ -19,7 +25,7 @@ concurrency:
 jobs:
   monitorar:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 340
     steps:
       - uses: actions/checkout@v5
 
@@ -44,7 +50,13 @@ jobs:
           fi
 
       - name: Procurar menções
-        run: python monitor_midia/monitorar.py --dias "${{ inputs.dias || '3' }}"
+        timeout-minutes: 320
+        env:
+          DESDE: ${{ inputs.desde }}
+        run: |
+          ARGS="--dias ${{ inputs.dias || '3' }} --por-aba ${{ inputs.por_aba || '20' }}"
+          if [ -n "$DESDE" ]; then ARGS="$ARGS --desde $DESDE"; fi
+          python monitor_midia/monitorar.py $ARGS
 
       - name: Registrar resultados
         if: always()
