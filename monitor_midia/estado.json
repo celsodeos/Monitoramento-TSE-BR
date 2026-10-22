@@ -23,7 +23,14 @@
  "-8vY_Docx78": {
   "canal": "Jovem Pan News",
   "data": "2026-10-22",
-  "status": "sem_legenda",
+  "status": "ok",
+  "tentativas": 2,
+  "visto": "2026-10-22"
+ },
+ "-MEMxBRo2J0": {
+  "canal": "CNN Brasil",
+  "data": "2026-10-22",
+  "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-22"
  },
@@ -62,16 +69,30 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "0WJC4ZpMMUM": {
+  "canal": "Jovem Pan News",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
  "0pdH50zfbYQ": {
   "canal": "ICL Notícias",
   "data": "2026-10-20",
   "status": "sem_legenda",
-  "tentativas": 1,
+  "tentativas": 2,
   "visto": "2026-10-22"
  },
  "0rOyQn0LdS0": {
   "canal": "GloboNews",
   "data": "2026-10-21",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "0yYJ4sJ6klE": {
+  "canal": "CNN Brasil",
+  "data": "2026-10-22",
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-22"
@@ -102,6 +123,13 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
+  "visto": "2026-10-22"
+ },
+ "2kkoQgmKaPc": {
+  "canal": "CNN Brasil",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
   "visto": "2026-10-22"
  },
  "2owEI-yb3dA": {
@@ -153,6 +181,13 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "40aYOYPNAHI": {
+  "canal": "CNN Brasil",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
  "43ims_TKeQ8": {
   "canal": "Jovem Pan News",
   "data": "2026-10-22",
@@ -186,7 +221,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] 66MsQlxjnL4: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
+  "tentativas": 2,
   "visto": "2026-10-22"
  },
  "6Ye9lTbpTzw": {
@@ -197,6 +232,13 @@
   "visto": "2026-10-22"
  },
  "6aTDz3Rgu8U": {
+  "canal": "CNN Brasil",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "6o2Ruj-CP2k": {
   "canal": "CNN Brasil",
   "data": "2026-10-22",
   "status": "ok",
@@ -243,7 +285,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] 82_GGFiY0Lc: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
+  "tentativas": 2,
   "visto": "2026-10-22"
  },
  "84n7SPoguoo": {
@@ -272,6 +314,13 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
+  "visto": "2026-10-22"
+ },
+ "9ftzYnzc9G4": {
+  "canal": "UOL",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
   "visto": "2026-10-22"
  },
  "9wsJu409uG8": {
@@ -311,9 +360,9 @@
  },
  "AgiIHNXynBM": {
   "canal": "Reinaldo Azevedo",
-  "data": "",
-  "status": "agendado",
-  "tentativas": 0,
+  "data": "2026-10-21",
+  "status": "sem_legenda",
+  "tentativas": 1,
   "visto": "2026-10-22"
  },
  "AkJtQgfM-Js": {
@@ -328,7 +377,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] B7PmN4hDDBM: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
+  "tentativas": 2,
   "visto": "2026-10-22"
  },
  "B7yOgTVp4tk": {
@@ -336,6 +385,13 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
+  "visto": "2026-10-22"
+ },
+ "BUmS-sUMwpY": {
+  "canal": "Reinaldo Azevedo",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
   "visto": "2026-10-22"
  },
  "BW_CtNXA6Hk": {
@@ -373,11 +429,18 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "E2oDh8tgs_w": {
+  "canal": "Reinaldo Azevedo",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
  "E6ig0Qt5Ho4": {
   "canal": "Reinaldo Azevedo",
-  "data": "2026-10-21",
-  "status": "sem_legenda",
-  "tentativas": 1,
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 2,
   "visto": "2026-10-22"
  },
  "EALwpcaCvF8": {
@@ -390,6 +453,13 @@
  "EJPe26l72hc": {
   "canal": "Jovem Pan News",
   "data": "2026-10-21",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "EOrYU_fxa_o": {
+  "canal": "CNN Brasil",
+  "data": "2026-10-22",
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-22"
@@ -418,12 +488,33 @@
  "FISQRBy1mGM": {
   "canal": "Jovem Pan News",
   "data": "2026-10-22",
-  "status": "sem_legenda",
-  "tentativas": 1,
+  "status": "ok",
+  "tentativas": 2,
   "visto": "2026-10-22"
  },
  "FSG5PMX3fF8": {
   "canal": "Jovem Pan News",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "FU_291XJH3k": {
+  "canal": "UOL",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "FY42NHKkQNY": {
+  "canal": "CNN Brasil",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "FmDK4dqWvbE": {
+  "canal": "CNN Brasil",
   "data": "2026-10-22",
   "status": "ok",
   "tentativas": 1,
@@ -459,9 +550,23 @@
  },
  "GCnYGAsKOaA": {
   "canal": "Reinaldo Azevedo",
-  "data": "",
-  "status": "agendado",
-  "tentativas": 0,
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "GRZYDO0O_MM": {
+  "canal": "GloboNews",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "GXDwbTMHiiI": {
+  "canal": "CNN Brasil",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
   "visto": "2026-10-22"
  },
  "Gjo7KTmTU6k": {
@@ -475,6 +580,13 @@
   "canal": "ICL Notícias",
   "data": "2026-06-02",
   "status": "antigo",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "HDkkBWvkN7U": {
+  "canal": "UOL",
+  "data": "2026-10-22",
+  "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-22"
  },
@@ -530,6 +642,13 @@
  "J4IG9HcNiew": {
   "canal": "GloboNews",
   "data": "2026-10-20",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "J5ND91lB0MY": {
+  "canal": "CNN Brasil",
+  "data": "2026-10-22",
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-22"
@@ -590,6 +709,13 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "LfB7KJixMzs": {
+  "canal": "UOL",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
  "LnprX5Nc6rE": {
   "canal": "Jovem Pan News",
   "data": "2026-10-22",
@@ -639,6 +765,13 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "O5vczKiXQgg": {
+  "canal": "CNN Brasil",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
  "OIyDYAU78OY": {
   "canal": "Reinaldo Azevedo",
   "data": "",
@@ -646,7 +779,21 @@
   "tentativas": 0,
   "visto": "2026-10-22"
  },
+ "OmMs22yXeKY": {
+  "canal": "Reinaldo Azevedo",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
  "OwGnhHsL2PQ": {
+  "canal": "CNN Brasil",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "PRXy37pDP_w": {
   "canal": "CNN Brasil",
   "data": "2026-10-22",
   "status": "ok",
@@ -674,11 +821,32 @@
   "tentativas": 0,
   "visto": "2026-10-22"
  },
+ "PlOuugPAeiU": {
+  "canal": "Reinaldo Azevedo",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
  "PnhrvLlb1pw": {
   "canal": "CNN Brasil",
   "data": "2026-10-22",
   "status": "ok",
   "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "QCVwN7eEoYk": {
+  "canal": "CNN Brasil",
+  "data": "2026-10-22",
+  "status": "sem_legenda",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "QYUB7qVZwTU": {
+  "canal": "ICL Notícias",
+  "data": "",
+  "status": "agendado",
+  "tentativas": 0,
   "visto": "2026-10-22"
  },
  "QlhahaMzJ4E": {
@@ -711,12 +879,19 @@
  },
  "SfMhby8gKnc": {
   "canal": "Jovem Pan News",
-  "data": "2026-10-21",
-  "status": "sem_legenda",
-  "tentativas": 1,
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 2,
   "visto": "2026-10-22"
  },
  "SoTl2YP2w4w": {
+  "canal": "CNN Brasil",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "SqldaNiuo4U": {
   "canal": "CNN Brasil",
   "data": "2026-10-22",
   "status": "ok",
@@ -732,9 +907,16 @@
  },
  "TWcoAvJOPfk": {
   "canal": "ICL Notícias",
-  "data": "",
-  "status": "agendado",
-  "tentativas": 0,
+  "data": "2026-10-21",
+  "status": "sem_legenda",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "TbHPoznmvyM": {
+  "canal": "Reinaldo Azevedo",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
   "visto": "2026-10-22"
  },
  "TcuysT3Sf-M": {
@@ -786,6 +968,13 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "VGh59VbzfpU": {
+  "canal": "Jovem Pan News",
+  "data": "2026-10-22",
+  "status": "sem_legenda",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
  "VRY7pFmtdJ4": {
   "canal": "GloboNews",
   "data": "2026-10-22",
@@ -810,8 +999,8 @@
  "WJedCJiAN4w": {
   "canal": "GloboNews",
   "data": "2026-10-22",
-  "status": "sem_legenda",
-  "tentativas": 1,
+  "status": "ok",
+  "tentativas": 2,
   "visto": "2026-10-22"
  },
  "WUI7nQKYU_M": {
@@ -835,8 +1024,36 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "XGXZkz1lLuk": {
+  "canal": "UOL",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "XHmyxvODXwg": {
+  "canal": "UOL",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "Xl_-tQiVhzc": {
+  "canal": "UOL",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
  "XvnMw3OQov0": {
   "canal": "UOL",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "Y3jIyDR2Hfw": {
+  "canal": "Jovem Pan News",
   "data": "2026-10-22",
   "status": "ok",
   "tentativas": 1,
@@ -863,6 +1080,14 @@
   "tentativas": 0,
   "visto": "2026-10-22"
  },
+ "YsXVZ3MJn8I": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] YsXVZ3MJn8I: Estreia em 47 horas",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
  "YtbbwaZ0xOI": {
   "canal": "CNN Brasil",
   "data": "",
@@ -874,6 +1099,13 @@
   "canal": "GloboNews",
   "data": "2026-07-07",
   "status": "antigo",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "ZcXzXLWV38I": {
+  "canal": "CNN Brasil",
+  "data": "2026-10-22",
+  "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-22"
  },
@@ -889,6 +1121,13 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] _pddjHfiJuI: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
+  "tentativas": 2,
+  "visto": "2026-10-22"
+ },
+ "a5rYjkMWjW0": {
+  "canal": "Reinaldo Azevedo",
+  "data": "2026-10-22",
+  "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-22"
  },
@@ -900,6 +1139,13 @@
   "visto": "2026-10-22"
  },
  "acjsX6ErYkE": {
+  "canal": "UOL",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "al2whpEnDSU": {
   "canal": "UOL",
   "data": "2026-10-22",
   "status": "ok",
@@ -924,6 +1170,13 @@
   "canal": "ICL Notícias",
   "data": "2026-10-16",
   "status": "antigo",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "cUFt_6pKEVA": {
+  "canal": "UOL",
+  "data": "2026-10-22",
+  "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-22"
  },
@@ -958,8 +1211,15 @@
  "dFL96AksRVQ": {
   "canal": "Reinaldo Azevedo",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] dFL96AksRVQ: Estreia em 3 horas",
+  "erro": "DownloadError: ERROR: [youtube] dFL96AksRVQ: Estreia em 50 minutos",
   "status": "erro",
+  "tentativas": 2,
+  "visto": "2026-10-22"
+ },
+ "doE0uBv7S2I": {
+  "canal": "UOL",
+  "data": "2026-10-22",
+  "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-22"
  },
@@ -1080,7 +1340,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] jG2_PIkzXmU: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
+  "tentativas": 2,
   "visto": "2026-10-22"
  },
  "k3Upuzy39VM": {
@@ -1167,6 +1427,27 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "nL9zmLGpQCM": {
+  "canal": "UOL",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "nxi4QslZou8": {
+  "canal": "CNN Brasil",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "o52DmGw8YVI": {
+  "canal": "CNN Brasil",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
  "o6Z6Ax_XVsY": {
   "canal": "CNN Brasil",
   "data": "",
@@ -1199,6 +1480,21 @@
   "canal": "UOL",
   "data": "2026-10-16",
   "status": "antigo",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "oQbJr_0B5oQ": {
+  "canal": "UOL",
+  "data": "2026-10-22",
+  "status": "sem_legenda",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "of7hYtfVE9U": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] of7hYtfVE9U: Estreia em 15 minutos",
+  "status": "erro",
   "tentativas": 1,
   "visto": "2026-10-22"
  },
@@ -1251,6 +1547,13 @@
   "tentativas": 0,
   "visto": "2026-10-22"
  },
+ "pl_2M4yk_g4": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "status": "agendado",
+  "tentativas": 0,
+  "visto": "2026-10-22"
+ },
  "plyugnZR2F4": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-21",
@@ -1260,9 +1563,9 @@
  },
  "qM9inTf8DDY": {
   "canal": "ICL Notícias",
-  "data": "2026-10-21",
+  "data": "2026-10-22",
   "status": "sem_legenda",
-  "tentativas": 1,
+  "tentativas": 2,
   "visto": "2026-10-22"
  },
  "qTmW-7dxP3Y": {
@@ -1281,9 +1584,9 @@
  },
  "qkNGxX_wEcE": {
   "canal": "Jovem Pan News",
-  "data": "",
-  "status": "agendado",
-  "tentativas": 0,
+  "data": "2026-10-21",
+  "status": "sem_legenda",
+  "tentativas": 1,
   "visto": "2026-10-22"
  },
  "qknIMTOo--4": {
@@ -1307,17 +1610,31 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "rvqNCVBs3OM": {
+  "canal": "UOL",
+  "data": "2026-10-22",
+  "status": "sem_legenda",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
  "s1l3npTVOk8": {
   "canal": "Reinaldo Azevedo",
   "data": "",
   "erro": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
   "status": "erro",
-  "tentativas": 1,
+  "tentativas": 2,
   "visto": "2026-10-22"
  },
  "s6s-jia_naA": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-21",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "s948F_XhQxM": {
+  "canal": "UOL",
+  "data": "2026-10-22",
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-22"
@@ -1371,6 +1688,13 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "u6nLYK_ECCE": {
+  "canal": "CNN Brasil",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
  "uR6w_MOox28": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-22",
@@ -1380,6 +1704,13 @@
  },
  "uWp7JoG6k1o": {
   "canal": "Jovem Pan News",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "upl5seTLwDQ": {
+  "canal": "Reinaldo Azevedo",
   "data": "2026-10-22",
   "status": "ok",
   "tentativas": 1,
@@ -1408,6 +1739,13 @@
  },
  "wZtYd4wvEhQ": {
   "canal": "CNN Brasil",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "w_dFAbd3K0o": {
+  "canal": "UOL",
   "data": "2026-10-22",
   "status": "ok",
   "tentativas": 1,
@@ -1469,6 +1807,13 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "ymnPk7d6GT8": {
+  "canal": "UOL",
+  "data": "2026-10-22",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
  "yog76be6vXg": {
   "canal": "GloboNews",
   "data": "2026-06-09",
@@ -1487,6 +1832,13 @@
   "canal": "GloboNews",
   "data": "2026-06-23",
   "status": "antigo",
+  "tentativas": 1,
+  "visto": "2026-10-22"
+ },
+ "zdsRlTIt46c": {
+  "canal": "CNN Brasil",
+  "data": "2026-10-22",
+  "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-22"
  },
