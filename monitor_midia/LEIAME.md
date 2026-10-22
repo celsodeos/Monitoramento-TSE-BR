@@ -3,8 +3,8 @@
 Rotina interna (não publica nada em `docs/`). A cada 6 horas o workflow
 `.github/workflows/monitor_midia.yml` lê os vídeos recentes dos canais de `canais.yml`,
 baixa as legendas em português (manuais ou automáticas) e procura "Nunes Marques"
-a até 60 s de: estudo, levantamento, UERJ, Celso, judicialização/judicializadas,
-Lauro Jardim (ocorrência **forte**) ou TSE, lento/lentidão (ocorrência **fraca**).
+a até 60 s de: UERJ, Celso, estudo, levantamento, judicialização/judicializadas,
+Lauro Jardim (ocorrência **provável**; com UERJ ou Celso, **confirmada**) ou TSE, lento/lentidão (ocorrência **fraca**).
 "Celso de Oliveira Santos" e "Monitor Eleitoral" contam sozinhos.
 
 - `relatorios/AAAA-MM-DD.md` — relatório do dia, com link no minuto exato e trecho da legenda

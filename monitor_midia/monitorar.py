@@ -47,12 +47,16 @@ def norm(s: str) -> str:
 
 
 # Expressões sobre texto normalizado (minúsculas, sem acento).
-PRIMARIO = re.compile(r"\bnunes marques?\b|\bkassio\b|\bcassio nunes\b")
+PRIMARIO = re.compile(r"\bnunes marques?\b|\bkassio\b|\bk?c?ass?c?io nunes\b")
+# Termos que identificam o estudo: com eles a ocorrência é "confirmada".
+TERMOS_ID = {
+    "UERJ": r"\buer(?:j|ge|gi|g)\b|\bu e r j\b",
+    "Celso": r"\bcelso\b",
+}
+# Termos associados: ocorrência "provável".
 TERMOS_FORTES = {
     "estudo": r"\bestudos?\b",
     "levantamento": r"\blevantamentos?\b",
-    "UERJ": r"\buerj\b",
-    "Celso": r"\bcelso\b",
     "judicialização": r"\bjudicializa\w*",
     "judicializadas": r"\bjudicializad\w*",
     "Lauro Jardim": r"\blauro jardim\b",
@@ -66,7 +70,8 @@ AUTONOMOS = {
     "Celso de Oliveira Santos": r"\bcelso de oliveira santos\b",
     "Monitor Eleitoral": r"\bmonitor eleitoral\b",
 }
-RE = {k: re.compile(v) for k, v in {**TERMOS_FORTES, **TERMOS_FRACOS, **AUTONOMOS}.items()}
+RE = {k: re.compile(v) for k, v in {**TERMOS_ID, **TERMOS_FORTES, **TERMOS_FRACOS, **AUTONOMOS}.items()}
+NIVEL = {"confirmada": 3, "provável": 2, "fraca": 1}
 
 CAMPOS = ["data_coleta", "canal", "data_video", "titulo", "video_id", "minuto",
           "link", "forca", "termos", "trecho"]
@@ -124,14 +129,15 @@ def buscar(segs: list[tuple[float, str]]) -> list[dict]:
     brutos = []
     for m in PRIMARIO.finditer(texto):
         t = tempo(m.start())
+        ids = termos_em(t - JANELA_S, t + JANELA_S, TERMOS_ID)
         fortes = termos_em(t - JANELA_S, t + JANELA_S, TERMOS_FORTES)
         fracos = termos_em(t - JANELA_S, t + JANELA_S, TERMOS_FRACOS)
-        if fortes or fracos:
-            brutos.append({"t": t, "forca": "forte" if fortes else "fraca",
-                           "termos": ["Nunes Marques"] + fortes + fracos})
+        if ids or fortes or fracos:
+            forca = "confirmada" if ids else "provável" if fortes else "fraca"
+            brutos.append({"t": t, "forca": forca, "termos": ["Nunes Marques"] + ids + fortes + fracos})
     for k in AUTONOMOS:
         for m in RE[k].finditer(texto):
-            brutos.append({"t": tempo(m.start()), "forca": "forte", "termos": [k]})
+            brutos.append({"t": tempo(m.start()), "forca": "confirmada", "termos": [k]})
 
     brutos.sort(key=lambda h: h["t"])
     grupos: list[dict] = []
@@ -140,7 +146,7 @@ def buscar(segs: list[tuple[float, str]]) -> list[dict]:
             g = grupos[-1]
             g["fim"] = h["t"]
             g["termos"] = list(dict.fromkeys(g["termos"] + h["termos"]))
-            if h["forca"] == "forte": g["forca"] = "forte"
+            if NIVEL[h["forca"]] > NIVEL[g["forca"]]: g["forca"] = h["forca"]
         else:
             grupos.append({"t": h["t"], "fim": h["t"], "forca": h["forca"], "termos": h["termos"]})
     for g in grupos:
@@ -220,10 +226,11 @@ def gravar(ocorrencias: list[dict]):
 
 def relatorio_md(ocorrencias: list[dict]) -> str:
     linhas = [f"# Menções em vídeo — {dt.date.today().isoformat()}", "",
-              "Ocorrências encontradas nas legendas. **Forte**: \"Nunes Marques\" junto de termo do estudo "
-              "(estudo, levantamento, UERJ, Celso, judicialização, Lauro Jardim) ou menção direta ao autor/projeto. "
-              "**Fraca**: só junto de \"TSE\" ou \"lento\" — conferir antes de usar.", ""]
-    for o in sorted(ocorrencias, key=lambda o: (o["forca"] != "forte", o["canal"], o["data_video"])):
+              "Ocorrências encontradas nas legendas, a até 60 s de \"Nunes Marques\". "
+              "**Confirmada**: com UERJ, Celso, \"Celso de Oliveira Santos\" ou \"Monitor Eleitoral\". "
+              "**Provável**: com estudo, levantamento, judicialização ou Lauro Jardim. "
+              "**Fraca**: só com TSE ou lento. Conferir sempre no vídeo antes de usar.", ""]
+    for o in sorted(ocorrencias, key=lambda o: (-NIVEL[o["forca"]], o["canal"], o["data_video"])):
         linhas += [f"## [{o['forca'].upper()}] {o['canal']} — {o['titulo']}",
                    f"- Data do vídeo: {o['data_video']} · minuto **{o['minuto']}** · [abrir no ponto]({o['link']})",
                    f"- Termos: {o['termos']}",
@@ -268,9 +275,11 @@ def main():
                     status, r, occ = analisar_video(ydl, vid, c["nome"], a.dias)
                 except Exception as e:
                     status, r, occ = "erro", {}, []
-                    problemas.append(f"{c['nome']} {vid}: {type(e).__name__}: {str(e)[:160]}")
+                    erro = f"{type(e).__name__}: {str(e)[:200]}"
+                    problemas.append(f"{c['nome']} {vid}: {erro}")
                 estado[vid] = {"status": status, "canal": c["nome"], "visto": hoje,
                                "tentativas": st.get("tentativas", 0) + 1}
+                if status == "erro": estado[vid]["erro"] = erro
                 for o in occ:
                     novas.append({"data_coleta": hoje, "canal": r["canal"], "data_video": r["data"],
                                   "titulo": r["titulo"], "video_id": vid, "minuto": minuto(o["t"]),
@@ -279,7 +288,8 @@ def main():
                                   "trecho": o["trecho"]})
 
     ESTADO.write_text(json.dumps(estado, ensure_ascii=False, indent=1, sort_keys=True))
-    resumo = [f"Ocorrências novas: {len(novas)} ({sum(o['forca']=='forte' for o in novas)} fortes)"]
+    resumo = [f"Ocorrências novas: {len(novas)} ({sum(o['forca']=='confirmada' for o in novas)} confirmadas, "
+              f"{sum(o['forca']=='provável' for o in novas)} prováveis)"]
     if novas:
         gravar(novas)
         RELATORIOS.mkdir(exist_ok=True)
