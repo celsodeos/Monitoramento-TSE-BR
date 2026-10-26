@@ -1,10 +1,10 @@
 {
- "carga_sig": "2026-10-25 05:30:20",
- "gerado_em": "2026-10-25 10:42",
+ "carga_sig": "2026-10-26 05:30:22",
+ "gerado_em": "2026-10-26 13:11",
  "ano_atual": 2026,
  "segundo_turno_atual": "2026-10-25",
- "em_curso": true,
- "autuacao_ate": "2026-10-23",
- "p_distribuicao_relatores": 0.02,
- "processos_atual": 419
+ "em_curso": false,
+ "autuacao_ate": "2026-10-24",
+ "p_distribuicao_relatores": 0.022,
+ "processos_atual": 420
 }

@@ -3,5 +3,5 @@ id,ano,presidente_tse,autor,processos,observaveis_3d,ate_3_dias,pct_ate_3_dias,o
 2018-pt,2018,Rosa Weber,PT / Lula,20,20,15,0.75,20,17,0.85,0.256,0.012,0.338,0.004
 2022-bol,2022,Alexandre de Moraes,Bolsonaro / Flávio,134,134,26,0.194,134,81,0.6045,2.3e-06,1.1e-07,0.021,0.09
 2022-pt,2022,Alexandre de Moraes,PT / Lula,110,110,53,0.4818,110,82,0.7455,2.3e-06,1.1e-07,0.021,0.09
-2026-bol,2026,Nunes Marques,Bolsonaro / Flávio,218,213,39,0.1831,113,44,0.3894,0.00088,0.002,5.4e-07,0.0001
-2026-pt,2026,Nunes Marques,PT / Lula,201,192,63,0.3281,82,62,0.7561,0.00088,0.002,5.4e-07,0.0001
+2026-bol,2026,Nunes Marques,Bolsonaro / Flávio,218,218,42,0.1927,125,48,0.384,0.002,0.004,2e-06,6.4e-05
+2026-pt,2026,Nunes Marques,PT / Lula,202,201,66,0.3284,99,70,0.7071,0.002,0.004,2e-06,6.4e-05
