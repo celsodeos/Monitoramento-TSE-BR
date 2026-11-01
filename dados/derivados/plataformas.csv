@@ -2,12 +2,12 @@ ano,empresa,instancia,processos
 2018,Amazon,TREs,1
 2018,"Google (Google, YouTube)",TREs,61
 2018,"Google (Google, YouTube)",TSE,14
-2018,"Meta (Facebook, Instagram, WhatsApp)",TREs,921
+2018,"Meta (Facebook, Instagram, WhatsApp)",TREs,922
 2018,"Meta (Facebook, Instagram, WhatsApp)",TSE,61
 2018,X (Twitter),TREs,46
 2018,X (Twitter),TSE,11
 2022,"Google (Google, YouTube)",Zonas eleitorais,2
-2022,"Google (Google, YouTube)",TREs,51
+2022,"Google (Google, YouTube)",TREs,54
 2022,"Google (Google, YouTube)",TSE,3
 2022,Kwai,TREs,2
 2022,"Meta (Facebook, Instagram, WhatsApp)",Zonas eleitorais,21
@@ -22,12 +22,12 @@ ano,empresa,instancia,processos
 2026,"Google (Google, YouTube)",TREs,19
 2026,"Google (Google, YouTube)",TSE,2
 2026,Kwai,TREs,1
-2026,"Meta (Facebook, Instagram, WhatsApp)",Zonas eleitorais,39
-2026,"Meta (Facebook, Instagram, WhatsApp)",TREs,1011
-2026,"Meta (Facebook, Instagram, WhatsApp)",TSE,40
+2026,"Meta (Facebook, Instagram, WhatsApp)",Zonas eleitorais,40
+2026,"Meta (Facebook, Instagram, WhatsApp)",TREs,1016
+2026,"Meta (Facebook, Instagram, WhatsApp)",TSE,36
 2026,TikTok (ByteDance),Zonas eleitorais,1
-2026,TikTok (ByteDance),TREs,24
-2026,TikTok (ByteDance),TSE,3
+2026,TikTok (ByteDance),TREs,26
+2026,TikTok (ByteDance),TSE,2
 2026,X (Twitter),Zonas eleitorais,1
-2026,X (Twitter),TREs,25
+2026,X (Twitter),TREs,28
 2026,X (Twitter),TSE,4
