@@ -286,6 +286,13 @@
   "tentativas": 1,
   "visto": "2026-10-25"
  },
+ "-hAuPdVpFLg": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "status": "agendado",
+  "tentativas": 0,
+  "visto": "2026-11-04"
+ },
  "-ksv9A1eTqc": {
   "canal": "CNN Brasil",
   "data": "2026-10-26",
@@ -508,7 +515,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "0PK6xapSdbM": {
   "canal": "Reinaldo Azevedo",
@@ -634,7 +641,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "0hN6PzqTtd0": {
   "canal": "CNN Brasil",
@@ -1048,6 +1055,13 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-23"
+ },
+ "1hAi32Q0rXw": {
+  "canal": "CNN Brasil",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "1ha6nhkIKNI": {
   "canal": "Reinaldo Azevedo",
@@ -2607,6 +2621,13 @@
   "tentativas": 1,
   "visto": "2026-10-26"
  },
+ "6adpRK8EGb0": {
+  "canal": "Reinaldo Azevedo",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "6f5LB8Vh-ik": {
   "canal": "Jovem Pan News",
   "data": "2026-10-31",
@@ -2620,6 +2641,13 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-27"
+ },
+ "6ittSZE6aS4": {
+  "canal": "CNN Brasil",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "6iue4Vzw1Vo": {
   "canal": "CNN Brasil",
@@ -3002,10 +3030,10 @@
  },
  "83d-7fjHE2g": {
   "canal": "CNN Brasil",
-  "data": "",
-  "status": "agendado",
-  "tentativas": 0,
-  "visto": "2026-11-03"
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "843XPXRszQI": {
   "canal": "Jovem Pan News",
@@ -3272,7 +3300,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "8uUEt1YUW_w": {
   "canal": "Reinaldo Azevedo",
@@ -3455,6 +3483,13 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-27"
+ },
+ "9OoquGO4mcA": {
+  "canal": "Reinaldo Azevedo",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "9OpaPgyBjJE": {
   "canal": "Jovem Pan News",
@@ -3881,7 +3916,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "Ae3yMSpC2lA": {
   "canal": "UOL",
@@ -4112,10 +4147,10 @@
  },
  "B9PDa32qMqM": {
   "canal": "CNN Brasil",
-  "data": "",
-  "status": "agendado",
-  "tentativas": 0,
-  "visto": "2026-11-03"
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "B9w0DMxESJw": {
   "canal": "Jovem Pan News",
@@ -4437,7 +4472,14 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
+ },
+ "Byhey2ukvYU": {
+  "canal": "Reinaldo Azevedo",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "C-ECqgt5r_U": {
   "canal": "Jovem Pan News",
@@ -4557,6 +4599,13 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-01"
+ },
+ "CNuUMQkIsvk": {
+  "canal": "Jovem Pan News",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "COCkktvsV10": {
   "canal": "UOL",
@@ -4850,7 +4899,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "DQ7wLL4mpzg": {
   "canal": "Reinaldo Azevedo",
@@ -5216,6 +5265,13 @@
   "tentativas": 1,
   "visto": "2026-11-02"
  },
+ "EhsbFnZ14hg": {
+  "canal": "Jovem Pan News",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "Ei1GAFXvptM": {
   "canal": "ICL Notícias",
   "data": "2026-10-24",
@@ -5438,7 +5494,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "FNXw8pZb21w": {
   "canal": "Jovem Pan News",
@@ -5547,10 +5603,10 @@
  },
  "F_sAMm-Z5s4": {
   "canal": "CNN Brasil",
-  "data": "2026-11-03",
-  "status": "sem_legenda",
-  "tentativas": 1,
-  "visto": "2026-11-03"
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 2,
+  "visto": "2026-11-04"
  },
  "Fd0eibbJZNI": {
   "canal": "CNN Brasil",
@@ -5692,6 +5748,13 @@
   "tentativas": 1,
   "visto": "2026-10-23"
  },
+ "Fz7APIyDGwQ": {
+  "canal": "CNN Brasil",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "FzFSfOwx5_U": {
   "canal": "Jovem Pan News",
   "data": "2026-10-27",
@@ -5746,7 +5809,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "G7yodoNQjFk": {
   "canal": "Reinaldo Azevedo",
@@ -5936,7 +5999,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "Ga6Yq3AGbfY": {
   "canal": "Reinaldo Azevedo",
@@ -6093,6 +6156,20 @@
   "tentativas": 1,
   "visto": "2026-10-30"
  },
+ "HFgShxgrWeg": {
+  "canal": "Jovem Pan News",
+  "data": "2026-11-03",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
+ "HHWt9mkiI5k": {
+  "canal": "CNN Brasil",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "HOxgi3w-L3Y": {
   "canal": "CNN Brasil",
   "data": "2026-10-30",
@@ -6170,6 +6247,13 @@
   "tentativas": 2,
   "visto": "2026-10-30"
  },
+ "Ha4hmnZ2M0o": {
+  "canal": "CNN Brasil",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "Ha6ETuYaKjg": {
   "canal": "CNN Brasil",
   "data": "2026-10-23",
@@ -6187,9 +6271,9 @@
  "HcJNLn3hnlc": {
   "canal": "CNN Brasil",
   "data": "2026-11-03",
-  "status": "sem_legenda",
-  "tentativas": 1,
-  "visto": "2026-11-03"
+  "status": "ok",
+  "tentativas": 2,
+  "visto": "2026-11-04"
  },
  "HcVIubUzUww": {
   "canal": "Reinaldo Azevedo",
@@ -6716,6 +6800,13 @@
   "tentativas": 1,
   "visto": "2026-10-27"
  },
+ "JAoVAS4iDCI": {
+  "canal": "CNN Brasil",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "JAtquH6_eZE": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-24",
@@ -6835,6 +6926,20 @@
   "tentativas": 1,
   "visto": "2026-10-26"
  },
+ "JQPxk5qwbyA": {
+  "canal": "Reinaldo Azevedo",
+  "data": "2026-11-03",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
+ "JRjVzFghN1w": {
+  "canal": "UOL",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "JTVcgRfRWP4": {
   "canal": "CNN Brasil",
   "data": "2026-10-28",
@@ -6952,7 +7057,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "JnfULDyUXI0": {
   "canal": "Reinaldo Azevedo",
@@ -7002,6 +7107,13 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-29"
+ },
+ "JwwLXNjlTkY": {
+  "canal": "CNN Brasil",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "JxLtd0wb0MM": {
   "canal": "Reinaldo Azevedo",
@@ -7072,6 +7184,13 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-28"
+ },
+ "K44kpl1FELU": {
+  "canal": "Jovem Pan News",
+  "data": "2026-11-03",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "K4bdf98OevA": {
   "canal": "CNN Brasil",
@@ -7626,6 +7745,13 @@
   "tentativas": 1,
   "visto": "2026-10-23"
  },
+ "Lc6RRD24lSc": {
+  "canal": "Jovem Pan News",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "LcogCo2vbFA": {
   "canal": "Jovem Pan News",
   "data": "2026-10-28",
@@ -7877,7 +8003,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "MNgXpCJtg6c": {
   "canal": "Jovem Pan News",
@@ -7994,10 +8120,10 @@
  },
  "MjdZS-wUA6s": {
   "canal": "Jovem Pan News",
-  "data": "2026-11-03",
-  "status": "sem_legenda",
-  "tentativas": 1,
-  "visto": "2026-11-03"
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 2,
+  "visto": "2026-11-04"
  },
  "Ml0gpf1xGB4": {
   "canal": "Reinaldo Azevedo",
@@ -8110,6 +8236,13 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-30"
+ },
+ "N27wz1R6O3w": {
+  "canal": "Jovem Pan News",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "N3a_Iyr3rEk": {
   "canal": "UOL",
@@ -8258,6 +8391,13 @@
   "tentativas": 1,
   "visto": "2026-10-26"
  },
+ "NU1Eoi-30rc": {
+  "canal": "UOL",
+  "data": "2026-11-04",
+  "status": "sem_legenda",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "NU4ChLUTg7A": {
   "canal": "CNN Brasil",
   "data": "2026-10-29",
@@ -8373,9 +8513,9 @@
  "Nma_X3VIDzs": {
   "canal": "UOL",
   "data": "2026-11-03",
-  "status": "sem_legenda",
-  "tentativas": 2,
-  "visto": "2026-11-03"
+  "status": "ok",
+  "tentativas": 3,
+  "visto": "2026-11-04"
  },
  "Nmpn3i_s2UE": {
   "canal": "CNN Brasil",
@@ -8452,7 +8592,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "O1LUufkd3EI": {
   "canal": "Jovem Pan News",
@@ -8665,6 +8805,13 @@
   "tentativas": 1,
   "visto": "2026-11-03"
  },
+ "OY_Zwlc1Kws": {
+  "canal": "Reinaldo Azevedo",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "OZzpd2fQe0Q": {
   "canal": "CNN Brasil",
   "data": "2026-10-31",
@@ -8699,6 +8846,20 @@
   "status": "agendado",
   "tentativas": 0,
   "visto": "2026-10-30"
+ },
+ "OeXu9tZRJls": {
+  "canal": "Jovem Pan News",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
+ "OjIac_ZMFFw": {
+  "canal": "Jovem Pan News",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "OkoN7qe0ypc": {
   "canal": "Reinaldo Azevedo",
@@ -8831,7 +8992,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "P57V5j_sxnY": {
   "canal": "Reinaldo Azevedo",
@@ -9192,6 +9353,13 @@
   "tentativas": 1,
   "visto": "2026-10-27"
  },
+ "QKPQ9AVKk3s": {
+  "canal": "Reinaldo Azevedo",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "QMKnGttMHfU": {
   "canal": "UOL",
   "data": "2026-10-26",
@@ -9297,6 +9465,13 @@
   "tentativas": 1,
   "visto": "2026-10-24"
  },
+ "Qke1q99Do2k": {
+  "canal": "CNN Brasil",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "QlhahaMzJ4E": {
   "canal": "CNN Brasil",
   "data": "2026-10-22",
@@ -9359,6 +9534,13 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-31"
+ },
+ "QwUg44Ipgx0": {
+  "canal": "CNN Brasil",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "R0C9r72dztA": {
   "canal": "Reinaldo Azevedo",
@@ -10166,6 +10348,13 @@
   "tentativas": 1,
   "visto": "2026-11-02"
  },
+ "TCiO9gjMWww": {
+  "canal": "Reinaldo Azevedo",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "TEDWOUmdegM": {
   "canal": "CNN Brasil",
   "data": "2026-10-28",
@@ -10432,7 +10621,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "Tu2569D91OQ": {
   "canal": "Jovem Pan News",
@@ -10523,7 +10712,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "U49P37xtgHI": {
   "canal": "Reinaldo Azevedo",
@@ -10966,6 +11155,13 @@
   "tentativas": 1,
   "visto": "2026-10-26"
  },
+ "VL-w2tEdVZ8": {
+  "canal": "Jovem Pan News",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "VLRvBXMztGc": {
   "canal": "CNN Brasil",
   "data": "2026-10-24",
@@ -10993,6 +11189,13 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-01"
+ },
+ "VNgr6IN02BY": {
+  "canal": "CNN Brasil",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "VOFJcpi3XqY": {
   "canal": "Jovem Pan News",
@@ -11182,6 +11385,13 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-28"
+ },
+ "VuN7ddEQqzA": {
+  "canal": "UOL",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "VuWUJSOzy9U": {
   "canal": "Jovem Pan News",
@@ -11533,6 +11743,13 @@
   "tentativas": 1,
   "visto": "2026-10-23"
  },
+ "WlXCQ_Nlf70": {
+  "canal": "CNN Brasil",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "Wn6mjI4LVXE": {
   "canal": "Jovem Pan News",
   "data": "2026-10-24",
@@ -11666,6 +11883,13 @@
   "tentativas": 1,
   "visto": "2026-10-23"
  },
+ "XDYRmgwcwQY": {
+  "canal": "Jovem Pan News",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "XEHeAdtrSks": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-27",
@@ -11714,6 +11938,13 @@
   "status": "ok",
   "tentativas": 2,
   "visto": "2026-10-24"
+ },
+ "XRojVJqDf0M": {
+  "canal": "CNN Brasil",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "XSRpw0-fHoc": {
   "canal": "CNN Brasil",
@@ -11805,6 +12036,13 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-28"
+ },
+ "XgNk-ZaarQ8": {
+  "canal": "Jovem Pan News",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "Xhf8q8qAvwU": {
   "canal": "Jovem Pan News",
@@ -12689,6 +12927,13 @@
   "tentativas": 1,
   "visto": "2026-10-27"
  },
+ "_QmLT4MprBY": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "status": "agendado",
+  "tentativas": 0,
+  "visto": "2026-11-04"
+ },
  "_V-apyvwpAE": {
   "canal": "CNN Brasil",
   "data": "2026-10-28",
@@ -12709,6 +12954,20 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-03"
+ },
+ "_buPA_jYLmU": {
+  "canal": "CNN Brasil",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
+ "_dVWEIgI3eE": {
+  "canal": "GloboNews",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "_eCTw3URBKM": {
   "canal": "CNN Brasil",
@@ -12779,6 +13038,13 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-03"
+ },
+ "_ov9E6l4ASo": {
+  "canal": "Jovem Pan News",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "_pddjHfiJuI": {
   "canal": "BandNews FM",
@@ -12856,7 +13122,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "a7PAduDUGWc": {
   "canal": "UOL",
@@ -13474,6 +13740,13 @@
   "tentativas": 1,
   "visto": "2026-10-28"
  },
+ "c2fNkCg86Bg": {
+  "canal": "CNN Brasil",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "c4EFg-99-0M": {
   "canal": "Jovem Pan News",
   "data": "2026-10-26",
@@ -13654,7 +13927,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "cby0y4lWF6M": {
   "canal": "Jovem Pan News",
@@ -13888,6 +14161,13 @@
   "tentativas": 0,
   "visto": "2026-10-25"
  },
+ "dVtpQPmPi_I": {
+  "canal": "Jovem Pan News",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "dXGeoHqhfg8": {
   "canal": "Jovem Pan News",
   "data": "2026-10-29",
@@ -14027,6 +14307,13 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-03"
+ },
+ "dvsW5ebcsB0": {
+  "canal": "Jovem Pan News",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "dw8PdCpmTTI": {
   "canal": "CNN Brasil",
@@ -14378,6 +14665,13 @@
   "tentativas": 1,
   "visto": "2026-11-03"
  },
+ "f07zpZ7NYAA": {
+  "canal": "CNN Brasil",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "f5EC6Fli4nM": {
   "canal": "Jovem Pan News",
   "data": "2026-10-21",
@@ -14453,14 +14747,14 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "fKx81h7SkOY": {
   "canal": "CNN Brasil",
   "data": "2026-11-03",
-  "status": "sem_legenda",
-  "tentativas": 1,
-  "visto": "2026-11-03"
+  "status": "ok",
+  "tentativas": 2,
+  "visto": "2026-11-04"
  },
  "fLEdXMPH8Mc": {
   "canal": "CNN Brasil",
@@ -14567,6 +14861,13 @@
   "tentativas": 1,
   "visto": "2026-10-26"
  },
+ "ffPcao6ECds": {
+  "canal": "CNN Brasil",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "fhnUIVyn4Rs": {
   "canal": "UOL",
   "data": "2026-11-03",
@@ -14580,6 +14881,13 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-31"
+ },
+ "flSlh8lC6JY": {
+  "canal": "Reinaldo Azevedo",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "fmE4FN7xNME": {
   "canal": "Jovem Pan News",
@@ -14845,7 +15153,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "ga7WmC-Iz1E": {
   "canal": "UOL",
@@ -15174,14 +15482,14 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "hggTk9_c0pg": {
   "canal": "Reinaldo Azevedo",
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "hj0PZztGYvE": {
   "canal": "Reinaldo Azevedo",
@@ -15370,7 +15678,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "iMUv-bFN8ss": {
   "canal": "GloboNews",
@@ -15388,10 +15696,10 @@
  },
  "iNi0jDCLaow": {
   "canal": "CNN Brasil",
-  "data": "",
-  "status": "agendado",
-  "tentativas": 0,
-  "visto": "2026-11-03"
+  "data": "2026-11-03",
+  "status": "sem_legenda",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "iOifNZ0FrVQ": {
   "canal": "CNN Brasil",
@@ -15635,8 +15943,8 @@
   "canal": "UOL",
   "data": "2026-11-03",
   "status": "sem_legenda",
-  "tentativas": 1,
-  "visto": "2026-11-03"
+  "tentativas": 2,
+  "visto": "2026-11-04"
  },
  "jAmszf8W32U": {
   "canal": "CNN Brasil",
@@ -15827,6 +16135,13 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-02"
+ },
+ "jlwETurGuxs": {
+  "canal": "Reinaldo Azevedo",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "jo9PwzLbBd4": {
   "canal": "Jovem Pan News",
@@ -16065,7 +16380,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "kb6GuJYHR50": {
   "canal": "Reinaldo Azevedo",
@@ -16580,6 +16895,13 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "m3trnDmAuNY": {
+  "canal": "Reinaldo Azevedo",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "m6CglIUnR84": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-22",
@@ -16725,7 +17047,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "mcJd13MULNA": {
   "canal": "UOL",
@@ -16823,7 +17145,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "n1HJxEWGJnY": {
   "canal": "Reinaldo Azevedo",
@@ -16867,6 +17189,13 @@
   "tentativas": 1,
   "visto": "2026-10-23"
  },
+ "n7mm_pNxKQc": {
+  "canal": "Reinaldo Azevedo",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "nAk6q28oasg": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-23",
@@ -16894,6 +17223,13 @@
   "status": "sem_legenda",
   "tentativas": 2,
   "visto": "2026-11-02"
+ },
+ "nBCHBaM8Mh0": {
+  "canal": "CNN Brasil",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "nJ8lSujhrms": {
   "canal": "CNN Brasil",
@@ -17069,7 +17405,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "ndeOlVyDnOg": {
   "canal": "CNN Brasil",
@@ -17116,9 +17452,9 @@
  "nhvJ0LlpqLo": {
   "canal": "ICL Notícias",
   "data": "2026-11-03",
-  "status": "sem_legenda",
-  "tentativas": 2,
-  "visto": "2026-11-03"
+  "status": "ok",
+  "tentativas": 3,
+  "visto": "2026-11-04"
  },
  "nkq1Vxb_SmI": {
   "canal": "CNN Brasil",
@@ -17400,6 +17736,13 @@
   "tentativas": 1,
   "visto": "2026-10-29"
  },
+ "oSPA_AmhhoQ": {
+  "canal": "Jovem Pan News",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "oVdVuMA3VWo": {
   "canal": "CNN Brasil",
   "data": "2026-11-02",
@@ -17552,9 +17895,9 @@
  "olLn7Sv5xdc": {
   "canal": "Jovem Pan News",
   "data": "2026-11-03",
-  "status": "sem_legenda",
-  "tentativas": 1,
-  "visto": "2026-11-03"
+  "status": "ok",
+  "tentativas": 2,
+  "visto": "2026-11-04"
  },
  "olNsB4PrB94": {
   "canal": "Reinaldo Azevedo",
@@ -17573,9 +17916,9 @@
  "on0ByWLvGPc": {
   "canal": "ICL Notícias",
   "data": "2026-11-03",
-  "status": "sem_legenda",
-  "tentativas": 1,
-  "visto": "2026-11-03"
+  "status": "ok",
+  "tentativas": 2,
+  "visto": "2026-11-04"
  },
  "on0kf-4I_6M": {
   "canal": "Jovem Pan News",
@@ -17877,7 +18220,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "pcazSzzaM54": {
   "canal": "Reinaldo Azevedo",
@@ -18060,6 +18403,13 @@
   "status": "sem_legenda",
   "tentativas": 1,
   "visto": "2026-10-25"
+ },
+ "q98j66qF_p8": {
+  "canal": "Reinaldo Azevedo",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "qAkwSBiRkBU": {
   "canal": "CNN Brasil",
@@ -18355,6 +18705,13 @@
   "tentativas": 2,
   "visto": "2026-10-28"
  },
+ "r-c1fHZIiB4": {
+  "canal": "UOL",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "r-cY6d2FPUU": {
   "canal": "Jovem Pan News",
   "data": "2026-10-31",
@@ -18584,7 +18941,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "rfin8bvJaFQ": {
   "canal": "Jovem Pan News",
@@ -18619,7 +18976,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "rnXi27xB3Vk": {
   "canal": "Jovem Pan News",
@@ -18649,6 +19006,13 @@
   "tentativas": 1,
   "visto": "2026-10-31"
  },
+ "rq8pWP8B2Qk": {
+  "canal": "Jovem Pan News",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "rqEgW50myz4": {
   "canal": "CNN Brasil",
   "data": "2026-10-23",
@@ -18660,8 +19024,8 @@
   "canal": "Jovem Pan News",
   "data": "2026-11-03",
   "status": "sem_legenda",
-  "tentativas": 1,
-  "visto": "2026-11-03"
+  "tentativas": 2,
+  "visto": "2026-11-04"
  },
  "rsbYb0J6q3U": {
   "canal": "Reinaldo Azevedo",
@@ -19034,7 +19398,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-03"
+  "visto": "2026-11-04"
  },
  "sn3RpyM3uWs": {
   "canal": "Jovem Pan News",
@@ -19337,6 +19701,13 @@
   "tentativas": 1,
   "visto": "2026-10-30"
  },
+ "tWeYv2xlUUY": {
+  "canal": "CNN Brasil",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "tXyxEpfZx2U": {
   "canal": "UOL",
   "data": "2026-10-27",
@@ -19498,6 +19869,13 @@
   "tentativas": 1,
   "visto": "2026-10-29"
  },
+ "u1RUZFur6FY": {
+  "canal": "UOL",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "u1U3M9gswfs": {
   "canal": "UOL",
   "data": "2026-10-27",
@@ -19539,6 +19917,13 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-26"
+ },
+ "uBV7g5Xf0q8": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "status": "agendado",
+  "tentativas": 0,
+  "visto": "2026-11-04"
  },
  "uDesFkMu2zw": {
   "canal": "Jovem Pan News",
@@ -19766,10 +20151,10 @@
  },
  "uuPo8aIsW2c": {
   "canal": "Reinaldo Azevedo",
-  "data": "",
-  "status": "agendado",
-  "tentativas": 0,
-  "visto": "2026-11-03"
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "uvvvgqPHa6I": {
   "canal": "Reinaldo Azevedo",
@@ -20458,6 +20843,13 @@
   "tentativas": 1,
   "visto": "2026-10-29"
  },
+ "wyEa1zqAqb0": {
+  "canal": "CNN Brasil",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "x-BDGZUFRZU": {
   "canal": "CNN Brasil",
   "data": "2026-10-28",
@@ -20728,9 +21120,9 @@
  "xlq2NvtFm80": {
   "canal": "Jovem Pan News",
   "data": "2026-11-03",
-  "status": "sem_legenda",
-  "tentativas": 1,
-  "visto": "2026-11-03"
+  "status": "ok",
+  "tentativas": 2,
+  "visto": "2026-11-04"
  },
  "xon30M0fnT0": {
   "canal": "UOL",
@@ -20780,6 +21172,13 @@
   "status": "sem_legenda",
   "tentativas": 2,
   "visto": "2026-10-24"
+ },
+ "xtp8Geun8sE": {
+  "canal": "Reinaldo Azevedo",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "xvNoGOwdjrU": {
   "canal": "Reinaldo Azevedo",
@@ -21090,6 +21489,13 @@
   "tentativas": 1,
   "visto": "2026-10-25"
  },
+ "ym464L1y014": {
+  "canal": "CNN Brasil",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
+ },
  "ymnPk7d6GT8": {
   "canal": "UOL",
   "data": "2026-10-22",
@@ -21180,6 +21586,13 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-03"
+ },
+ "z3qYJJW206w": {
+  "canal": "Reinaldo Azevedo",
+  "data": "2026-11-04",
+  "status": "ok",
+  "tentativas": 1,
+  "visto": "2026-11-04"
  },
  "z7AFi2hWhcQ": {
   "canal": "UOL",
