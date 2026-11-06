@@ -1945,6 +1945,13 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "46GbkBhWMbA": {
+  "canal": "ICL Notícias",
+  "data": "",
+  "status": "agendado",
+  "tentativas": 0,
+  "visto": "2026-11-06"
+ },
  "4A9fX4UCWP4": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-26",
@@ -11512,7 +11519,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] Td5xUrNDtb0: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 2,
+  "tentativas": 3,
   "visto": "2026-11-06"
  },
  "TibGRjJ-tI8": {
@@ -17845,6 +17852,14 @@
   "tentativas": 1,
   "visto": "2026-10-26"
  },
+ "k54NA35Vjmg": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] k54NA35Vjmg: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-06"
+ },
  "k5S5CT7ZiMg": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-24",
@@ -20232,6 +20247,14 @@
   "tentativas": 1,
   "visto": "2026-10-25"
  },
+ "q3cV0Kz7PyE": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] q3cV0Kz7PyE: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-06"
+ },
  "q40mlh_vVaI": {
   "canal": "CNN Brasil",
   "data": "2026-11-05",
@@ -21227,6 +21250,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-03"
+ },
+ "sa4Rfw_SoyA": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] sa4Rfw_SoyA: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-06"
  },
  "saf2wentqzA": {
   "canal": "Reinaldo Azevedo",
@@ -22906,8 +22937,9 @@
  "x2Xnj-iOEdM": {
   "canal": "ICL Notícias",
   "data": "",
-  "status": "agendado",
-  "tentativas": 0,
+  "erro": "DownloadError: ERROR: [youtube] x2Xnj-iOEdM: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
   "visto": "2026-11-06"
  },
  "x3CU84aEFG0": {
