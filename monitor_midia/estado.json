@@ -9855,6 +9855,14 @@
   "tentativas": 1,
   "visto": "2026-10-31"
  },
+ "P8rYxEWjhhk": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] P8rYxEWjhhk: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-06"
+ },
  "PD_yK6QTdcY": {
   "canal": "UOL",
   "data": "2026-10-27",
@@ -11501,10 +11509,11 @@
  },
  "Td5xUrNDtb0": {
   "canal": "ICL Notícias",
-  "data": "2026-11-04",
-  "status": "sem_legenda",
-  "tentativas": 1,
-  "visto": "2026-11-05"
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] Td5xUrNDtb0: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 2,
+  "visto": "2026-11-06"
  },
  "TibGRjJ-tI8": {
   "canal": "CNN Brasil",
@@ -17468,6 +17477,14 @@
   "tentativas": 1,
   "visto": "2026-11-04"
  },
+ "j7qlKWa0IDA": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] j7qlKWa0IDA: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-06"
+ },
  "j7wHkV5gM6Y": {
   "canal": "Jovem Pan News",
   "data": "2026-10-21",
@@ -17643,6 +17660,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-23"
+ },
+ "jSUJOSvuANk": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] jSUJOSvuANk: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-06"
  },
  "jVrRnGDOZig": {
   "canal": "Reinaldo Azevedo",
@@ -21602,6 +21627,14 @@
   "tentativas": 1,
   "visto": "2026-10-30"
  },
+ "tWLTidLI-HA": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] tWLTidLI-HA: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-06"
+ },
  "tWeYv2xlUUY": {
   "canal": "CNN Brasil",
   "data": "2026-11-04",
@@ -22869,6 +22902,13 @@
   "status": "ok",
   "tentativas": 2,
   "visto": "2026-11-01"
+ },
+ "x2Xnj-iOEdM": {
+  "canal": "ICL Notícias",
+  "data": "",
+  "status": "agendado",
+  "tentativas": 0,
+  "visto": "2026-11-06"
  },
  "x3CU84aEFG0": {
   "canal": "Reinaldo Azevedo",
