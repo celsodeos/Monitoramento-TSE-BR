@@ -1948,9 +1948,10 @@
  "46GbkBhWMbA": {
   "canal": "ICL Notícias",
   "data": "",
-  "status": "agendado",
-  "tentativas": 0,
-  "visto": "2026-11-06"
+  "erro": "DownloadError: ERROR: [youtube] 46GbkBhWMbA: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-07"
  },
  "4A9fX4UCWP4": {
   "canal": "Reinaldo Azevedo",
@@ -3631,6 +3632,14 @@
   "tentativas": 1,
   "visto": "2026-10-25"
  },
+ "8rY6CD1F2zk": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 8rY6CD1F2zk: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-07"
+ },
  "8sdnEpB9phs": {
   "canal": "Jovem Pan News",
   "data": "2026-10-25",
@@ -4408,6 +4417,13 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-28"
+ },
+ "AmrH9L7OW0s": {
+  "canal": "ICL Notícias",
+  "data": "",
+  "status": "agendado",
+  "tentativas": 0,
+  "visto": "2026-11-07"
  },
  "An3V0UpIKWk": {
   "canal": "Jovem Pan News",
@@ -11519,8 +11535,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] Td5xUrNDtb0: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 3,
-  "visto": "2026-11-06"
+  "tentativas": 4,
+  "visto": "2026-11-07"
  },
  "TibGRjJ-tI8": {
   "canal": "CNN Brasil",
@@ -18092,6 +18108,14 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "kgorzJpHZaU": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] kgorzJpHZaU: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-07"
+ },
  "kjM102thDis": {
   "canal": "GloboNews",
   "data": "2026-11-05",
@@ -22939,8 +22963,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] x2Xnj-iOEdM: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
-  "visto": "2026-11-06"
+  "tentativas": 2,
+  "visto": "2026-11-07"
  },
  "x3CU84aEFG0": {
   "canal": "Reinaldo Azevedo",
