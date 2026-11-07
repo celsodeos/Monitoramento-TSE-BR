@@ -1063,6 +1063,14 @@
   "tentativas": 1,
   "visto": "2026-10-25"
  },
+ "1SuxNAEodcc": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 1SuxNAEodcc: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-07"
+ },
  "1TAJW9DbCWo": {
   "canal": "CNN Brasil",
   "data": "2026-11-05",
@@ -1950,7 +1958,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] 46GbkBhWMbA: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 2,
+  "tentativas": 3,
   "visto": "2026-11-07"
  },
  "4A9fX4UCWP4": {
@@ -6639,6 +6647,14 @@
   "status": "antigo",
   "tentativas": 1,
   "visto": "2026-10-22"
+ },
+ "Gju7dxRqKgg": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] Gju7dxRqKgg: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-07"
  },
  "GkHi_lq7g4w": {
   "canal": "GloboNews",
@@ -11543,7 +11559,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] Td5xUrNDtb0: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 5,
+  "tentativas": 6,
   "visto": "2026-11-07"
  },
  "TibGRjJ-tI8": {
@@ -22979,7 +22995,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] x2Xnj-iOEdM: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 3,
+  "tentativas": 4,
   "visto": "2026-11-07"
  },
  "x3CU84aEFG0": {
