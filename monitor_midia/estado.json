@@ -1950,7 +1950,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] 46GbkBhWMbA: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
+  "tentativas": 2,
   "visto": "2026-11-07"
  },
  "4A9fX4UCWP4": {
@@ -10337,6 +10337,14 @@
   "tentativas": 1,
   "visto": "2026-10-29"
  },
+ "QaFKNUcER_o": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] QaFKNUcER_o: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-07"
+ },
  "Qai8LxY20WI": {
   "canal": "Jovem Pan News",
   "data": "2026-10-31",
@@ -11535,7 +11543,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] Td5xUrNDtb0: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 4,
+  "tentativas": 5,
   "visto": "2026-11-07"
  },
  "TibGRjJ-tI8": {
@@ -18446,6 +18454,14 @@
   "tentativas": 1,
   "visto": "2026-10-25"
  },
+ "leAp0RcdPWY": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] leAp0RcdPWY: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-07"
+ },
  "lgKS8CATgIc": {
   "canal": "UOL",
   "data": "2026-10-29",
@@ -22963,7 +22979,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] x2Xnj-iOEdM: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 2,
+  "tentativas": 3,
   "visto": "2026-11-07"
  },
  "x3CU84aEFG0": {
