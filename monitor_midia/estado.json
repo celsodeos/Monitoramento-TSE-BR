@@ -1958,8 +1958,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] 46GbkBhWMbA: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 3,
-  "visto": "2026-11-07"
+  "tentativas": 4,
+  "visto": "2026-11-08"
  },
  "4A9fX4UCWP4": {
   "canal": "Reinaldo Azevedo",
@@ -2641,6 +2641,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-30"
+ },
+ "5sFHU8TzQBo": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 5sFHU8TzQBo: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-08"
  },
  "5sGL9gzBYlk": {
   "canal": "Reinaldo Azevedo",
@@ -4431,7 +4439,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-07"
+  "visto": "2026-11-08"
  },
  "An3V0UpIKWk": {
   "canal": "Jovem Pan News",
@@ -11559,8 +11567,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] Td5xUrNDtb0: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 6,
-  "visto": "2026-11-07"
+  "tentativas": 7,
+  "visto": "2026-11-08"
  },
  "TibGRjJ-tI8": {
   "canal": "CNN Brasil",
@@ -17800,6 +17808,14 @@
   "tentativas": 1,
   "visto": "2026-11-02"
  },
+ "jkzohF-RNR0": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] jkzohF-RNR0: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-08"
+ },
  "jlwETurGuxs": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-11-04",
@@ -22995,8 +23011,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] x2Xnj-iOEdM: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 4,
-  "visto": "2026-11-07"
+  "tentativas": 5,
+  "visto": "2026-11-08"
  },
  "x3CU84aEFG0": {
   "canal": "Reinaldo Azevedo",
