@@ -150,9 +150,20 @@ html, body { margin: 0; background: var(--color-bg); color: var(--color-fg); fon
 .lt tr.gg-pres td { background: var(--gg-hl); font-weight: 600; }
 :root { --gg-hl: #fff4e8; }
 @media (prefers-color-scheme: dark) { :root { --gg-hl: #2a2219; } }
+/* idiomas */
+.idiomas { position: absolute; top: max(12px, env(safe-area-inset-top, 0px)); right: max(16px, env(safe-area-inset-right, 0px)); display: flex; gap: 2px; font-size: var(--cds-font-size-caption, 12px); letter-spacing: .06em; z-index: 5; }
+.idiomas a, .idiomas span { padding: 3px 7px; border-radius: 4px; text-decoration: none; color: var(--color-fg-muted); border: 1px solid transparent; }
+.idiomas a:hover, .idiomas a:focus-visible { color: var(--color-fg); border-color: var(--color-border-line); outline: none; }
+.idiomas span { color: var(--color-fg); font-weight: 600; border-color: var(--color-border-line); }
+body { position: relative; }
+/* fim idiomas */
 </style>
+<link rel="alternate" hreflang="pt-BR" href="https://celsodeos.github.io/Monitoramento-TSE-BR/">
+<link rel="alternate" hreflang="en" href="https://celsodeos.github.io/Monitoramento-TSE-BR/en/">
+<link rel="alternate" hreflang="es" href="https://celsodeos.github.io/Monitoramento-TSE-BR/es/">
 </head>
 <body>
+<nav class="idiomas" aria-label="Idioma / Language / Idioma"><span aria-current="page">PT</span><a href="en/" hreflang="en" lang="en" title="English">EN</a><a href="es/" hreflang="es" lang="es" title="Español">ES</a></nav>
 <main class="page">
 <script>
 window.dash = (function () {

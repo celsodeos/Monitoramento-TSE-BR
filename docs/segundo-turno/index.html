@@ -147,9 +147,20 @@ html, body { margin: 0; background: var(--color-bg); color: var(--color-fg); fon
 .lt .press-txt { display: grid; gap: var(--cds-gap-xs); padding: var(--cds-pad-lg); align-content: start; }
 .lt .press-meta { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); text-transform: uppercase; letter-spacing: .04em; }
 .lt .press-tit { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-heading); line-height: 1.3; text-wrap: balance; }
+/* idiomas */
+.idiomas { position: absolute; top: max(12px, env(safe-area-inset-top, 0px)); right: max(16px, env(safe-area-inset-right, 0px)); display: flex; gap: 2px; font-size: var(--cds-font-size-caption, 12px); letter-spacing: .06em; z-index: 5; }
+.idiomas a, .idiomas span { padding: 3px 7px; border-radius: 4px; text-decoration: none; color: var(--color-fg-muted); border: 1px solid transparent; }
+.idiomas a:hover, .idiomas a:focus-visible { color: var(--color-fg); border-color: var(--color-border-line); outline: none; }
+.idiomas span { color: var(--color-fg); font-weight: 600; border-color: var(--color-border-line); }
+body { position: relative; }
+/* fim idiomas */
 </style>
+<link rel="alternate" hreflang="pt-BR" href="https://celsodeos.github.io/Monitoramento-TSE-BR/segundo-turno/">
+<link rel="alternate" hreflang="en" href="https://celsodeos.github.io/Monitoramento-TSE-BR/segundo-turno/en/">
+<link rel="alternate" hreflang="es" href="https://celsodeos.github.io/Monitoramento-TSE-BR/segundo-turno/es/">
 </head>
 <body>
+<nav class="idiomas" aria-label="Idioma / Language / Idioma"><span aria-current="page">PT</span><a href="en/" hreflang="en" lang="en" title="English">EN</a><a href="es/" hreflang="es" lang="es" title="Español">ES</a></nav>
 <main class="page">
 <div class="lt">
   <header class="head">
