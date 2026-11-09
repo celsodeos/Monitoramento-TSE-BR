@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Estadísticas Públicas – Contencioso de propaganda y campaña en la 2.ª vuelta de las elecciones brasileñas (2018, 2022 y 2026)</title>
-<meta name="description" content="Acciones entre las campañas presidenciales en el Tribunal Superior Electoral (TSE) en la 2.ª vuelta de 2018, 2022 y 2026: volumen, velocidad y reparto entre gabinetes. Autor: Celso de Oliveira Santos.">
+<meta name="description" content="Acciones entre las campañas presidenciales en el Tribunal Superior Electoral (TSE) en la 2.ª vuelta de 2018, 2022 y 2026: volumen, velocidad y reparto entre oficinas. Autor: Celso de Oliveira Santos.">
 <meta name="author" content="Celso de Oliveira Santos">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -201,7 +201,7 @@ body { position: relative; }
   </section>
 
   <section id="distribuicao">
-    <h2>3. A qué gabinetes fueron las acciones en 2026</h2>
+    <h2>3. A qué oficinas fueron las acciones en 2026</h2>
     <p class="muted">Acciones por relator, según la campaña demandada. Relator efectivo: autor de la primera decisión en el SIG; sin decisión, el relator actual. Prueba de independencia entre relator y campaña (chi cuadrado): <b class="dyn" id="pdist">—</b>.</p>
     <div class="card">
       <div class="legend" id="lg-dist"></div>
@@ -210,8 +210,8 @@ body { position: relative; }
   </section>
 
   <section id="gabinetes">
-    <h2>4. Velocidad en cada gabinete en 2026</h2>
-    <p class="muted">Acciones resueltas en hasta 3 días, entre las que ya tenían 3 días de tramitación, por relator y campaña demandada. El gráfico solo compara gabinetes con al menos 5 acciones observables de cada lado; la tabla los incluye todos.</p>
+    <h2>4. Velocidad en cada oficina en 2026</h2>
+    <p class="muted">Acciones resueltas en hasta 3 días, entre las que ya tenían 3 días de tramitación, por relator y campaña demandada. El gráfico solo compara oficinas con al menos 5 acciones observables de cada lado; la tabla las incluye todas.</p>
     <div class="card">
       <div class="legend" id="lg-gab"></div>
       <div class="chart dash-skeleton" id="c-gab"></div>
@@ -223,8 +223,8 @@ body { position: relative; }
   </section>
 
   <section id="todos-gabinetes">
-    <h2>5. Todos los gabinetes, por gestión</h2>
-    <p class="muted">Proporción de las acciones de cada campaña recibida por cada gabinete en la 2.ª vuelta, en las gestiones de Rosa Weber (2018), Alexandre de Moraes (2022) y Nunes Marques (2026). La fila destacada es el gabinete del presidente del TSE. Los gabinetes con menos de 3 acciones se suman en “Otros gabinetes”. Gabinete: autor de la primera decisión registrada en el SIG; sin decisión, el relator actual. Datos de la versión congelada v.1.0-2T (carga del TSE del 18/10/2026).</p>
+    <h2>5. Todas las oficinas, por gestión</h2>
+    <p class="muted">Proporción de las acciones de cada campaña recibida por cada oficina en la 2.ª vuelta, en las gestiones de Rosa Weber (2018), Alexandre de Moraes (2022) y Nunes Marques (2026). La fila destacada es la oficina del presidente del TSE. Las oficinas con menos de 3 acciones se suman en “Otras oficinas”. Oficina: autor de la primera decisión registrada en el SIG; sin decisión, el relator actual. Datos de la versión congelada v.1.0-2T (carga del TSE del 18/10/2026).</p>
     <div class="legend" id="lg-gg"></div>
     <div class="gg-trio" id="gg-trio"></div>
     <div class="tbl"><table id="t-gg"></table></div>
@@ -239,13 +239,13 @@ body { position: relative; }
         <span class="vs">en toda la 2.ª vuelta de 2022: <b id="k1b">—</b> · de 2018: <b id="k1c">—</b></span>
       </div>
       <div class="tile">
-        <span class="lbl">Gabinete del presidente: acciones de Lula resueltas en hasta 3 días</span>
+        <span class="lbl">Oficina del presidente: acciones de Lula resueltas en hasta 3 días</span>
         <span class="big dash-skeleton" id="k2">—</span>
-        <span class="vs">acciones de Flávio en el mismo gabinete: <b id="k2b">—</b></span>
+        <span class="vs">acciones de Flávio en la misma oficina: <b id="k2b">—</b></span>
       </div>
     </div>
     <div class="hero">
-      <span class="lbl">Proporción de las acciones de cada campaña asignada al gabinete del presidente del TSE, 2.ª vuelta de 2026</span>
+      <span class="lbl">Proporción de las acciones de cada campaña asignada a la oficina del presidente del TSE, 2.ª vuelta de 2026</span>
       <div class="duo">
         <div class="side a">
           <span class="huge dash-skeleton" id="h1">—</span>
@@ -583,7 +583,7 @@ let __rt; window.addEventListener('resize', () => { clearTimeout(__rt); __rt = s
     const ok = (g) => g.pres || g.bol + g.pt >= 3;
     const r = d.gabinetes.filter(ok), s = d.gabinetes.filter((g) => !ok(g));
     r.sort((p, q) => (q.pres - p.pres) || (q.bol + q.pt - p.bol - p.pt));
-    if (s.length) r.push({ relator: 'Otros gabinetes', pres: false, bol: d3.sum(s, (g) => g.bol), pt: d3.sum(s, (g) => g.pt) });
+    if (s.length) r.push({ relator: 'Otras oficinas', pres: false, bol: d3.sum(s, (g) => g.bol), pt: d3.sum(s, (g) => g.pt) });
     if (!d.gabinetes.some((g) => g.pres)) r.unshift({ relator: d.presidente, pres: true, bol: 0, pt: 0 });
     return r;
   }
@@ -622,7 +622,7 @@ let __rt; window.addEventListener('resize', () => { clearTimeout(__rt); __rt = s
     });
     const t = document.getElementById('t-gg'); t.replaceChildren();
     const hr = t.createTHead().insertRow();
-    ['Elección', 'Presidente del TSE', 'Gabinete', 'Acciones de Bolsonaro / Flávio', '%', 'Acciones del PT / Lula', '%'].forEach((s, i) => { const c = document.createElement('th'); c.textContent = s; if (i < 3) c.className = 'l'; hr.appendChild(c); });
+    ['Elección', 'Presidente del TSE', 'Oficina', 'Acciones de Bolsonaro / Flávio', '%', 'Acciones del PT / Lula', '%'].forEach((s, i) => { const c = document.createElement('th'); c.textContent = s; if (i < 3) c.className = 'l'; hr.appendChild(c); });
     const tb = t.createTBody();
     D.forEach((d) => linhas(d).forEach((g) => {
       const r = tb.insertRow(); if (g.pres) r.className = 'gg-pres';

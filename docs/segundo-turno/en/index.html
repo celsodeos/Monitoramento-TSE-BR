@@ -194,7 +194,7 @@ body { position: relative; }
       <div class="legend" id="lg-vel"></div>
       <div class="chart dash-skeleton" id="c-vel"></div>
       <div class="tbl"><table id="t-vel">
-        <thead><tr><th>Election</th><th class="l">TSE President</th><th class="l">Filed by</th><th>Cases</th><th>Pending for at least 3 days</th><th>Within 3 days</th><th>%</th><th>Pending for at least 10 days</th><th>Within 10 days</th><th>%</th><th>p 3 days (raw)</th><th>p 3 days (by rapporteur and case type)</th></tr></thead>
+        <thead><tr><th>Election</th><th class="l">TSE President</th><th class="l">Filed by</th><th>Cases</th><th>Pending for at least 3 days</th><th>Within 3 days</th><th>%</th><th>Pending for at least 10 days</th><th>Within 10 days</th><th>%</th><th>p 3 days (raw)</th><th>p 3 days (by reporting justice and case type)</th></tr></thead>
         <tbody></tbody>
       </table></div>
     </div>
@@ -202,7 +202,7 @@ body { position: relative; }
 
   <section id="distribuicao">
     <h2>3. Which chambers received the cases in 2026</h2>
-    <p class="muted">Cases by rapporteur, according to the respondent campaign. Effective rapporteur: author of the first decision in SIG; if no decision, the current rapporteur. Test of independence between rapporteur and campaign (chi-square): <b class="dyn" id="pdist">—</b>.</p>
+    <p class="muted">Cases by reporting justice, according to the respondent campaign. Effective reporting justice: author of the first decision in SIG; if no decision, the current reporting justice. Test of independence between reporting justice and campaign (chi-square): <b class="dyn" id="pdist">—</b>.</p>
     <div class="card">
       <div class="legend" id="lg-dist"></div>
       <div class="chart dash-skeleton" id="c-dist"></div>
@@ -211,12 +211,12 @@ body { position: relative; }
 
   <section id="gabinetes">
     <h2>4. Speed in each Justice’s chambers in 2026</h2>
-    <p class="muted">Cases decided within 3 days, among those already pending for 3 days, by rapporteur and respondent campaign. The chart compares only chambers with at least 5 observable cases on each side; the table lists them all.</p>
+    <p class="muted">Cases decided within 3 days, among those already pending for 3 days, by reporting justice and respondent campaign. The chart compares only chambers with at least 5 observable cases on each side; the table lists them all.</p>
     <div class="card">
       <div class="legend" id="lg-gab"></div>
       <div class="chart dash-skeleton" id="c-gab"></div>
       <div class="tbl"><table id="t-gab">
-        <thead><tr><th class="l">Rapporteur</th><th class="l">Respondent campaign</th><th>Cases</th><th>Pending for at least 3 days</th><th>Within 3 days</th><th>%</th><th>No decision</th></tr></thead>
+        <thead><tr><th class="l">Reporting justice</th><th class="l">Respondent campaign</th><th>Cases</th><th>Pending for at least 3 days</th><th>Within 3 days</th><th>%</th><th>No decision</th></tr></thead>
         <tbody></tbody>
       </table></div>
     </div>
@@ -224,7 +224,7 @@ body { position: relative; }
 
   <section id="todos-gabinetes">
     <h2>5. All chambers, by TSE presidency</h2>
-    <p class="muted">Share of each campaign’s cases received by each Justice’s chambers in the 2nd round, under the presidencies of Rosa Weber (2018), Alexandre de Moraes (2022) and Nunes Marques (2026). The highlighted row is the TSE President’s chambers. Chambers with fewer than 3 cases are grouped as “Other chambers”. Chambers: author of the first decision recorded in SIG; if no decision, the current rapporteur. Data from frozen version v.1.0-2T (TSE data load of 18/10/2026).</p>
+    <p class="muted">Share of each campaign’s cases received by each Justice’s chambers in the 2nd round, under the presidencies of Rosa Weber (2018), Alexandre de Moraes (2022) and Nunes Marques (2026). The highlighted row is the TSE President’s chambers. Chambers with fewer than 3 cases are grouped as “Other chambers”. Chambers: author of the first decision recorded in SIG; if no decision, the current reporting justice. Data from frozen version v.1.0-2T (TSE data load of 18/10/2026).</p>
     <div class="legend" id="lg-gg"></div>
     <div class="gg-trio" id="gg-trio"></div>
     <div class="tbl"><table id="t-gg"></table></div>
@@ -259,7 +259,7 @@ body { position: relative; }
           <div class="meter"><i id="m2"></i></div>
         </div>
       </div>
-      <span class="foot">The concentration may have a legitimate cause, such as prevention (<i>prevenção</i>) due to a connection with earlier cases; this can only be verified in the case files (PJe). Relationship between rapporteur and campaign: <span id="pdist2">—</span>.</span>
+      <span class="foot">The concentration may have a legitimate cause, such as prevention (<i>prevenção</i>) due to a connection with earlier cases; this can only be verified in the case files (PJe). Relationship between reporting justice and campaign: <span id="pdist2">—</span>.</span>
     </div>
   </section>
 
@@ -269,7 +269,7 @@ body { position: relative; }
       <li>Main source: TSE Open Data Portal, “Processual” group (cases, decisions and parties), updated daily by an automated routine.</li>
       <li>Period: from the day after the 1st round to the 2nd-round election day (Federal Constitution, Art. 77; Law 9.504/1997, Art. 2, § 1): 08–28/10/2018, 03–30/10/2022 and 05–25/10/2026.</li>
       <li>Time frame: from filing to the first decision-making act, excluding procedural orders. For 2026, the calculation considers only cases already pending for the required number of days on the data-load date, so that a newly filed case is not counted as “undecided”.</li>
-      <li>Tests: Fisher’s exact test (raw comparison), Mantel-Haenszel stratified by effective rapporteur and case type, and chi-square test of independence between rapporteur and campaign. With few cases per stratum, as in 2018, Mantel-Haenszel is unreliable.</li>
+      <li>Tests: Fisher’s exact test (raw comparison), Mantel-Haenszel stratified by effective reporting justice and case type, and chi-square test of independence between reporting justice and campaign. With few cases per stratum, as in 2018, Mantel-Haenszel is unreliable.</li>
       <li>Data and code: <a href="https://github.com/celsodeos/Monitoramento-TSE-BR">github.com/celsodeos/Monitoramento-TSE-BR</a>. Frozen version: <code>versoes/v2.0-2T/</code>, DOI <a href="https://doi.org/10.5281/zenodo.23455041">10.5281/zenodo.23455041</a>. 1st-round version: DOI <a href="https://doi.org/10.5281/zenodo.23441914">10.5281/zenodo.23441914</a>.</li>
     </ul>
   </section>
