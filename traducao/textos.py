@@ -1,0 +1,429 @@
+# Traduções das páginas públicas (PT -> EN, ES).
+# Chave: o trecho exato da página em português (conteúdo de elemento, atributo ou literal de texto do script).
+# Títulos de matérias jornalísticas ficam no original. Nomes de normas mantêm a numeração oficial brasileira.
+
+T = {}
+
+def t(pt, en, es):
+    T[pt] = {"en": en, "es": es}
+
+t('Logotipo do projeto',
+  'Project logo',
+  'Logotipo del proyecto')
+t('Eleição',
+  'Election',
+  'Elección')
+t('Presidente do TSE',
+  'TSE President',
+  'Presidente del TSE')
+t('Vice-presidente',
+  'Vice-President',
+  'Vicepresidente')
+t('Ações',
+  'Cases',
+  'Acciones')
+t('Relator',
+  'Reporting justice',
+  'Relator')
+t('Gabinete',
+  'Chambers',
+  'Oficina')
+t('Tribunal',
+  'Court',
+  'Tribunal')
+t('Processos',
+  'Cases',
+  'Procesos')
+t('Prazo',
+  'Time frame',
+  'Plazo')
+t('Até 3 dias',
+  'Within 3 days',
+  'Hasta 3 días')
+t('Até 10 dias',
+  'Within 10 days',
+  'Hasta 10 días')
+t('Autora da ação',
+  'Filed by',
+  'Parte demandante')
+t('Campanha ré',
+  'Respondent campaign',
+  'Campaña demandada')
+t('Sem decisão',
+  'No decision',
+  'Sin decisión')
+t('Síntese',
+  'Summary',
+  'Síntesis')
+t('Método e fontes',
+  'Method and sources',
+  'Método y fuentes')
+t('Repercussão',
+  'Media coverage',
+  'Repercusión')
+t('Números absolutos',
+  'Absolute numbers',
+  'Números absolutos')
+t('Concedida',
+  'Granted',
+  'Concedida')
+t('p (Fisher)',
+  'p (Fisher)',
+  'p (Fisher)')
+t('No DataJud',
+  'In DataJud',
+  'En DataJud')
+t('Liminar apreciada',
+  'Injunction request ruled on',
+  'Medida cautelar resuelta')
+t('Liminar concedida',
+  'Injunction granted',
+  'Medida cautelar concedida')
+t('Decididos em até 3 dias',
+  'Decided within 3 days',
+  'Resueltos en hasta 3 días')
+t('Decididos em até 10 dias',
+  'Decided within 10 days',
+  'Resueltos en hasta 10 días')
+t('Com 3 dias de tramitação',
+  'Pending for at least 3 days',
+  'Con 3 días de tramitación')
+t('Com 10 dias de tramitação',
+  'Pending for at least 10 days',
+  'Con 10 días de tramitación')
+t('Ações de Bolsonaro / Flávio contra o PT',
+  'Cases filed by Bolsonaro / Flávio against the PT',
+  'Acciones de Bolsonaro / Flávio contra el PT')
+t('Ações do PT / Lula contra Bolsonaro / Flávio',
+  'Cases filed by the PT / Lula against Bolsonaro / Flávio',
+  'Acciones del PT / Lula contra Bolsonaro / Flávio')
+t('Ações de Bolsonaro / Flávio',
+  'Cases by Bolsonaro / Flávio',
+  'Acciones de Bolsonaro / Flávio')
+t('Ações do PT / Lula',
+  'Cases by the PT / Lula',
+  'Acciones del PT / Lula')
+t('Ações contra Lula (de Flávio)',
+  'Cases against Lula (by Flávio)',
+  'Acciones contra Lula (de Flávio)')
+t('Ações contra Flávio (de Lula)',
+  'Cases against Flávio (by Lula)',
+  'Acciones contra Flávio (de Lula)')
+t('Contra Flávio',
+  'Against Flávio',
+  'Contra Flávio')
+t('Contra Lula',
+  'Against Lula',
+  'Contra Lula')
+t('Outros gabinetes',
+  'Other chambers',
+  'Otras oficinas')
+t(' (presidente)',
+  ' (President)',
+  ' (presidente)')
+t("${pctBR(num(r[field]))} (${int(num(r[field === 'pct_ate_3_dias' ? 'ate_3_dias' : 'ate_10_dias']))} de ${int(num(r.processos))})",
+  "${pctBR(num(r[field]))} (${int(num(r[field === 'pct_ate_3_dias' ? 'ate_3_dias' : 'ate_10_dias']))} of ${int(num(r.processos))})",
+  "${pctBR(num(r[field]))} (${int(num(r[field === 'pct_ate_3_dias' ? 'ate_3_dias' : 'ate_10_dias']))} de ${int(num(r.processos))})")
+t('${pctBR(+r[f])} (${r[cnt]} de ${r.processos})',
+  '${pctBR(+r[f])} (${r[cnt]} of ${r.processos})',
+  '${pctBR(+r[f])} (${r[cnt]} de ${r.processos})')
+t('${pctBR(+x[f])} (${x[cnt]} de ${x.processos})',
+  '${pctBR(+x[f])} (${x[cnt]} of ${x.processos})',
+  '${pctBR(+x[f])} (${x[cnt]} de ${x.processos})')
+t('${pctBR(+r.pct_decidida)} (${r.liminar_decidida} de ${r.no_datajud}; ${r.liminar_concedida} concedidas)',
+  '${pctBR(+r.pct_decidida)} (${r.liminar_decidida} of ${r.no_datajud}; ${r.liminar_concedida} granted)',
+  '${pctBR(+r.pct_decidida)} (${r.liminar_decidida} de ${r.no_datajud}; ${r.liminar_concedida} concedidas)')
+t('${d.n_bol} ações de Bolsonaro / Flávio · ${d.n_pt} do PT / Lula',
+  '${d.n_bol} cases by Bolsonaro / Flávio · ${d.n_pt} by the PT / Lula',
+  '${d.n_bol} acciones de Bolsonaro / Flávio · ${d.n_pt} del PT / Lula')
+t('${g.relator} · ${LAB[k]}: ${n} de ${N} (${PCT(v)})',
+  '${g.relator} · ${LAB[k]}: ${n} of ${N} (${PCT(v)})',
+  '${g.relator} · ${LAB[k]}: ${n} de ${N} (${PCT(v)})')
+t('${pctBR(+r[f])} (${r[cnt]} de ${r[obs]})',
+  '${pctBR(+r[f])} (${r[cnt]} of ${r[obs]})',
+  '${pctBR(+r[f])} (${r[cnt]} de ${r[obs]})')
+t('${pctBR(+x.pct_ate_3_dias)} (${x.ate_3_dias} de ${x.observaveis_3d})',
+  '${pctBR(+x.pct_ate_3_dias)} (${x.ate_3_dias} of ${x.observaveis_3d})',
+  '${pctBR(+x.pct_ate_3_dias)} (${x.ate_3_dias} de ${x.observaveis_3d})')
+t('${nl.ate_3_dias} de ${nl.observaveis_3d}',
+  '${nl.ate_3_dias} of ${nl.observaveis_3d}',
+  '${nl.ate_3_dias} de ${nl.observaveis_3d}')
+t('${nf.ate_3_dias} de ${nf.observaveis_3d}',
+  '${nf.ate_3_dias} of ${nf.observaveis_3d}',
+  '${nf.ate_3_dias} de ${nf.observaveis_3d}')
+t('${nf ? nf.processos : 0} de ${allF}',
+  '${nf ? nf.processos : 0} of ${allF}',
+  '${nf ? nf.processos : 0} de ${allF}')
+t('${nl ? nl.processos : 0} de ${allL}',
+  '${nl ? nl.processos : 0} of ${allL}',
+  '${nl ? nl.processos : 0} de ${allL}')
+t('Failed to load',
+  'Failed to load',
+  'No se pudo cargar')
+t('Agência Pública · Solange Guimarães · 24/10/2026 · 2º turno',
+  'Agência Pública · Solange Guimarães · 24/10/2026 · 2nd round',
+  'Agência Pública · Solange Guimarães · 24/10/2026 · 2.ª vuelta')
+t('Estadão · 22/10/2026 · 1º e 2º turnos',
+  'Estadão · 22/10/2026 · 1st and 2nd rounds',
+  'Estadão · 22/10/2026 · 1.ª y 2.ª vueltas')
+t('Jornal do Brasil · com Agência Estado · 22/10/2026 · 1º e 2º turnos',
+  'Jornal do Brasil · with Agência Estado · 22/10/2026 · 1st and 2nd rounds',
+  'Jornal do Brasil · con Agência Estado · 22/10/2026 · 1.ª y 2.ª vueltas')
+t('O Globo · coluna Lauro Jardim · 21/10/2026 · 2º turno',
+  'O Globo · Lauro Jardim column · 21/10/2026 · 2nd round',
+  'O Globo · columna de Lauro Jardim · 21/10/2026 · 2.ª vuelta')
+t('Brasil 247 · 21/10/2026 · 2º turno',
+  'Brasil 247 · 21/10/2026 · 2nd round',
+  'Brasil 247 · 21/10/2026 · 2.ª vuelta')
+t('BandNews FM · O É da Coisa, com Reinaldo Azevedo · 21/10/2026 · 2º turno · em 34:15',
+  'BandNews FM · O É da Coisa, with Reinaldo Azevedo · 21/10/2026 · 2nd round · at 34:15',
+  'BandNews FM · O É da Coisa, con Reinaldo Azevedo · 21/10/2026 · 2.ª vuelta · en 34:15')
+t('O Globo · coluna Lauro Jardim · 16/10/2026 · 1º turno',
+  'O Globo · Lauro Jardim column · 16/10/2026 · 1st round',
+  'O Globo · columna de Lauro Jardim · 16/10/2026 · 1.ª vuelta')
+t('Brasil 247 · 16/10/2026 · 1º turno',
+  'Brasil 247 · 16/10/2026 · 1st round',
+  'Brasil 247 · 16/10/2026 · 1.ª vuelta')
+t('Advogado e consultor para entidades públicas, privadas e do terceiro setor. Professor de Direito e pesquisador em estágio pós-doutoral no Programa de Pós-Graduação da Faculdade de Direito da UERJ. Mestre pela USP e doutor pela UERJ (com financiamento da FAPERJ) em Direito Internacional e Comparado. Coordenador do Curso de Especialização em Direito Internacional do CEPED/UERJ. Pesquisador integrante do Projeto DGAPA PAPIIT IN309526 “Cambios dentro de la Democracia: retrocesos, resistencias y resiliencias”, da Universidad Nacional Autónoma de México. Membro da Latin American Studies Association e das Comissões de Direito Internacional das seccionais de São Paulo e do Rio de Janeiro da Ordem dos Advogados do Brasil.',
+  'Lawyer and consultant to public, private and non-profit organizations. Law professor and postdoctoral researcher in the Graduate Program of the Faculty of Law of the Rio de Janeiro State University (UERJ). LL.M. from the University of São Paulo (USP) and Ph.D. from UERJ (funded by FAPERJ) in International and Comparative Law. Coordinator of the Specialization Course in International Law at CEPED/UERJ. Researcher in the DGAPA PAPIIT IN309526 Project “Cambios dentro de la Democracia: retrocesos, resistencias y resiliencias”, at the National Autonomous University of Mexico (UNAM). Member of the Latin American Studies Association and of the International Law Committees of the São Paulo and Rio de Janeiro sections of the Brazilian Bar Association (OAB).',
+  'Abogado y consultor de entidades públicas, privadas y del tercer sector. Profesor de Derecho e investigador en estancia posdoctoral en el Programa de Posgrado de la Facultad de Derecho de la Universidad del Estado de Río de Janeiro (UERJ). Magíster por la Universidad de São Paulo (USP) y doctor por la UERJ (con financiación de la FAPERJ) en Derecho Internacional y Comparado. Coordinador del Curso de Especialización en Derecho Internacional del CEPED/UERJ. Investigador del Proyecto DGAPA PAPIIT IN309526 “Cambios dentro de la Democracia: retrocesos, resistencias y resiliencias”, de la Universidad Nacional Autónoma de México. Miembro de la Latin American Studies Association y de las Comisiones de Derecho Internacional de las seccionales de São Paulo y de Río de Janeiro del Colegio de Abogados de Brasil (OAB).')
+t('Currículo Lattes: <a href="http://lattes.cnpq.br/8981314196162452">lattes.cnpq.br/8981314196162452</a>',
+  'Lattes CV: <a href="http://lattes.cnpq.br/8981314196162452">lattes.cnpq.br/8981314196162452</a>',
+  'Currículum Lattes: <a href="http://lattes.cnpq.br/8981314196162452">lattes.cnpq.br/8981314196162452</a>')
+t('Estatísticas Públicas – Contencioso de propaganda e campanha no 1º turno das eleições brasileiras (2018, 2022 e 2026)',
+  'Public Statistics – Electoral advertising and campaign litigation in the 1st round of Brazilian elections (2018, 2022 and 2026)',
+  'Estadísticas Públicas – Contencioso de propaganda y campaña en la 1.ª vuelta de las elecciones brasileñas (2018, 2022 y 2026)')
+t('Contencioso de propaganda e campanha no 1º turno das eleições brasileiras de 2018, 2022 e 2026. Dados do TSE e do DataJud/CNJ sobre 2018, 2022 e 2026. Autor: Celso de Oliveira Santos.',
+  'Electoral advertising and campaign litigation in the 1st round of the 2018, 2022 and 2026 Brazilian elections. Data from the Superior Electoral Court (TSE) and DataJud/CNJ. Author: Celso de Oliveira Santos.',
+  'Contencioso de propaganda y campaña en la 1.ª vuelta de las elecciones brasileñas de 2018, 2022 y 2026. Datos del Tribunal Superior Electoral (TSE) y de DataJud/CNJ. Autor: Celso de Oliveira Santos.')
+t('Dados do Portal de Dados Abertos do TSE (grupo Processual) e da API Pública do DataJud/CNJ, extraídos em 14 e 15/10/2026. Página complementar: <a href="segundo-turno/">o 2º turno</a>. Versão congelada que acompanha o artigo: <a href="v1/">v1.0, carga de 14/10/2026</a> (DOI <a href="https://doi.org/10.5281/zenodo.23441914">10.5281/zenodo.23441914</a>).',
+  'Data from the Open Data Portal of the Superior Electoral Court (TSE, “Processual” group) and from the DataJud/CNJ Public API, extracted on 14 and 15/10/2026. Companion page: <a href="../segundo-turno/en/">the 2nd round</a>. Frozen version accompanying the article: <a href="../v1/">v1.0, TSE data load of 14/10/2026</a>, in Portuguese (DOI <a href="https://doi.org/10.5281/zenodo.23441914">10.5281/zenodo.23441914</a>).',
+  'Datos del Portal de Datos Abiertos del Tribunal Superior Electoral (TSE, grupo “Processual”) y de la API Pública de DataJud/CNJ, extraídos el 14 y 15/10/2026. Página complementaria: <a href="../segundo-turno/es/">la 2.ª vuelta</a>. Versión congelada que acompaña el artículo: <a href="../v1/">v1.0, carga del 14/10/2026</a>, en portugués (DOI <a href="https://doi.org/10.5281/zenodo.23441914">10.5281/zenodo.23441914</a>).')
+t('Números do texto referentes à carga de 14/10/2026.',
+  'Figures in the text refer to the TSE data load of 14/10/2026.',
+  'Las cifras del texto corresponden a la carga del 14/10/2026.')
+t('Nos tribunais eleitorais (tanto regionais como no TSE), as representações, as reclamações e os pedidos de direito de resposta são de competência dos juízes auxiliares designados para este fim, e os recursos devem ser julgados pelo plenário da Corte, conforme a inteligência dos parágrafos 3º e 4º do art. 96 da Lei das Eleições (9.504/97). No entanto, a presidência e a vice-presidência da Corte avocaram esta competência em desconformidade com a Resolução TSE nº 23.608/2019, que determina que os juízes auxiliares sejam designados dentre os membros substitutos do Tribunal (art. 2º, II e § 4º), e sem deliberação colegiada registrada.',
+  'In the electoral courts (both the Regional Electoral Courts and the TSE), complaints (<i>representações</i>), claims (<i>reclamações</i>) and right-of-reply requests fall within the jurisdiction of auxiliary judges appointed for that purpose, and appeals against their rulings must be decided by the full Court, under paragraphs 3 and 4 of Article 96 of the Elections Law (Law 9.504/1997). Nevertheless, the Court’s President and Vice-President took this jurisdiction upon themselves, contrary to TSE Resolution 23.608/2019, which requires auxiliary judges to be appointed from among the Court’s substitute members (Art. 2, II and § 4), and with no recorded collegiate decision.',
+  'En los tribunales electorales (tanto regionales como en el TSE), las representaciones, las reclamaciones y las solicitudes de derecho de respuesta son competencia de los jueces auxiliares designados para ese fin, y los recursos deben ser resueltos por el pleno de la Corte, conforme a los párrafos 3.º y 4.º del art. 96 de la Ley de Elecciones (Ley 9.504/1997). Sin embargo, la presidencia y la vicepresidencia de la Corte se atribuyeron esta competencia en desconformidad con la Resolución TSE n.º 23.608/2019, que determina que los jueces auxiliares sean designados entre los miembros suplentes del Tribunal (art. 2.º, II y § 4.º), y sin deliberación colegiada registrada.')
+t('Por meio da Portaria TSE nº 235, de 20 de maio de 2026 (publicada no DJE de 22 de maio), o então recém-empossado Nunes Marques designou o ministro André Mendonça, já ocupando o cargo de vice, para uma das três vagas de juiz auxiliar na equipe de propaganda, e, no mesmo ato, incluiu a si mesmo na distribuição dos processos referentes à matéria. Até ali, somente a ministra Estela Aranha, designada em 2025 durante a presidência da ministra Cármen Lúcia no TSE, encontrava-se formalmente designada para a equipe, já que a ministra Vera Lúcia Santana Araújo, que também havia sido designada no fim de 2025 na gestão da ministra Cármen Lúcia, deixou o TSE em fevereiro de 2026.',
+  'Through TSE Ordinance (<i>Portaria</i>) 235 of 20 May 2026 (published in the Electronic Justice Gazette, DJE, on 22 May), the newly sworn-in President Nunes Marques appointed Justice André Mendonça, already serving as Vice-President, to one of the three auxiliary judge seats on the advertising panel and, in the same act, included himself in the assignment of cases on the matter. Until then, only Justice Estela Aranha, appointed in 2025 under Justice Cármen Lúcia’s presidency of the TSE, was formally assigned to the panel, since Justice Vera Lúcia Santana Araújo, also appointed at the end of 2025 under Justice Cármen Lúcia, left the TSE in February 2026.',
+  'Mediante la Portaria (resolución administrativa) TSE n.º 235, de 20 de mayo de 2026 (publicada en el Diario de la Justicia Electrónico, DJE, del 22 de mayo), el recién posesionado Nunes Marques designó al ministro André Mendonça, que ya ocupaba la vicepresidencia, para una de las tres plazas de juez auxiliar en el equipo de propaganda y, en el mismo acto, se incluyó a sí mismo en el reparto de los procesos sobre la materia. Hasta entonces, solo la ministra Estela Aranha, designada en 2025 durante la presidencia de la ministra Cármen Lúcia en el TSE, estaba formalmente designada para el equipo, ya que la ministra Vera Lúcia Santana Araújo, también designada a fines de 2025 bajo la gestión de la ministra Cármen Lúcia, dejó el TSE en febrero de 2026.')
+t('Somente em 7 de outubro, após a votação do primeiro turno, é que o presidente da Corte designou o ministro substituto Marco Aurélio Bellizze Oliveira, que passou a integrar a escala de sorteios juntamente com a ministra Estela Aranha, o ministro André Mendonça e o próprio Nunes Marques. A participação da Presidência na distribuição não é inédita: no 2º turno de 2022, a Portaria TSE nº 1.007/2022 incluiu o então presidente Alexandre de Moraes na distribuição das representações de propaganda. A diferença está no alcance e no resultado. Em 2022, a Presidência entrou só no 2º turno, o vice não participou, e no 1º turno o presidente e o vice relataram 5 das 200 ações (2,5%); no 2º turno, o gabinete de Moraes recebeu a mesma parcela das ações de cada campanha (18,0% das de Bolsonaro e 18,2% das de Lula) e decidiu todas as 44. Em 2026, a Presidência e a Vice-Presidência integram a distribuição desde o início do calendário de campanha e concentraram 398 das 598 ações do 1º turno (66,6%), e o gabinete do presidente recebeu as ações de forma desigual entre as campanhas, retendo as movidas por Lula contra Flávio.',
+  'Only on 7 October, after the first-round vote, did the Court’s President appoint substitute Justice Marco Aurélio Bellizze Oliveira, who joined the random-assignment roster alongside Justice Estela Aranha, Justice André Mendonça and Nunes Marques himself. The Presidency’s participation in case assignment is not unprecedented: in the 2nd round of 2022, TSE Ordinance 1.007/2022 included then-President Alexandre de Moraes in the assignment of advertising complaints. The difference lies in its scope and its outcome. In 2022, the Presidency joined only in the 2nd round, the Vice-President did not take part, and in the 1st round the President and Vice-President were reporting justices in 5 of 200 cases (2.5%); in the 2nd round, Moraes’s chambers received the same share of each campaign’s cases (18.0% of Bolsonaro’s and 18.2% of Lula’s) and decided all 44. In 2026, the Presidency and the Vice-Presidency have been part of case assignment since the start of the campaign calendar and concentrated 398 of the 598 first-round cases (66.6%), and the President’s chambers received cases unevenly across the campaigns, holding on to those filed by Lula against Flávio.',
+  'Solo el 7 de octubre, tras la votación de la primera vuelta, el presidente de la Corte designó al ministro suplente Marco Aurélio Bellizze Oliveira, que pasó a integrar la escala de sorteos junto con la ministra Estela Aranha, el ministro André Mendonça y el propio Nunes Marques. La participación de la Presidencia en el reparto no es inédita: en la 2.ª vuelta de 2022, la Portaria TSE n.º 1.007/2022 incluyó al entonces presidente Alexandre de Moraes en el reparto de las representaciones de propaganda. La diferencia está en el alcance y en el resultado. En 2022, la Presidencia entró solo en la 2.ª vuelta, el vicepresidente no participó y en la 1.ª vuelta el presidente y el vicepresidente fueron relatores de 5 de las 200 acciones (2,5%); en la 2.ª vuelta, la oficina de Moraes recibió la misma proporción de las acciones de cada campaña (18,0% de las de Bolsonaro y 18,2% de las de Lula) y resolvió las 44. En 2026, la Presidencia y la Vicepresidencia integran el reparto desde el inicio del calendario de campaña y concentraron 398 de las 598 acciones de la 1.ª vuelta (66,6%), y la oficina del presidente recibió las acciones de forma desigual entre las campañas, reteniendo las promovidas por Lula contra Flávio.')
+t('Relatores das representações, direitos de resposta e notícias de irregularidade no 1º turno',
+  'Reporting justices of complaints, right-of-reply requests and notices of irregularity in the 1st round',
+  'Relatores de las representaciones, derechos de respuesta y noticias de irregularidad en la 1.ª vuelta')
+t('Com o presidente ou o vice como relator',
+  'With the President or Vice-President as reporting justice',
+  'Con el presidente o el vicepresidente como relator')
+t('Principais relatores',
+  'Main reporting justices',
+  'Principales relatores')
+t('Ações originárias do TSE (representação, representação especial, direito de resposta e notícia de irregularidade em propaganda) autuadas de 20/07 ao dia do 1º turno; relator atual segundo o SIG/TSE, carga de 14/10/2026. Presidência e vice-presidência na data do 1º turno. Fontes normativas: Lei 9.504/1997, art. 96, §§ 3º e 4º; Res.-TSE 23.608/2019, art. 2º, II e § 4º (e, em 2018, Res.-TSE 23.547/2017, art. 2º); Portaria TSE nº 235/2026 (DJE-TSE nº 81, de 22/05/2026).',
+  'Original-jurisdiction cases at the TSE (complaint, special complaint, right of reply and notice of irregularity in advertising) filed from 20/07 to election day of the 1st round; current reporting justice according to SIG/TSE, data load of 14/10/2026. President and Vice-President as of the 1st-round election day. Legal sources: Law 9.504/1997, Art. 96, §§ 3 and 4; TSE Resolution 23.608/2019, Art. 2, II and § 4 (and, in 2018, TSE Resolution 23.547/2017, Art. 2); TSE Ordinance 235/2026 (DJE-TSE No. 81, 22/05/2026).',
+  'Acciones originarias del TSE (representación, representación especial, derecho de respuesta y noticia de irregularidad en propaganda) registradas del 20/07 al día de la 1.ª vuelta; relator actual según el SIG/TSE, carga del 14/10/2026. Presidencia y vicepresidencia en la fecha de la 1.ª vuelta. Fuentes normativas: Ley 9.504/1997, art. 96, §§ 3.º y 4.º; Res.-TSE 23.608/2019, art. 2.º, II y § 4.º (y, en 2018, Res.-TSE 23.547/2017, art. 2.º); Portaria TSE n.º 235/2026 (DJE-TSE n.º 81, del 22/05/2026).')
+t('1. A judicialização cresceu, sobretudo no TSE',
+  '1. Litigation grew, especially at the TSE',
+  '1. La judicialización creció, sobre todo en el TSE')
+t('Processos autuados de 20/07 ao dia do 1º turno. À esquerda, toda a Justiça Eleitoral; à direita, as ações de propaganda, direito de resposta, notícias de irregularidade, tutelas, cassatórias e recursos no TSE, excluídos os recursos de registro de candidatura.',
+  'Cases filed from 20/07 to the 1st-round election day. Left: the whole Electoral Justice system; right: advertising, right-of-reply, notice-of-irregularity, interim-relief, removal-from-office (<i>cassação</i>) and appeal cases at the TSE, excluding appeals on candidate registration.',
+  'Procesos registrados del 20/07 al día de la 1.ª vuelta. A la izquierda, toda la Justicia Electoral; a la derecha, las acciones de propaganda, derecho de respuesta, noticias de irregularidad, tutelas, acciones de casación del mandato y recursos en el TSE, excluidos los recursos de registro de candidatura.')
+t('Justiça Eleitoral, todas as classes',
+  'Electoral Justice, all case types',
+  'Justicia Electoral, todas las clases')
+t('TSE, recorte de campanha',
+  'TSE, campaign cases',
+  'TSE, casos de campaña')
+t('2. Os TREs absorveram o aumento; o TSE desacelerou',
+  '2. The Regional Electoral Courts absorbed the increase; the TSE slowed down',
+  '2. Los TRE absorbieron el aumento; el TSE se desaceleró')
+t('Proporção de processos com a primeira decisão, sentença ou acórdão em até 3 e em até 10 dias da autuação. Três dias aproximam as 72 horas do art. 58, § 2º, da Lei 9.504/1997.',
+  'Share of cases with a first decision, judgment or court ruling within 3 and within 10 days of filing. Three days approximate the 72 hours set by Art. 58, § 2, of Law 9.504/1997.',
+  'Proporción de procesos con la primera decisión, sentencia o acuerdo en hasta 3 y en hasta 10 días desde su registro. Tres días se aproximan a las 72 horas del art. 58, § 2.º, de la Ley 9.504/1997.')
+t('3. Velocidade por campanha e gestão',
+  '3. Speed by campaign and TSE presidency',
+  '3. Velocidad por campaña y gestión')
+t('Ações originárias do TSE ajuizadas por uma campanha presidencial principal contra a outra, no 1º turno. Em 2022, só a gestão Moraes. As diferenças não são significativas em 2018 e 2022. Em 2026, a diferença bruta em 3 dias é significativa, mas deixa de ser quando se compara cada relator com ele mesmo.',
+  'Original-jurisdiction TSE cases filed by one main presidential campaign against the other in the 1st round. For 2022, Moraes’s presidency only. Differences are not significant in 2018 and 2022. In 2026, the raw 3-day difference is significant, but it ceases to be when each reporting justice is compared with himself or herself.',
+  'Acciones originarias del TSE promovidas por una de las principales campañas presidenciales contra la otra, en la 1.ª vuelta. En 2022, solo la gestión de Moraes. Las diferencias no son significativas en 2018 y 2022. En 2026, la diferencia bruta en 3 días es significativa, pero deja de serlo cuando se compara a cada relator consigo mismo.')
+t('p 3 dias (bruto)',
+  'p 3 days (raw)',
+  'p 3 días (bruto)')
+t('p 3 dias (por relator e classe)',
+  'p 3 days (by reporting justice and case type)',
+  'p 3 días (por relator y clase)')
+t('4. Gabinetes em 2026: a diferença vem da distribuição',
+  '4. Chambers in 2026: the difference comes from case assignment',
+  '4. Oficinas en 2026: la diferencia viene del reparto')
+t('Processos decididos nas ações contra cada campanha, por relator efetivo (autor da primeira decisão no SIG). Dentro de cada gabinete os dois lados ficam próximos; Estela Aranha, o gabinete mais rápido, recebeu 80 ações contra Lula e 38 contra Flávio. Ficam de fora 33 processos redistribuídos a Bellizze após o 1º turno, nenhum decidido até 14/10, e 6 com outros ministros.',
+  'Cases decided among those against each campaign, by effective reporting justice (author of the first decision in SIG). Within each Justice’s chambers the two sides are close; Estela Aranha, the fastest chambers, received 80 cases against Lula and 38 against Flávio. Excluded: 33 cases reassigned to Bellizze after the 1st round, none decided by 14/10, and 6 with other Justices.',
+  'Procesos resueltos en las acciones contra cada campaña, por relator efectivo (autor de la primera decisión en el SIG). Dentro de cada oficina los dos lados quedan próximos; Estela Aranha, la oficina más rápida, recibió 80 acciones contra Lula y 38 contra Flávio. Quedan fuera 33 procesos redistribuidos a Bellizze tras la 1.ª vuelta, ninguno resuelto hasta el 14/10, y 6 con otros ministros.')
+t('5. Liminares: a assimetria aparece em 2026',
+  '5. Preliminary injunctions: the asymmetry appears in 2026',
+  '5. Medidas cautelares: la asimetría aparece en 2026')
+t('Proporção de ações com decisão sobre o pedido liminar, entre as localizadas no DataJud (códigos TPU 339, 892 e 792). Em 2026 a diferença se mantém controlando relator e classe (Mantel-Haenszel, p = 0,008). Em 2022, sob Moraes, não é significativa. Em 2018 o DataJud não tem esses processos.',
+  'Share of cases with a ruling on the request for a preliminary injunction, among those found in DataJud (TPU codes 339, 892 and 792). In 2026 the difference holds when controlling for reporting justice and case type (Mantel-Haenszel, p = 0.008). In 2022, under Moraes, it is not significant. DataJud does not hold these cases for 2018.',
+  'Proporción de acciones con decisión sobre la solicitud de medida cautelar, entre las localizadas en DataJud (códigos TPU 339, 892 y 792). En 2026 la diferencia se mantiene controlando relator y clase (Mantel-Haenszel, p = 0,008). En 2022, bajo Moraes, no es significativa. En 2018 DataJud no tiene estos procesos.')
+t('6. Todos os gabinetes, por gestão',
+  '6. All chambers, by TSE presidency',
+  '6. Todas las oficinas, por gestión')
+t('Parcela das ações de cada campanha recebida por gabinete no 1º turno, nas gestões de Rosa Weber (2018), Alexandre de Moraes (2022) e Nunes Marques (2026). A linha destacada é o gabinete do presidente do TSE. Gabinetes com menos de 3 ações estão somados em “Outros gabinetes”. Gabinete: autor da primeira decisão registrada no SIG; sem decisão, o relator atual. Dados da versão congelada v1.0-1T (carga do TSE de 14/10/2026).',
+  'Share of each campaign’s cases received by each Justice’s chambers in the 1st round, under the presidencies of Rosa Weber (2018), Alexandre de Moraes (2022) and Nunes Marques (2026). The highlighted row is the TSE President’s chambers. Chambers with fewer than 3 cases are grouped as “Other chambers”. Chambers: author of the first decision recorded in SIG; if no decision, the current reporting justice. Data from frozen version v1.0-1T (TSE data load of 14/10/2026).',
+  'Proporción de las acciones de cada campaña recibida por cada oficina en la 1.ª vuelta, en las gestiones de Rosa Weber (2018), Alexandre de Moraes (2022) y Nunes Marques (2026). La fila destacada es la oficina del presidente del TSE. Las oficinas con menos de 3 acciones se suman en “Otras oficinas”. Oficina: autor de la primera decisión registrada en el SIG; sin decisión, el relator actual. Datos de la versión congelada v1.0-1T (carga del TSE del 14/10/2026).')
+t('Processos no TSE no recorte de campanha, 2026',
+  'Campaign cases at the TSE, 2026',
+  'Procesos de campaña en el TSE, 2026')
+t('em 2022: <b id="k2b" data-source="volume" data-field="tse_campanha" data-where="ano=2022">—</b> · em 2018: <b id="k2c" data-source="volume" data-field="tse_campanha" data-where="ano=2018">—</b>',
+  'in 2022: <b id="k2b" data-source="volume" data-field="tse_campanha" data-where="ano=2022">—</b> · in 2018: <b id="k2c" data-source="volume" data-field="tse_campanha" data-where="ano=2018">—</b>',
+  'en 2022: <b id="k2b" data-source="volume" data-field="tse_campanha" data-where="ano=2022">—</b> · en 2018: <b id="k2c" data-source="volume" data-field="tse_campanha" data-where="ano=2018">—</b>')
+t('TSE: processos decididos em até 3 dias, 2026',
+  'TSE: cases decided within 3 days, 2026',
+  'TSE: procesos resueltos en hasta 3 días, 2026')
+t('em 2022: <b id="k1b" data-source="tse_tres" data-field="pct_ate_3_dias" data-where="ano=2022&amp;tribunal=TSE">—</b> · TREs em 2026: <b id="k1c" data-source="tse_tres" data-field="pct_ate_3_dias" data-where="ano=2026&amp;tribunal=TREs">—</b>',
+  'in 2022: <b id="k1b" data-source="tse_tres" data-field="pct_ate_3_dias" data-where="ano=2022&amp;tribunal=TSE">—</b> · Regional Courts in 2026: <b id="k1c" data-source="tse_tres" data-field="pct_ate_3_dias" data-where="ano=2026&amp;tribunal=TREs">—</b>',
+  'en 2022: <b id="k1b" data-source="tse_tres" data-field="pct_ate_3_dias" data-where="ano=2022&amp;tribunal=TSE">—</b> · TRE en 2026: <b id="k1c" data-source="tse_tres" data-field="pct_ate_3_dias" data-where="ano=2026&amp;tribunal=TREs">—</b>')
+t('Liminar apreciada pelo TSE no 1º turno de 2026, entre as ações localizadas no DataJud',
+  'Injunction requests ruled on by the TSE in the 1st round of 2026, among cases found in DataJud',
+  'Medidas cautelares resueltas por el TSE en la 1.ª vuelta de 2026, entre las acciones localizadas en DataJud')
+t('nas ações de Flávio Bolsonaro contra Lula',
+  'in Flávio Bolsonaro’s cases against Lula',
+  'en las acciones de Flávio Bolsonaro contra Lula')
+t('nas ações de Lula contra Flávio Bolsonaro',
+  'in Lula’s cases against Flávio Bolsonaro',
+  'en las acciones de Lula contra Flávio Bolsonaro')
+t('Diferença estatisticamente significativa mesmo comparando dentro de cada gabinete (Mantel-Haenszel, p = 0,008). Em 2022, sob Moraes, não houve diferença significativa.',
+  'The difference is statistically significant even when comparing within each Justice’s chambers (Mantel-Haenszel, p = 0.008). In 2022, under Moraes, there was no significant difference.',
+  'Diferencia estadísticamente significativa incluso comparando dentro de cada oficina (Mantel-Haenszel, p = 0,008). En 2022, bajo Moraes, no hubo diferencia significativa.')
+t('Fonte principal: Portal de Dados Abertos do TSE, grupo Processual (arquivos de processos eleitorais, decisões e partes), extraídos em 14 e 15/10/2026. Liminares: API Pública do DataJud/CNJ, consultada em outubro de 2026, com cobertura de cerca de 64% dos processos de 2026.',
+  'Main source: TSE Open Data Portal, “Processual” group (files on electoral cases, decisions and parties), extracted on 14 and 15/10/2026. Preliminary injunctions: DataJud/CNJ Public API, queried in October 2026, covering about 64% of the 2026 cases.',
+  'Fuente principal: Portal de Datos Abiertos del TSE, grupo “Processual” (archivos de procesos electorales, decisiones y partes), extraídos el 14 y 15/10/2026. Medidas cautelares: API Pública de DataJud/CNJ, consultada en octubre de 2026, con cobertura de cerca del 64% de los procesos de 2026.')
+t('Prazo: da autuação ao primeiro ato decisório (decisão, sentença ou acórdão), sem despachos. Processos sem decisão contam como não decididos.',
+  'Time frame: from filing to the first decision-making act (decision, judgment or court ruling), excluding procedural orders. Cases with no decision count as undecided.',
+  'Plazo: desde el registro hasta el primer acto decisorio (decisión, sentencia o acuerdo), sin providencias de mero trámite. Los procesos sin decisión cuentan como no resueltos.')
+t('Campanhas identificadas pelas partes principais: candidatos, coligação ou federação nacional, partido nacional e CNPJ de campanha.',
+  'Campaigns identified by their main parties: candidates, national coalition or party federation, national party and campaign taxpayer number (CNPJ).',
+  'Campañas identificadas por sus partes principales: candidatos, coalición o federación nacional, partido nacional y CNPJ (registro fiscal) de campaña.')
+t('Testes: Fisher exato (comparação bruta) e Mantel-Haenszel estratificado por relator efetivo e classe processual. p abaixo de 0,05 aparece em destaque.',
+  'Tests: Fisher’s exact test (raw comparison) and Mantel-Haenszel stratified by effective reporting justice and case type. p below 0.05 is highlighted.',
+  'Pruebas: exacta de Fisher (comparación bruta) y Mantel-Haenszel estratificada por relator efectivo y clase procesal. Los valores de p inferiores a 0,05 aparecen destacados.')
+t('Normas: Lei 9.504/1997, arts. 8º, 58, § 2º, e 96, §§ 3º e 4º; Res.-TSE 23.547/2017 (2018) e 23.608/2019, art. 2º, II e § 4º; Portaria TSE nº 235/2026.',
+  'Legal provisions: Law 9.504/1997, Arts. 8, 58, § 2, and 96, §§ 3 and 4; TSE Resolutions 23.547/2017 (2018) and 23.608/2019, Art. 2, II and § 4; TSE Ordinance 235/2026.',
+  'Normas: Ley 9.504/1997, arts. 8.º, 58, § 2.º, y 96, §§ 3.º y 4.º; Res.-TSE 23.547/2017 (2018) y 23.608/2019, art. 2.º, II y § 4.º; Portaria TSE n.º 235/2026.')
+t('Estudo: “Como explicar a letargia do TSE nas eleições mais judicializadas da história do Brasil?”. Dados abertos do TSE e do DataJud/CNJ, tratados pelo autor. Dados e código da versão do artigo: DOI <a href="https://doi.org/10.5281/zenodo.23441914">10.5281/zenodo.23441914</a>.',
+  'Study: “Como explicar a letargia do TSE nas eleições mais judicializadas da história do Brasil?” (How to explain the TSE’s lethargy in the most litigated elections in Brazil’s history?). Open data from the TSE and DataJud/CNJ, processed by the author. Data and code for the article version: DOI <a href="https://doi.org/10.5281/zenodo.23441914">10.5281/zenodo.23441914</a>.',
+  'Estudio: “Como explicar a letargia do TSE nas eleições mais judicializadas da história do Brasil?” (¿Cómo explicar el letargo del TSE en las elecciones más judicializadas de la historia de Brasil?). Datos abiertos del TSE y de DataJud/CNJ, tratados por el autor. Datos y código de la versión del artículo: DOI <a href="https://doi.org/10.5281/zenodo.23441914">10.5281/zenodo.23441914</a>.')
+t('Gráficos e tabelas atualizados automaticamente. Última carga dos dados do TSE: ',
+  'Charts and tables are updated automatically. Latest TSE data load: ',
+  'Gráficos y tablas actualizados automáticamente. Última carga de datos del TSE: ')
+t('Estatísticas Públicas – Contencioso de propaganda e campanha no 2º turno das eleições brasileiras (2018, 2022 e 2026)',
+  'Public Statistics – Electoral advertising and campaign litigation in the 2nd round of Brazilian elections (2018, 2022 and 2026)',
+  'Estadísticas Públicas – Contencioso de propaganda y campaña en la 2.ª vuelta de las elecciones brasileñas (2018, 2022 y 2026)')
+t('Ações entre as campanhas presidenciais no TSE no 2º turno de 2018, 2022 e 2026: volume, velocidade e distribuição entre gabinetes. Autor: Celso de Oliveira Santos.',
+  'Cases between the presidential campaigns at the Superior Electoral Court (TSE) in the 2nd round of 2018, 2022 and 2026: volume, speed and assignment across chambers. Author: Celso de Oliveira Santos.',
+  'Acciones entre las campañas presidenciales en el Tribunal Superior Electoral (TSE) en la 2.ª vuelta de 2018, 2022 y 2026: volumen, velocidad y reparto entre oficinas. Autor: Celso de Oliveira Santos.')
+t('Ações entre as duas campanhas presidenciais no TSE, autuadas do dia seguinte ao 1º turno até o dia do 2º turno. Dados do Portal de Dados Abertos do TSE (grupo Processual). Página complementar ao estudo sobre o 1º turno: <a href="../">ver o 1º turno</a>.',
+  'Cases between the two presidential campaigns at the TSE, filed from the day after the 1st round to the 2nd-round election day. Data from the TSE Open Data Portal (“Processual” group). Companion page to the study on the 1st round: <a href="../../en/">see the 1st round</a>.',
+  'Acciones entre las dos campañas presidenciales en el TSE, registradas desde el día siguiente a la 1.ª vuelta hasta el día de la 2.ª vuelta. Datos del Portal de Datos Abiertos del TSE (grupo “Processual”). Página complementaria al estudio sobre la 1.ª vuelta: <a href="../../es/">ver la 1.ª vuelta</a>.')
+t('<b>Versão congelada v.1.0-2T</b>, com os dados usados no texto sobre o 2º turno. O 2º turno de 2026 estava em curso: os números de 2026 vão até a carga indicada abaixo e não serão atualizados nesta página; os dados finais, após a eleição, terão página própria. DOI <a href="https://doi.org/10.5281/zenodo.23455041">10.5281/zenodo.23455041</a>.',
+  '<b>Frozen version v.1.0-2T</b>, with the data used in the text on the 2nd round. The 2026 2nd round was still under way: the 2026 figures run up to the data load shown below and will not be updated on this page; the final post-election data will have a page of their own. DOI <a href="https://doi.org/10.5281/zenodo.23455041">10.5281/zenodo.23455041</a>.',
+  '<b>Versión congelada v.1.0-2T</b>, con los datos usados en el texto sobre la 2.ª vuelta. La 2.ª vuelta de 2026 estaba en curso: las cifras de 2026 llegan hasta la carga indicada abajo y no se actualizarán en esta página; los datos finales, tras la elección, tendrán página propia. DOI <a href="https://doi.org/10.5281/zenodo.23455041">10.5281/zenodo.23455041</a>.')
+t('1. Quantas ações cada campanha moveu contra a outra',
+  '1. How many cases each campaign filed against the other',
+  '1. Cuántas acciones promovió cada campaña contra la otra')
+t('Ações originárias do TSE (representação, direito de resposta, notícia de irregularidade em propaganda, AIJE e tutela cautelar antecedente) em que uma campanha presidencial principal está no polo ativo e a outra no passivo. Em 2026, só as autuadas até <span class="dyn" id="ate">—</span>.',
+  'Original-jurisdiction TSE cases (complaint, right of reply, notice of irregularity in advertising, electoral judicial investigation action – AIJE – and prior interim protective relief) in which one main presidential campaign is the claimant and the other the respondent. For 2026, only those filed up to <span class="dyn" id="ate">—</span>.',
+  'Acciones originarias del TSE (representación, derecho de respuesta, noticia de irregularidad en propaganda, acción de investigación judicial electoral – AIJE – y tutela cautelar antecedente) en las que una de las principales campañas presidenciales es la parte demandante y la otra la demandada. En 2026, solo las registradas hasta el <span class="dyn" id="ate">—</span>.')
+t('2. Velocidade da primeira decisão',
+  '2. Speed of the first decision',
+  '2. Velocidad de la primera decisión')
+t('Proporção de ações com a primeira decisão, sentença ou acórdão em até 3 e em até 10 dias da autuação. Em 2026 entram só as ações que já tinham 3 (ou 10) dias de tramitação na data da carga. Três dias aproximam as 72 horas do art. 58, § 2º, da Lei 9.504/1997.',
+  'Share of cases with a first decision, judgment or court ruling within 3 and within 10 days of filing. For 2026, only cases already pending for 3 (or 10) days on the data-load date are included. Three days approximate the 72 hours set by Art. 58, § 2, of Law 9.504/1997.',
+  'Proporción de acciones con la primera decisión, sentencia o acuerdo en hasta 3 y en hasta 10 días desde su registro. En 2026 entran solo las acciones que ya tenían 3 (o 10) días de tramitación en la fecha de la carga. Tres días se aproximan a las 72 horas del art. 58, § 2.º, de la Ley 9.504/1997.')
+t('3. Para quais gabinetes foram as ações em 2026',
+  '3. Which chambers received the cases in 2026',
+  '3. A qué oficinas fueron las acciones en 2026')
+t('Ações por relator, conforme a campanha que é ré. Relator efetivo: autor da primeira decisão no SIG; sem decisão, o relator atual. Teste de independência entre relator e campanha (qui-quadrado): <b class="dyn" id="pdist">—</b>.',
+  'Cases by reporting justice, according to the respondent campaign. Effective reporting justice: author of the first decision in SIG; if no decision, the current reporting justice. Test of independence between reporting justice and campaign (chi-square): <b class="dyn" id="pdist">—</b>.',
+  'Acciones por relator, según la campaña demandada. Relator efectivo: autor de la primera decisión en el SIG; sin decisión, el relator actual. Prueba de independencia entre relator y campaña (chi cuadrado): <b class="dyn" id="pdist">—</b>.')
+t('4. Velocidade em cada gabinete em 2026',
+  '4. Speed in each Justice’s chambers in 2026',
+  '4. Velocidad en cada oficina en 2026')
+t('Ações decididas em até 3 dias, entre as que já tinham 3 dias de tramitação, por relator e campanha ré. O gráfico só compara gabinetes com ao menos 5 ações observáveis de cada lado; a tabela traz todos.',
+  'Cases decided within 3 days, among those already pending for 3 days, by reporting justice and respondent campaign. The chart compares only chambers with at least 5 observable cases on each side; the table lists them all.',
+  'Acciones resueltas en hasta 3 días, entre las que ya tenían 3 días de tramitación, por relator y campaña demandada. El gráfico solo compara oficinas con al menos 5 acciones observables de cada lado; la tabla las incluye todas.')
+t('5. Todos os gabinetes, por gestão',
+  '5. All chambers, by TSE presidency',
+  '5. Todas las oficinas, por gestión')
+t('Parcela das ações de cada campanha recebida por gabinete no 2º turno, nas gestões de Rosa Weber (2018), Alexandre de Moraes (2022) e Nunes Marques (2026). A linha destacada é o gabinete do presidente do TSE. Gabinetes com menos de 3 ações estão somados em “Outros gabinetes”. Gabinete: autor da primeira decisão registrada no SIG; sem decisão, o relator atual. Dados da versão congelada v.1.0-2T (carga do TSE de 18/10/2026).',
+  'Share of each campaign’s cases received by each Justice’s chambers in the 2nd round, under the presidencies of Rosa Weber (2018), Alexandre de Moraes (2022) and Nunes Marques (2026). The highlighted row is the TSE President’s chambers. Chambers with fewer than 3 cases are grouped as “Other chambers”. Chambers: author of the first decision recorded in SIG; if no decision, the current reporting justice. Data from frozen version v.1.0-2T (TSE data load of 18/10/2026).',
+  'Proporción de las acciones de cada campaña recibida por cada oficina en la 2.ª vuelta, en las gestiones de Rosa Weber (2018), Alexandre de Moraes (2022) y Nunes Marques (2026). La fila destacada es la oficina del presidente del TSE. Las oficinas con menos de 3 acciones se suman en “Otras oficinas”. Oficina: autor de la primera decisión registrada en el SIG; sin decisión, el relator actual. Datos de la versión congelada v.1.0-2T (carga del TSE del 18/10/2026).')
+t('Fonte principal: Portal de Dados Abertos do TSE, grupo Processual (processos, decisões e partes), atualizado diariamente por rotina automática.',
+  'Main source: TSE Open Data Portal, “Processual” group (cases, decisions and parties), updated daily by an automated routine.',
+  'Fuente principal: Portal de Datos Abiertos del TSE, grupo “Processual” (procesos, decisiones y partes), actualizado diariamente por una rutina automática.')
+t('Período: do dia seguinte ao 1º turno até o dia do 2º turno (CF, art. 77; Lei 9.504/1997, art. 2º, § 1º): 08 a 28/10/2018, 03 a 30/10/2022 e 05 a 25/10/2026.',
+  'Period: from the day after the 1st round to the 2nd-round election day (Federal Constitution, Art. 77; Law 9.504/1997, Art. 2, § 1): 08–28/10/2018, 03–30/10/2022 and 05–25/10/2026.',
+  'Período: desde el día siguiente a la 1.ª vuelta hasta el día de la 2.ª vuelta (Constitución Federal, art. 77; Ley 9.504/1997, art. 2.º, § 1.º): 08 a 28/10/2018, 03 a 30/10/2022 y 05 a 25/10/2026.')
+t('Prazo: da autuação ao primeiro ato decisório, sem despachos. Em 2026, o cálculo considera só as ações que já tinham o número de dias exigido na data da carga, para não contar como "não decidida" uma ação recém-chegada.',
+  'Time frame: from filing to the first decision-making act, excluding procedural orders. For 2026, the calculation considers only cases already pending for the required number of days on the data-load date, so that a newly filed case is not counted as “undecided”.',
+  'Plazo: desde el registro hasta el primer acto decisorio, sin providencias de mero trámite. En 2026, el cálculo considera solo las acciones que ya tenían el número de días exigido en la fecha de la carga, para no contar como “no resuelta” una acción recién llegada.')
+t('Testes: Fisher exato (comparação bruta), Mantel-Haenszel estratificado por relator efetivo e classe e qui-quadrado de independência entre relator e campanha. Com poucos casos por estrato, como em 2018, o Mantel-Haenszel é pouco confiável.',
+  'Tests: Fisher’s exact test (raw comparison), Mantel-Haenszel stratified by effective reporting justice and case type, and chi-square test of independence between reporting justice and campaign. With few cases per stratum, as in 2018, Mantel-Haenszel is unreliable.',
+  'Pruebas: exacta de Fisher (comparación bruta), Mantel-Haenszel estratificada por relator efectivo y clase, y chi cuadrado de independencia entre relator y campaña. Con pocos casos por estrato, como en 2018, el Mantel-Haenszel es poco fiable.')
+t('Dados e código: <a href="https://github.com/celsodeos/Monitoramento-TSE-BR">github.com/celsodeos/Monitoramento-TSE-BR</a>. Versão congelada: <code>versoes/v2.0-2T/</code>, DOI <a href="https://doi.org/10.5281/zenodo.23455041">10.5281/zenodo.23455041</a>. Versão do 1º turno: DOI <a href="https://doi.org/10.5281/zenodo.23441914">10.5281/zenodo.23441914</a>.',
+  'Data and code: <a href="https://github.com/celsodeos/Monitoramento-TSE-BR">github.com/celsodeos/Monitoramento-TSE-BR</a>. Frozen version: <code>versoes/v2.0-2T/</code>, DOI <a href="https://doi.org/10.5281/zenodo.23455041">10.5281/zenodo.23455041</a>. 1st-round version: DOI <a href="https://doi.org/10.5281/zenodo.23441914">10.5281/zenodo.23441914</a>.',
+  'Datos y código: <a href="https://github.com/celsodeos/Monitoramento-TSE-BR">github.com/celsodeos/Monitoramento-TSE-BR</a>. Versión congelada: <code>versoes/v2.0-2T/</code>, DOI <a href="https://doi.org/10.5281/zenodo.23455041">10.5281/zenodo.23455041</a>. Versión de la 1.ª vuelta: DOI <a href="https://doi.org/10.5281/zenodo.23441914">10.5281/zenodo.23441914</a>.')
+t('Estudo: “Como explicar a letargia do TSE nas eleições mais judicializadas da história do Brasil?”. Dados abertos do TSE, tratados pelo autor. Dados e código desta versão: DOI <a href="https://doi.org/10.5281/zenodo.23455041">10.5281/zenodo.23455041</a>.',
+  'Study: “Como explicar a letargia do TSE nas eleições mais judicializadas da história do Brasil?” (How to explain the TSE’s lethargy in the most litigated elections in Brazil’s history?). Open TSE data, processed by the author. Data and code for this version: DOI <a href="https://doi.org/10.5281/zenodo.23455041">10.5281/zenodo.23455041</a>.',
+  'Estudio: “Como explicar a letargia do TSE nas eleições mais judicializadas da história do Brasil?” (¿Cómo explicar el letargo del TSE en las elecciones más judicializadas de la historia de Brasil?). Datos abiertos del TSE, tratados por el autor. Datos y código de esta versión: DOI <a href="https://doi.org/10.5281/zenodo.23455041">10.5281/zenodo.23455041</a>.')
+t('${labels[k]}: ${int(+r.processos)} ações',
+  '${labels[k]}: ${int(+r.processos)} cases',
+  '${labels[k]}: ${int(+r.processos)} acciones')
+t('sem decisão registrada: ${int(+r.sem_decisao)}',
+  'no decision recorded: ${int(+r.sem_decisao)}',
+  'sin decisión registrada: ${int(+r.sem_decisao)}')
+t('← contra Lula',
+  '← against Lula',
+  '← contra Lula')
+t('contra Flávio →',
+  'against Flávio →',
+  'contra Flávio →')
+t('Dados das ações autuadas até ${brDate(M.autuacao_ate)}, carga do TSE de ${brDate(M.carga_sig)}.',
+  'Data on cases filed up to ${brDate(M.autuacao_ate)}, TSE data load of ${brDate(M.carga_sig)}.',
+  'Datos de las acciones registradas hasta el ${brDate(M.autuacao_ate)}, carga del TSE del ${brDate(M.carga_sig)}.')
+t(' (poucas ações observáveis)',
+  ' (few observable cases)',
+  ' (pocas acciones observables)')
+t(' (poucas ações)',
+  ' (few cases)',
+  ' (pocas acciones)')
+t('Ações entre as campanhas no 2º turno de 2026',
+  'Cases between the campaigns in the 2026 2nd round',
+  'Acciones entre las campañas en la 2.ª vuelta de 2026')
+t('em todo o 2º turno de 2022: <b id="k1b">—</b> · de 2018: <b id="k1c">—</b>',
+  'in the whole 2022 2nd round: <b id="k1b">—</b> · 2018: <b id="k1c">—</b>',
+  'en toda la 2.ª vuelta de 2022: <b id="k1b">—</b> · de 2018: <b id="k1c">—</b>')
+t('Gabinete do presidente: ações de Lula decididas em até 3 dias',
+  'President’s chambers: Lula’s cases decided within 3 days',
+  'Oficina del presidente: acciones de Lula resueltas en hasta 3 días')
+t('ações de Flávio no mesmo gabinete: <b id="k2b">—</b>',
+  'Flávio’s cases in the same chambers: <b id="k2b">—</b>',
+  'acciones de Flávio en la misma oficina: <b id="k2b">—</b>')
+t('Parcela das ações de cada campanha distribuída ao gabinete do presidente do TSE, 2º turno de 2026',
+  'Share of each campaign’s cases assigned to the TSE President’s chambers, 2026 2nd round',
+  'Proporción de las acciones de cada campaña asignada a la oficina del presidente del TSE, 2.ª vuelta de 2026')
+t('Contato: <span class="mail">osantoscelso@gmail.com</span>',
+  'Contact: <span class="mail">osantoscelso@gmail.com</span>',
+  'Contacto: <span class="mail">osantoscelso@gmail.com</span>')
+t('das ações de Flávio Bolsonaro contra Lula (<span id="h1n">—</span>)',
+  'of Flávio Bolsonaro’s cases against Lula (<span id="h1n">—</span>)',
+  'de las acciones de Flávio Bolsonaro contra Lula (<span id="h1n">—</span>)')
+t('das ações de Lula contra Flávio Bolsonaro (<span id="h2n">—</span>)',
+  'of Lula’s cases against Flávio Bolsonaro (<span id="h2n">—</span>)',
+  'de las acciones de Lula contra Flávio Bolsonaro (<span id="h2n">—</span>)')
+t('A concentração pode ter causa legítima, como a prevenção por conexão com ações anteriores; isso só se verifica nos autos (PJe). Relação entre relator e campanha: <span id="pdist2">—</span>.',
+  'The concentration may have a legitimate cause, such as prevention (<i>prevenção</i>) due to a connection with earlier cases; this can only be verified in the case files (PJe). Relationship between reporting justice and campaign: <span id="pdist2">—</span>.',
+  'La concentración puede tener una causa legítima, como la prevención por conexión con acciones anteriores; eso solo se verifica en los autos (PJe). Relación entre relator y campaña: <span id="pdist2">—</span>.')
+t('Quem julga ações sobre propaganda e campanha eleitoral no TSE',
+  'Who rules on electoral campaign and advertising complaints at the Superior Electoral Court (TSE)',
+  'Quiénes juzgan las representaciones sobre propaganda y campaña electoral en el TSE')
