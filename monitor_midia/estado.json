@@ -1778,6 +1778,14 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "3_LDJxtKg1c": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 3_LDJxtKg1c: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-09"
+ },
  "3_f893ZepYk": {
   "canal": "CNN Brasil",
   "data": "2026-10-23",
@@ -1958,8 +1966,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] 46GbkBhWMbA: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 6,
-  "visto": "2026-11-08"
+  "tentativas": 7,
+  "visto": "2026-11-09"
  },
  "4A9fX4UCWP4": {
   "canal": "Reinaldo Azevedo",
@@ -4447,7 +4455,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-08"
+  "visto": "2026-11-09"
  },
  "An3V0UpIKWk": {
   "canal": "Jovem Pan News",
@@ -13983,6 +13991,14 @@
   "tentativas": 1,
   "visto": "2026-10-25"
  },
+ "ZiYs-H2POQs": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] ZiYs-H2POQs: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-09"
+ },
  "ZiakPuhaDSU": {
   "canal": "GloboNews",
   "data": "2026-10-24",
@@ -15974,6 +15990,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-25"
+ },
+ "eZTPu70aqUM": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] eZTPu70aqUM: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-09"
  },
  "eZWYQ6YFXng": {
   "canal": "GloboNews",
@@ -23051,8 +23075,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] x2Xnj-iOEdM: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 7,
-  "visto": "2026-11-08"
+  "tentativas": 8,
+  "visto": "2026-11-09"
  },
  "x3CU84aEFG0": {
   "canal": "Reinaldo Azevedo",
