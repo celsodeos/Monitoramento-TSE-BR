@@ -1966,7 +1966,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] 46GbkBhWMbA: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 7,
+  "tentativas": 8,
   "visto": "2026-11-09"
  },
  "4A9fX4UCWP4": {
@@ -4267,6 +4267,14 @@
   "tentativas": 2,
   "visto": "2026-10-29"
  },
+ "AOSDBLYBq6w": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] AOSDBLYBq6w: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-09"
+ },
  "AQMaYZ-8Cr4": {
   "canal": "GloboNews",
   "data": "2026-11-02",
@@ -4453,8 +4461,9 @@
  "AmrH9L7OW0s": {
   "canal": "ICL Notícias",
   "data": "",
-  "status": "agendado",
-  "tentativas": 0,
+  "erro": "DownloadError: ERROR: [youtube] AmrH9L7OW0s: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
   "visto": "2026-11-09"
  },
  "An3V0UpIKWk": {
@@ -5004,6 +5013,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-29"
+ },
+ "C6kDLwlsA94": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] C6kDLwlsA94: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-09"
  },
  "C8RZp3ZlBJk": {
   "canal": "CNN Brasil",
@@ -7830,6 +7847,13 @@
   "tentativas": 1,
   "visto": "2026-10-30"
  },
+ "JohBGPHwC9k": {
+  "canal": "ICL Notícias",
+  "data": "",
+  "status": "agendado",
+  "tentativas": 0,
+  "visto": "2026-11-09"
+ },
  "JqMvBztjns8": {
   "canal": "Jovem Pan News",
   "data": "2026-11-02",
@@ -8726,6 +8750,13 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-24"
+ },
+ "M6nC5D3CN9Y": {
+  "canal": "ICL Notícias",
+  "data": "",
+  "status": "agendado",
+  "tentativas": 0,
+  "visto": "2026-11-09"
  },
  "M7hPe82m6X0": {
   "canal": "Jovem Pan News",
@@ -12611,6 +12642,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-31"
+ },
+ "W0lEsxvgjis": {
+  "canal": "ICL Notícias",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] W0lEsxvgjis: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-09"
  },
  "W1pXwK-tBm8": {
   "canal": "Jovem Pan News",
