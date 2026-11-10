@@ -4463,7 +4463,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] AmrH9L7OW0s: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 2,
+  "tentativas": 3,
   "visto": "2026-11-10"
  },
  "An3V0UpIKWk": {
@@ -7850,8 +7850,9 @@
  "JohBGPHwC9k": {
   "canal": "ICL Notícias",
   "data": "",
-  "status": "agendado",
-  "tentativas": 0,
+  "erro": "DownloadError: ERROR: [youtube] JohBGPHwC9k: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
   "visto": "2026-11-10"
  },
  "JqMvBztjns8": {
@@ -12648,7 +12649,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] W0lEsxvgjis: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 2,
+  "tentativas": 3,
   "visto": "2026-11-10"
  },
  "W1pXwK-tBm8": {
@@ -13245,6 +13246,14 @@
   "status": "ok",
   "tentativas": 2,
   "visto": "2026-10-29"
+ },
+ "XVnnMWPFTfw": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] XVnnMWPFTfw: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-10"
  },
  "XWPudyR8Vtk": {
   "canal": "Jovem Pan News",
@@ -18515,6 +18524,14 @@
   "tentativas": 1,
   "visto": "2026-10-30"
  },
+ "lOOc1XlGKB8": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] lOOc1XlGKB8: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-10"
+ },
  "lPzFI7fE_9Y": {
   "canal": "Jovem Pan News",
   "data": "2026-10-30",
@@ -22375,6 +22392,13 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-29"
+ },
+ "uw-ijAXaydA": {
+  "canal": "ICL Notícias",
+  "data": "",
+  "status": "agendado",
+  "tentativas": 0,
+  "visto": "2026-11-10"
  },
  "uyUIzdr3W3E": {
   "canal": "UOL",
