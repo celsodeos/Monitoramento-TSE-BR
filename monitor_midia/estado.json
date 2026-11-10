@@ -4463,8 +4463,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] AmrH9L7OW0s: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
-  "visto": "2026-11-09"
+  "tentativas": 2,
+  "visto": "2026-11-10"
  },
  "An3V0UpIKWk": {
   "canal": "Jovem Pan News",
@@ -7852,7 +7852,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-09"
+  "visto": "2026-11-10"
  },
  "JqMvBztjns8": {
   "canal": "Jovem Pan News",
@@ -8756,7 +8756,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-09"
+  "visto": "2026-11-10"
  },
  "M7hPe82m6X0": {
   "canal": "Jovem Pan News",
@@ -12648,8 +12648,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] W0lEsxvgjis: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
-  "visto": "2026-11-09"
+  "tentativas": 2,
+  "visto": "2026-11-10"
  },
  "W1pXwK-tBm8": {
   "canal": "Jovem Pan News",
@@ -13854,6 +13854,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-27"
+ },
+ "Z2I_B4oQG2M": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] Z2I_B4oQG2M: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-10"
  },
  "Z33uulgtdcY": {
   "canal": "Jovem Pan News",
@@ -15126,6 +15134,14 @@
   "tentativas": 1,
   "visto": "2026-10-28"
  },
+ "bs0q8S3Eabc": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] bs0q8S3Eabc: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-10"
+ },
  "bt9SYbNdCq0": {
   "canal": "CNN Brasil",
   "data": "2026-10-30",
@@ -15209,6 +15225,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-26"
+ },
+ "c62zg51bdw0": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] c62zg51bdw0: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-10"
  },
  "c7r9AkbPyAQ": {
   "canal": "CNN Brasil",
