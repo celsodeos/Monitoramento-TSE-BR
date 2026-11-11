@@ -4463,8 +4463,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] AmrH9L7OW0s: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 3,
-  "visto": "2026-11-10"
+  "tentativas": 4,
+  "visto": "2026-11-11"
  },
  "An3V0UpIKWk": {
   "canal": "Jovem Pan News",
@@ -7852,8 +7852,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] JohBGPHwC9k: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
-  "visto": "2026-11-10"
+  "tentativas": 2,
+  "visto": "2026-11-11"
  },
  "JqMvBztjns8": {
   "canal": "Jovem Pan News",
@@ -8281,6 +8281,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-03"
+ },
+ "KlFdMs7hvls": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] KlFdMs7hvls: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-11"
  },
  "KnGmM2TNSsU": {
   "canal": "Reinaldo Azevedo",
@@ -8757,7 +8765,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-10"
+  "visto": "2026-11-11"
  },
  "M7hPe82m6X0": {
   "canal": "Jovem Pan News",
@@ -12649,8 +12657,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] W0lEsxvgjis: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 3,
-  "visto": "2026-11-10"
+  "tentativas": 4,
+  "visto": "2026-11-11"
  },
  "W1pXwK-tBm8": {
   "canal": "Jovem Pan News",
@@ -16771,6 +16779,13 @@
   "status": "ok",
   "tentativas": 2,
   "visto": "2026-10-24"
+ },
+ "gJg5ZxqN6xw": {
+  "canal": "ICL Notícias",
+  "data": "",
+  "status": "agendado",
+  "tentativas": 0,
+  "visto": "2026-11-11"
  },
  "gNZ2ogTyLVg": {
   "canal": "Reinaldo Azevedo",
@@ -22396,9 +22411,10 @@
  "uw-ijAXaydA": {
   "canal": "ICL Notícias",
   "data": "",
-  "status": "agendado",
-  "tentativas": 0,
-  "visto": "2026-11-10"
+  "erro": "DownloadError: ERROR: [youtube] uw-ijAXaydA: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-11"
  },
  "uyUIzdr3W3E": {
   "canal": "UOL",
