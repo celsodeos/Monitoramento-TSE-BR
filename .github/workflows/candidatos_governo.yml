@@ -1,0 +1,49 @@
+name: Candidatos a governador (extração sob demanda)
+
+on:
+  workflow_dispatch:
+    inputs:
+      ufs:
+        description: "UFs separadas por vírgula"
+        default: "RJ,SP,MG,DF,ES,BA"
+
+jobs:
+  extrair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install pandas
+      - name: Baixar consulta_cand e extrair governador e vice
+        env:
+          UFS: ${{ inputs.ufs }}
+        run: |
+          mkdir -p brutos saida
+          for y in 2018 2022 2026; do
+            curl -sSfL --retry 3 -o brutos/c$y.zip "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_$y.zip"
+          done
+          python - <<'PY'
+          import pandas as pd, zipfile, os, io
+          ufs = os.environ["UFS"].split(",")
+          cols = ["ANO_ELEICAO","NR_TURNO","SG_UF","DS_CARGO","SQ_CANDIDATO","NM_CANDIDATO","NM_URNA_CANDIDATO","SG_PARTIDO",
+                  "NM_COLIGACAO","DS_COMPOSICAO_COLIGACAO","SQ_COLIGACAO","DS_SITUACAO_CANDIDATURA","DS_DETALHE_SITUACAO_CAND","DS_SIT_TOT_TURNO","NR_CANDIDATO"]
+          out = []
+          for y in (2018, 2022, 2026):
+              z = zipfile.ZipFile(f"brutos/c{y}.zip")
+              for n in z.namelist():
+                  uf = n.rsplit("_", 1)[-1].split(".")[0]
+                  if not n.endswith(".csv") or uf not in ufs: continue
+                  d = pd.read_csv(z.open(n), sep=";", encoding="latin1", dtype=str)
+                  d = d[d.DS_CARGO.str.upper().isin(["GOVERNADOR", "VICE-GOVERNADOR"])]
+                  out.append(d[[c for c in cols if c in d.columns]])
+          r = pd.concat(out, ignore_index=True)
+          r.to_csv("saida/candidatos_governo.csv", index=False)
+          print(r.groupby(["ANO_ELEICAO","SG_UF","NR_TURNO"]).size().to_string())
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: candidatos-governo
+          path: saida/candidatos_governo.csv
+          retention-days: 7
