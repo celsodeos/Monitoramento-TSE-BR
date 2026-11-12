@@ -2473,8 +2473,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] 5PvA_wQpHyQ: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
-  "visto": "2026-11-11"
+  "tentativas": 2,
+  "visto": "2026-11-12"
  },
  "5Q4kxr3ND3o": {
   "canal": "ICL Notícias",
@@ -6840,6 +6840,13 @@
   "tentativas": 1,
   "visto": "2026-11-04"
  },
+ "HOlRyzx0MDo": {
+  "canal": "ICL Notícias",
+  "data": "",
+  "status": "agendado",
+  "tentativas": 0,
+  "visto": "2026-11-12"
+ },
  "HOxgi3w-L3Y": {
   "canal": "CNN Brasil",
   "data": "2026-10-30",
@@ -7860,8 +7867,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] JohBGPHwC9k: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 3,
-  "visto": "2026-11-11"
+  "tentativas": 4,
+  "visto": "2026-11-12"
  },
  "JqMvBztjns8": {
   "canal": "Jovem Pan News",
@@ -8773,7 +8780,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-11"
+  "visto": "2026-11-12"
  },
  "M7hPe82m6X0": {
   "canal": "Jovem Pan News",
@@ -9136,9 +9143,10 @@
  "N3ddiIjigXM": {
   "canal": "ICL Notícias",
   "data": "",
-  "status": "agendado",
-  "tentativas": 0,
-  "visto": "2026-11-11"
+  "erro": "DownloadError: ERROR: [youtube] N3ddiIjigXM: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-12"
  },
  "N4N_3eaQEXA": {
   "canal": "Jovem Pan News",
@@ -16800,8 +16808,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] gJg5ZxqN6xw: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
-  "visto": "2026-11-11"
+  "tentativas": 2,
+  "visto": "2026-11-12"
  },
  "gNZ2ogTyLVg": {
   "canal": "Reinaldo Azevedo",
@@ -22429,8 +22437,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] uw-ijAXaydA: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 2,
-  "visto": "2026-11-11"
+  "tentativas": 3,
+  "visto": "2026-11-12"
  },
  "uyUIzdr3W3E": {
   "canal": "UOL",
