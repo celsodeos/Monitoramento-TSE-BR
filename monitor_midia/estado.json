@@ -6845,7 +6845,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] HOlRyzx0MDo: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 2,
+  "tentativas": 3,
   "visto": "2026-11-13"
  },
  "HOxgi3w-L3Y": {
@@ -8781,7 +8781,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] M6nC5D3CN9Y: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
+  "tentativas": 2,
   "visto": "2026-11-13"
  },
  "M7hPe82m6X0": {
@@ -9077,7 +9077,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] MtDtKLNk6C4: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
+  "tentativas": 2,
   "visto": "2026-11-13"
  },
  "MukbRnu4BAo": {
@@ -9155,7 +9155,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] N3ddiIjigXM: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 3,
+  "tentativas": 4,
   "visto": "2026-11-13"
  },
  "N4N_3eaQEXA": {
@@ -18414,8 +18414,9 @@
  "l2wMPIVHxqc": {
   "canal": "ICL Notícias",
   "data": "",
-  "status": "agendado",
-  "tentativas": 0,
+  "erro": "DownloadError: ERROR: [youtube] l2wMPIVHxqc: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
   "visto": "2026-11-13"
  },
  "l5qDp_XRf6k": {
@@ -24217,6 +24218,13 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-31"
+ },
+ "zgre1W7FXJM": {
+  "canal": "ICL Notícias",
+  "data": "",
+  "status": "agendado",
+  "tentativas": 0,
+  "visto": "2026-11-13"
  },
  "zgwd7P8aDMY": {
   "canal": "UOL",
