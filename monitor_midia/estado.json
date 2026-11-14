@@ -6845,8 +6845,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] HOlRyzx0MDo: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 3,
-  "visto": "2026-11-13"
+  "tentativas": 4,
+  "visto": "2026-11-14"
  },
  "HOxgi3w-L3Y": {
   "canal": "CNN Brasil",
@@ -7267,6 +7267,13 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-22"
+ },
+ "IUwlUBq_N8w": {
+  "canal": "ICL Notícias",
+  "data": "",
+  "status": "agendado",
+  "tentativas": 0,
+  "visto": "2026-11-14"
  },
  "IVYfOjyo2qA": {
   "canal": "Reinaldo Azevedo",
@@ -8781,8 +8788,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] M6nC5D3CN9Y: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 2,
-  "visto": "2026-11-13"
+  "tentativas": 3,
+  "visto": "2026-11-14"
  },
  "M7hPe82m6X0": {
   "canal": "Jovem Pan News",
@@ -9077,8 +9084,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] MtDtKLNk6C4: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 2,
-  "visto": "2026-11-13"
+  "tentativas": 3,
+  "visto": "2026-11-14"
  },
  "MukbRnu4BAo": {
   "canal": "GloboNews",
@@ -18416,8 +18423,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] l2wMPIVHxqc: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
-  "visto": "2026-11-13"
+  "tentativas": 2,
+  "visto": "2026-11-14"
  },
  "l5qDp_XRf6k": {
   "canal": "Jovem Pan News",
@@ -24222,9 +24229,10 @@
  "zgre1W7FXJM": {
   "canal": "ICL Notícias",
   "data": "",
-  "status": "agendado",
-  "tentativas": 0,
-  "visto": "2026-11-13"
+  "erro": "DownloadError: ERROR: [youtube] zgre1W7FXJM: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-14"
  },
  "zgwd7P8aDMY": {
   "canal": "UOL",
