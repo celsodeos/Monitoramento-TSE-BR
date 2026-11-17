@@ -4929,8 +4929,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] BrFM49ZLZqw: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
-  "visto": "2026-11-16"
+  "tentativas": 2,
+  "visto": "2026-11-17"
  },
  "BrtEUR27rbE": {
   "canal": "CNN Brasil",
@@ -7281,8 +7281,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] IUwlUBq_N8w: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
-  "visto": "2026-11-16"
+  "tentativas": 2,
+  "visto": "2026-11-17"
  },
  "IVYfOjyo2qA": {
   "canal": "Reinaldo Azevedo",
@@ -9171,8 +9171,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] N3ddiIjigXM: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 6,
-  "visto": "2026-11-16"
+  "tentativas": 7,
+  "visto": "2026-11-17"
  },
  "N4N_3eaQEXA": {
   "canal": "Jovem Pan News",
@@ -10600,6 +10600,13 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-05"
+ },
+ "R06U9Nj9cd4": {
+  "canal": "ICL Notícias",
+  "data": "",
+  "status": "agendado",
+  "tentativas": 0,
+  "visto": "2026-11-17"
  },
  "R0C9r72dztA": {
   "canal": "Reinaldo Azevedo",
@@ -16834,8 +16841,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] gJg5ZxqN6xw: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 4,
-  "visto": "2026-11-13"
+  "tentativas": 5,
+  "visto": "2026-11-17"
  },
  "gNZ2ogTyLVg": {
   "canal": "Reinaldo Azevedo",
@@ -22816,7 +22823,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-16"
+  "visto": "2026-11-17"
  },
  "vsdwzG_kmzI": {
   "canal": "CNN Brasil",
@@ -24247,8 +24254,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] zgre1W7FXJM: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 7,
-  "visto": "2026-11-16"
+  "tentativas": 8,
+  "visto": "2026-11-17"
  },
  "zgwd7P8aDMY": {
   "canal": "UOL",
