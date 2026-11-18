@@ -4929,8 +4929,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] BrFM49ZLZqw: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 3,
-  "visto": "2026-11-17"
+  "tentativas": 4,
+  "visto": "2026-11-18"
  },
  "BrtEUR27rbE": {
   "canal": "CNN Brasil",
@@ -6825,8 +6825,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] HE69fj61bAg: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
-  "visto": "2026-11-17"
+  "tentativas": 2,
+  "visto": "2026-11-18"
  },
  "HEzqZTKQvfg": {
   "canal": "UOL",
@@ -7289,8 +7289,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] IUwlUBq_N8w: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 3,
-  "visto": "2026-11-17"
+  "tentativas": 4,
+  "visto": "2026-11-18"
  },
  "IVYfOjyo2qA": {
   "canal": "Reinaldo Azevedo",
@@ -10614,8 +10614,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] R06U9Nj9cd4: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
-  "visto": "2026-11-17"
+  "tentativas": 2,
+  "visto": "2026-11-18"
  },
  "R0C9r72dztA": {
   "canal": "Reinaldo Azevedo",
@@ -16850,8 +16850,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] gJg5ZxqN6xw: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 5,
-  "visto": "2026-11-17"
+  "tentativas": 6,
+  "visto": "2026-11-18"
  },
  "gNZ2ogTyLVg": {
   "canal": "Reinaldo Azevedo",
@@ -20602,6 +20602,13 @@
   "tentativas": 1,
   "visto": "2026-10-29"
  },
+ "qD8yRYXiE-0": {
+  "canal": "ICL Notícias",
+  "data": "",
+  "status": "agendado",
+  "tentativas": 0,
+  "visto": "2026-11-18"
+ },
  "qDQHhyQsF3Q": {
   "canal": "Jovem Pan News",
   "data": "2026-10-25",
@@ -22832,7 +22839,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-17"
+  "visto": "2026-11-18"
  },
  "vsdwzG_kmzI": {
   "canal": "CNN Brasil",
