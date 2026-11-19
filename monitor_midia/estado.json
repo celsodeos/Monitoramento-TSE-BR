@@ -1849,9 +1849,9 @@
  "3Vm1gSldz2c": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] 3Vm1gSldz2c: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "erro": "DownloadError: ERROR: [youtube] 3Vm1gSldz2c: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 2,
+  "tentativas": 3,
   "visto": "2026-11-19"
  },
  "3VvFDuUpNMg": {
@@ -3335,9 +3335,9 @@
  "7Mxr6jCG3v4": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] 7Mxr6jCG3v4: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "erro": "DownloadError: ERROR: [youtube] 7Mxr6jCG3v4: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
+  "tentativas": 2,
   "visto": "2026-11-19"
  },
  "7NOSd40gRnE": {
@@ -6676,6 +6676,14 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "G-soN3MXn-g": {
+  "canal": "ICL Notícias",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] G-soN3MXn-g: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "G2C0Fss4cWI": {
   "canal": "UOL",
   "data": "2026-10-27",
@@ -7143,9 +7151,9 @@
  "HE69fj61bAg": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] HE69fj61bAg: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "erro": "DownloadError: ERROR: [youtube] HE69fj61bAg: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 4,
+  "tentativas": 5,
   "visto": "2026-11-19"
  },
  "HEzqZTKQvfg": {
@@ -21573,9 +21581,9 @@
  "qD8yRYXiE-0": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] qD8yRYXiE-0: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "erro": "DownloadError: ERROR: [youtube] qD8yRYXiE-0: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 2,
+  "tentativas": 3,
   "visto": "2026-11-19"
  },
  "qDQHhyQsF3Q": {
@@ -23918,8 +23926,7 @@
  "vs8THCaUMNg": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] vs8THCaUMNg: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
-  "status": "erro",
+  "status": "agendado",
   "tentativas": 1,
   "visto": "2026-11-19"
  },
