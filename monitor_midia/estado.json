@@ -83,6 +83,14 @@
   "tentativas": 1,
   "visto": "2026-10-25"
  },
+ "-BA-R8wVuDo": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] -BA-R8wVuDo: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "-DW8kofjUc0": {
   "canal": "CNN Brasil",
   "data": "2026-10-30",
@@ -419,6 +427,14 @@
   "tentativas": 1,
   "visto": "2026-11-03"
  },
+ "02RE1QJi3Nw": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 02RE1QJi3Nw: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "04XlBC5YtfU": {
   "canal": "CNN Brasil",
   "data": "2026-10-23",
@@ -656,6 +672,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-28"
+ },
+ "0XilO2AH0Zo": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 0XilO2AH0Zo: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "0XljjRPAJNw": {
   "canal": "Jovem Pan News",
@@ -1007,6 +1031,14 @@
   "tentativas": 1,
   "visto": "2026-10-24"
  },
+ "1K659C7OLhg": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 1K659C7OLhg: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "1Lh2P3gz8dE": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-27",
@@ -1106,6 +1138,14 @@
   "tentativas": 1,
   "visto": "2026-10-26"
  },
+ "1_6bdKKtfpE": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 1_6bdKKtfpE: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "1a3ZHXiufs4": {
   "canal": "UOL",
   "data": "2026-10-27",
@@ -1147,6 +1187,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-29"
+ },
+ "1fRPbsjBHjc": {
+  "canal": "GloboNews",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 1fRPbsjBHjc: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "1gDLCGfMoE8": {
   "canal": "Reinaldo Azevedo",
@@ -1204,6 +1252,14 @@
   "tentativas": 1,
   "visto": "2026-10-24"
  },
+ "1pyNUyq4D8g": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 1pyNUyq4D8g: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "1q9dD7n3Ui4": {
   "canal": "CNN Brasil",
   "data": "2026-11-03",
@@ -1217,6 +1273,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-05"
+ },
+ "1rS4UQta3NQ": {
+  "canal": "GloboNews",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 1rS4UQta3NQ: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "1s-2dJR3oPw": {
   "canal": "CNN Brasil",
@@ -1245,6 +1309,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-24"
+ },
+ "1tINlemBp8Y": {
+  "canal": "GloboNews",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 1tINlemBp8Y: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "1upU6dMtRYg": {
   "canal": "CNN Brasil",
@@ -1294,6 +1366,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-03"
+ },
+ "26QkpahZ-gU": {
+  "canal": "GloboNews",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 26QkpahZ-gU: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "278HsVaxGdA": {
   "canal": "CNN Brasil",
@@ -1372,12 +1452,28 @@
   "tentativas": 1,
   "visto": "2026-10-27"
  },
+ "2KcxS6u9aAY": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 2KcxS6u9aAY: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "2NXiw85rj2I": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-24",
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-25"
+ },
+ "2ODAAh6TM2M": {
+  "canal": "GloboNews",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 2ODAAh6TM2M: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "2PcI9iA9e00": {
   "canal": "Reinaldo Azevedo",
@@ -1753,10 +1849,10 @@
  "3Vm1gSldz2c": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] 3Vm1gSldz2c: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "erro": "DownloadError: ERROR: [youtube] 3Vm1gSldz2c: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
   "status": "erro",
-  "tentativas": 1,
-  "visto": "2026-11-18"
+  "tentativas": 2,
+  "visto": "2026-11-19"
  },
  "3VvFDuUpNMg": {
   "canal": "Jovem Pan News",
@@ -1785,6 +1881,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-22"
+ },
+ "3Yo2UdoyjVc": {
+  "canal": "GloboNews",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 3Yo2UdoyjVc: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "3_LDJxtKg1c": {
   "canal": "UOL",
@@ -1891,6 +1995,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-02"
+ },
+ "3qC-4XM5ggg": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 3qC-4XM5ggg: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "3tKAOcWwKsk": {
   "canal": "Reinaldo Azevedo",
@@ -2088,6 +2200,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-27"
+ },
+ "4LqVsVgbG8M": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 4LqVsVgbG8M: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "4N98vrdhVYk": {
   "canal": "CNN Brasil",
@@ -2392,6 +2512,14 @@
   "tentativas": 1,
   "visto": "2026-11-03"
  },
+ "5AhZ2B_NT68": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 5AhZ2B_NT68: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "5CRVGqohYWo": {
   "canal": "CNN Brasil",
   "data": "2026-11-01",
@@ -2479,10 +2607,10 @@
  "5PvA_wQpHyQ": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] 5PvA_wQpHyQ: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "erro": "DownloadError: ERROR: [youtube] 5PvA_wQpHyQ: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
   "status": "erro",
-  "tentativas": 3,
-  "visto": "2026-11-12"
+  "tentativas": 4,
+  "visto": "2026-11-19"
  },
  "5Q4kxr3ND3o": {
   "canal": "ICL Notícias",
@@ -2752,6 +2880,14 @@
   "tentativas": 8,
   "visto": "2026-10-26"
  },
+ "642f38uacnE": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 642f38uacnE: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "66MsQlxjnL4": {
   "canal": "BandNews FM",
   "data": "",
@@ -2970,6 +3106,14 @@
   "tentativas": 1,
   "visto": "2026-11-04"
  },
+ "6dJ0nynhjTA": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 6dJ0nynhjTA: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "6f5LB8Vh-ik": {
   "canal": "Jovem Pan News",
   "data": "2026-10-31",
@@ -3110,6 +3254,14 @@
   "tentativas": 1,
   "visto": "2026-10-27"
  },
+ "74DG9zIt6tA": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 74DG9zIt6tA: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "74xqXLjPoGE": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-28",
@@ -3180,6 +3332,14 @@
   "tentativas": 1,
   "visto": "2026-10-31"
  },
+ "7Mxr6jCG3v4": {
+  "canal": "ICL Notícias",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 7Mxr6jCG3v4: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "7NOSd40gRnE": {
   "canal": "UOL",
   "data": "2026-11-02",
@@ -3235,6 +3395,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-31"
+ },
+ "7XGd_pomEzc": {
+  "canal": "GloboNews",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 7XGd_pomEzc: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "7ZSZ985S9hk": {
   "canal": "CNN Brasil",
@@ -3974,6 +4142,14 @@
   "tentativas": 1,
   "visto": "2026-10-28"
  },
+ "9ZmVEMfNak4": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] 9ZmVEMfNak4: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "9_B0DHwBvpU": {
   "canal": "UOL",
   "data": "2026-10-26",
@@ -4177,6 +4353,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-24"
+ },
+ "A3NhMowsNAI": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] A3NhMowsNAI: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "A4kShw1nI10": {
   "canal": "Reinaldo Azevedo",
@@ -4432,6 +4616,14 @@
   "tentativas": 1,
   "visto": "2026-11-03"
  },
+ "AjGuw0j3ls4": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] AjGuw0j3ls4: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "AjQa-8WEuco": {
   "canal": "UOL",
   "data": "2026-11-03",
@@ -4477,10 +4669,10 @@
  "AmrH9L7OW0s": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] AmrH9L7OW0s: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "erro": "DownloadError: ERROR: [youtube] AmrH9L7OW0s: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
   "status": "erro",
-  "tentativas": 4,
-  "visto": "2026-11-11"
+  "tentativas": 5,
+  "visto": "2026-11-19"
  },
  "An3V0UpIKWk": {
   "canal": "Jovem Pan News",
@@ -4530,6 +4722,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-04"
+ },
+ "AuEu45kulVQ": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] AuEu45kulVQ: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "AwRl_SKzEVw": {
   "canal": "Reinaldo Azevedo",
@@ -4935,10 +5135,10 @@
  "BrFM49ZLZqw": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] BrFM49ZLZqw: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "erro": "DownloadError: ERROR: [youtube] BrFM49ZLZqw: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
   "status": "erro",
-  "tentativas": 5,
-  "visto": "2026-11-18"
+  "tentativas": 6,
+  "visto": "2026-11-19"
  },
  "BrtEUR27rbE": {
   "canal": "CNN Brasil",
@@ -5186,6 +5386,14 @@
   "tentativas": 1,
   "visto": "2026-10-28"
  },
+ "CaKbGCiCnVA": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] CaKbGCiCnVA: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "CaYXgH6fgDg": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-11-03",
@@ -5283,6 +5491,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-29"
+ },
+ "CvPKUlc841g": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] CvPKUlc841g: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "CwZguscIqr4": {
   "canal": "GloboNews",
@@ -5719,6 +5935,14 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "E3f9dtXWgtA": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] E3f9dtXWgtA: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "E5rxCDhSU9Y": {
   "canal": "CNN Brasil",
   "data": "2026-11-02",
@@ -5999,6 +6223,22 @@
   "tentativas": 1,
   "visto": "2026-11-02"
  },
+ "F-1sqiDeeME": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] F-1sqiDeeME: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
+ "F1Ny0RKyyOA": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] F1Ny0RKyyOA: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "F3TAc9ZL5x4": {
   "canal": "Jovem Pan News",
   "data": "2026-10-31",
@@ -6089,6 +6329,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-25"
+ },
+ "FHiSPqo9334": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] FHiSPqo9334: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "FIMJDEn4x14": {
   "canal": "UOL",
@@ -6244,6 +6492,14 @@
   "tentativas": 2,
   "visto": "2026-11-04"
  },
+ "Fa-aylvb9e8": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] Fa-aylvb9e8: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "Fd0eibbJZNI": {
   "canal": "CNN Brasil",
   "data": "2026-10-26",
@@ -6377,6 +6633,14 @@
   "tentativas": 1,
   "visto": "2026-10-25"
  },
+ "FwxLgmU1PtM": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] FwxLgmU1PtM: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "FxXP4eVrHtE": {
   "canal": "Jovem Pan News",
   "data": "2026-11-02",
@@ -6453,6 +6717,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-04"
+ },
+ "G6XAMpXzYP0": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] G6XAMpXzYP0: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "G7yodoNQjFk": {
   "canal": "Reinaldo Azevedo",
@@ -6574,6 +6846,14 @@
   "tentativas": 1,
   "visto": "2026-10-23"
  },
+ "GKv97ePkJuw": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] GKv97ePkJuw: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "GM59Kmf5Th8": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-23",
@@ -6672,6 +6952,14 @@
   "tentativas": 1,
   "visto": "2026-10-27"
  },
+ "GbD5PkUT7Xc": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] GbD5PkUT7Xc: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "GbZAkcoD9T8": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-25",
@@ -6692,6 +6980,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-23"
+ },
+ "GeRaPmvvRAE": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] GeRaPmvvRAE: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "GeZa-easetU": {
   "canal": "Jovem Pan News",
@@ -6779,6 +7075,14 @@
   "tentativas": 1,
   "visto": "2026-10-24"
  },
+ "H2-U_3SbfWI": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] H2-U_3SbfWI: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "H3l_QhmbB-g": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-23",
@@ -6821,6 +7125,14 @@
   "tentativas": 2,
   "visto": "2026-10-27"
  },
+ "HC35t5yuHZM": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] HC35t5yuHZM: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "HDkkBWvkN7U": {
   "canal": "UOL",
   "data": "2026-10-22",
@@ -6831,10 +7143,10 @@
  "HE69fj61bAg": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] HE69fj61bAg: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "erro": "DownloadError: ERROR: [youtube] HE69fj61bAg: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
   "status": "erro",
-  "tentativas": 3,
-  "visto": "2026-11-18"
+  "tentativas": 4,
+  "visto": "2026-11-19"
  },
  "HEzqZTKQvfg": {
   "canal": "UOL",
@@ -7061,6 +7373,14 @@
   "tentativas": 1,
   "visto": "2026-10-27"
  },
+ "Hmg9poPP4Wc": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] Hmg9poPP4Wc: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "Hn0_3yZ7i5A": {
   "canal": "Jovem Pan News",
   "data": "2026-10-26",
@@ -7180,6 +7500,14 @@
   "tentativas": 1,
   "visto": "2026-10-26"
  },
+ "IDA6YpDhN0M": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] IDA6YpDhN0M: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "IDcYXIz6A68": {
   "canal": "UOL",
   "data": "2026-10-28",
@@ -7257,6 +7585,14 @@
   "tentativas": 1,
   "visto": "2026-11-05"
  },
+ "IOcr-fii7KQ": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] IOcr-fii7KQ: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "IPywDGAfKbE": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-29",
@@ -7295,10 +7631,10 @@
  "IUwlUBq_N8w": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] IUwlUBq_N8w: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "erro": "DownloadError: ERROR: [youtube] IUwlUBq_N8w: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
   "status": "erro",
-  "tentativas": 4,
-  "visto": "2026-11-18"
+  "tentativas": 5,
+  "visto": "2026-11-19"
  },
  "IVYfOjyo2qA": {
   "canal": "Reinaldo Azevedo",
@@ -7313,6 +7649,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-24"
+ },
+ "IasJwnnGf4Q": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] IasJwnnGf4Q: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "Id9ogS0_Lh8": {
   "canal": "Jovem Pan News",
@@ -7474,6 +7818,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-25"
+ },
+ "Iw3NScx-g6k": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] Iw3NScx-g6k: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "IysnmPSdJto": {
   "canal": "Reinaldo Azevedo",
@@ -7706,6 +8058,22 @@
   "tentativas": 1,
   "visto": "2026-11-04"
  },
+ "JMGNBr_NsnQ": {
+  "canal": "GloboNews",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] JMGNBr_NsnQ: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
+ "JNXig9GktHI": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] JNXig9GktHI: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "JNlyGSdOrJg": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-26",
@@ -7881,6 +8249,14 @@
   "tentativas": 1,
   "visto": "2026-11-05"
  },
+ "JnL8ZfdDxak": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] JnL8ZfdDxak: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "JnfULDyUXI0": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-28",
@@ -7898,10 +8274,10 @@
  "JohBGPHwC9k": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] JohBGPHwC9k: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "erro": "DownloadError: ERROR: [youtube] JohBGPHwC9k: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
   "status": "erro",
-  "tentativas": 4,
-  "visto": "2026-11-12"
+  "tentativas": 5,
+  "visto": "2026-11-19"
  },
  "JqMvBztjns8": {
   "canal": "Jovem Pan News",
@@ -8176,6 +8552,14 @@
   "tentativas": 1,
   "visto": "2026-10-30"
  },
+ "KKElQoqblEQ": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] KKElQoqblEQ: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "KMorcrC4CgM": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-22",
@@ -8232,6 +8616,14 @@
   "tentativas": 1,
   "visto": "2026-10-29"
  },
+ "KXL2XAaTOCI": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] KXL2XAaTOCI: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "KYJ6fQnFUPY": {
   "canal": "CNN Brasil",
   "data": "2026-10-26",
@@ -8259,6 +8651,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-25"
+ },
+ "KaTI0LienkA": {
+  "canal": "GloboNews",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] KaTI0LienkA: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "KbVngmi1j9Y": {
   "canal": "CNN Brasil",
@@ -8457,6 +8857,14 @@
   "tentativas": 1,
   "visto": "2026-11-03"
  },
+ "L1wMjjS35EU": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] L1wMjjS35EU: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "L3hR_UlefHA": {
   "canal": "Jovem Pan News",
   "data": "2026-10-31",
@@ -8491,6 +8899,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-24"
+ },
+ "LAiczYF-MfY": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] LAiczYF-MfY: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "LCVGfX8u66I": {
   "canal": "Jovem Pan News",
@@ -8907,6 +9323,14 @@
   "tentativas": 1,
   "visto": "2026-10-24"
  },
+ "MOFeNcNrG7s": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] MOFeNcNrG7s: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "MXkCwueLMtk": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-11-04",
@@ -9126,6 +9550,14 @@
   "tentativas": 1,
   "visto": "2026-10-29"
  },
+ "MvSrqiagfKE": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] MvSrqiagfKE: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "MvW982cMq0g": {
   "canal": "UOL",
   "data": "2026-10-24",
@@ -9239,6 +9671,14 @@
   "tentativas": 1,
   "visto": "2026-10-26"
  },
+ "N8VmN35T3RQ": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] N8VmN35T3RQ: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "N9HFSDpMquY": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-23",
@@ -9350,6 +9790,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-29"
+ },
+ "NUP0834jxIk": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] NUP0834jxIk: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "NVg7IJ5vFbk": {
   "canal": "UOL",
@@ -9786,6 +10234,14 @@
   "tentativas": 1,
   "visto": "2026-11-03"
  },
+ "OYIqr-VeU0w": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] OYIqr-VeU0w: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "OY_Zwlc1Kws": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-11-04",
@@ -9954,6 +10410,14 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "OyCnJtlzyyA": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] OyCnJtlzyyA: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "OyshJqkP4PQ": {
   "canal": "UOL",
   "data": "2026-11-01",
@@ -10046,6 +10510,22 @@
   "tentativas": 1,
   "visto": "2026-10-27"
  },
+ "PFGED1ttdDY": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] PFGED1ttdDY: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
+ "PFx2xbC1QF4": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] PFx2xbC1QF4: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "PMdOYJexR_o": {
   "canal": "GloboNews",
   "data": "2026-10-23",
@@ -10131,6 +10611,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-02"
+ },
+ "PaKgG2sMDR8": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] PaKgG2sMDR8: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "PaVETbU-eBc": {
   "canal": "CNN Brasil",
@@ -10343,6 +10831,14 @@
   "tentativas": 1,
   "visto": "2026-10-24"
  },
+ "Q2_f7JxNnNA": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] Q2_f7JxNnNA: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "Q4uarpRdYLI": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-25",
@@ -10505,6 +11001,14 @@
   "tentativas": 1,
   "visto": "2026-10-31"
  },
+ "QbsSm5XkHOM": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] QbsSm5XkHOM: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "QczKVxGSzv0": {
   "canal": "CNN Brasil",
   "data": "2026-10-29",
@@ -10620,10 +11124,10 @@
  "R06U9Nj9cd4": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] R06U9Nj9cd4: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "erro": "DownloadError: ERROR: [youtube] R06U9Nj9cd4: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
   "status": "erro",
-  "tentativas": 3,
-  "visto": "2026-11-18"
+  "tentativas": 4,
+  "visto": "2026-11-19"
  },
  "R0C9r72dztA": {
   "canal": "Reinaldo Azevedo",
@@ -11680,6 +12184,14 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "TbKHAnEqPxo": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] TbKHAnEqPxo: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "TbuVgK5JNVw": {
   "canal": "CNN Brasil",
   "data": "2026-10-24",
@@ -12207,6 +12719,14 @@
   "tentativas": 1,
   "visto": "2026-11-05"
  },
+ "UlQPdyImVRg": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] UlQPdyImVRg: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "UpBKZEyNeXk": {
   "canal": "CNN Brasil",
   "data": "2026-11-02",
@@ -12312,6 +12832,22 @@
   "tentativas": 1,
   "visto": "2026-10-23"
  },
+ "V4nHd2mb-9s": {
+  "canal": "GloboNews",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] V4nHd2mb-9s: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
+ "V63twdATYbY": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] V63twdATYbY: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "V7lrX_u2uAw": {
   "canal": "CNN Brasil",
   "data": "2026-11-03",
@@ -12402,6 +12938,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-26"
+ },
+ "VKh2ya3yFzQ": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] VKh2ya3yFzQ: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "VL-w2tEdVZ8": {
   "canal": "Jovem Pan News",
@@ -12690,6 +13234,14 @@
   "tentativas": 2,
   "visto": "2026-10-25"
  },
+ "VwlLJH6WxEI": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] VwlLJH6WxEI: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "VxhHoHj1sUs": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-30",
@@ -12728,10 +13280,10 @@
  "W0lEsxvgjis": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] W0lEsxvgjis: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "erro": "DownloadError: ERROR: [youtube] W0lEsxvgjis: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
   "status": "erro",
-  "tentativas": 5,
-  "visto": "2026-11-11"
+  "tentativas": 6,
+  "visto": "2026-11-19"
  },
  "W1pXwK-tBm8": {
   "canal": "Jovem Pan News",
@@ -12767,6 +13319,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-29"
+ },
+ "W6S-t4MHsp0": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] W6S-t4MHsp0: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "W8XykNiOnko": {
   "canal": "Jovem Pan News",
@@ -12907,6 +13467,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-22"
+ },
+ "WUQW09yKMpQ": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] WUQW09yKMpQ: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "WWURAyQS5x8": {
   "canal": "Jovem Pan News",
@@ -13111,6 +13679,14 @@
   "tentativas": 1,
   "visto": "2026-10-26"
  },
+ "Wtx1xsP9DdE": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] Wtx1xsP9DdE: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "WvbHZRcIxjQ": {
   "canal": "UOL",
   "data": "2026-10-22",
@@ -13131,6 +13707,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-05"
+ },
+ "X-iSJutqz0Y": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] X-iSJutqz0Y: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "X0E8B73XnA8": {
   "canal": "CNN Brasil",
@@ -13258,6 +13842,14 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "XI2z3OiaCo0": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] XI2z3OiaCo0: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "XKa2aV6x5M4": {
   "canal": "CNN Brasil",
   "data": "2026-11-04",
@@ -13370,6 +13962,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-27"
+ },
+ "XZuzKAW640s": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] XZuzKAW640s: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "X_-qI_4HLrg": {
   "canal": "UOL",
@@ -13749,6 +14349,14 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "YSaUgJxXBvo": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] YSaUgJxXBvo: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "YT2rilpIP7Y": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-11-01",
@@ -13783,6 +14391,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-02"
+ },
+ "Yaiyx3O2a1k": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] Yaiyx3O2a1k: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "YamLH30EsXU": {
   "canal": "Reinaldo Azevedo",
@@ -13854,12 +14470,28 @@
   "tentativas": 1,
   "visto": "2026-10-29"
  },
+ "YkRn3X5yagE": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] YkRn3X5yagE: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "YmYjCPNQHz8": {
   "canal": "UOL",
   "data": "2026-10-15",
   "status": "antigo",
   "tentativas": 1,
   "visto": "2026-10-25"
+ },
+ "Yo6HWT1geMY": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] Yo6HWT1geMY: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "Yoq2cBzzhbM": {
   "canal": "UOL",
@@ -13917,6 +14549,14 @@
   "tentativas": 1,
   "visto": "2026-10-28"
  },
+ "YxhAuVRqg-4": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] YxhAuVRqg-4: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "YyTJKrUXJK8": {
   "canal": "GloboNews",
   "data": "2026-10-30",
@@ -13966,6 +14606,14 @@
   "status": "sem_legenda",
   "tentativas": 1,
   "visto": "2026-10-23"
+ },
+ "Z5AdQNkdpUU": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] Z5AdQNkdpUU: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "Z5touPva86Q": {
   "canal": "UOL",
@@ -14050,6 +14698,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-03"
+ },
+ "ZRuigxSHiH8": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] ZRuigxSHiH8: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "ZSFwVcx0lcY": {
   "canal": "Jovem Pan News",
@@ -14277,6 +14933,14 @@
   "tentativas": 1,
   "visto": "2026-10-24"
  },
+ "_70k_EEjxUs": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] _70k_EEjxUs: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "_83OJBwppkg": {
   "canal": "UOL",
   "data": "2026-10-27",
@@ -14325,6 +14989,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-29"
+ },
+ "_J2zcTLdceA": {
+  "canal": "GloboNews",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] _J2zcTLdceA: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "_LY2fiXBbkI": {
   "canal": "Jovem Pan News",
@@ -14403,6 +15075,14 @@
   "tentativas": 1,
   "visto": "2026-11-03"
  },
+ "_XSD1sZPWSw": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] _XSD1sZPWSw: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "_YNACmnuGbY": {
   "canal": "UOL",
   "data": "2026-11-02",
@@ -14437,6 +15117,22 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-25"
+ },
+ "_f--2PrFP24": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] _f--2PrFP24: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
+ "_fwLBsm1yDM": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] _fwLBsm1yDM: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "_g2zTvgLAIk": {
   "canal": "Jovem Pan News",
@@ -14656,12 +15352,28 @@
   "tentativas": 1,
   "visto": "2026-10-27"
  },
+ "aDLq31qlPow": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] aDLq31qlPow: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "aDkw2vgxe60": {
   "canal": "Jovem Pan News",
   "data": "2026-10-26",
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-26"
+ },
+ "aF4-bfuCqmY": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] aF4-bfuCqmY: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "aGKu6Abxj34": {
   "canal": "Reinaldo Azevedo",
@@ -14697,6 +15409,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-25"
+ },
+ "aK6EkpWkd7E": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] aK6EkpWkd7E: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "aMHTu8daHbc": {
   "canal": "CNN Brasil",
@@ -14852,6 +15572,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-05"
+ },
+ "anL_DbOTKy0": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] anL_DbOTKy0: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "ao0oo_tniI8": {
   "canal": "Reinaldo Azevedo",
@@ -15027,6 +15755,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-25"
+ },
+ "bHknVHObwLE": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] bHknVHObwLE: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "bJKfsRR-hf4": {
   "canal": "Jovem Pan News",
@@ -15344,6 +16080,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-22"
+ },
+ "c9iFrJ6Yvpc": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] c9iFrJ6Yvpc: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "c9jILt4RuE4": {
   "canal": "GloboNews",
@@ -15702,6 +16446,14 @@
   "tentativas": 2,
   "visto": "2026-10-23"
  },
+ "d7o3M_j1peQ": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] d7o3M_j1peQ: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "d9QQ-np_MMU": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-30",
@@ -15729,6 +16481,22 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-22"
+ },
+ "dCJILwngwFM": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] dCJILwngwFM: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
+ "dEMFh9DwFDo": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] dEMFh9DwFDo: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "dFL96AksRVQ": {
   "canal": "Reinaldo Azevedo",
@@ -15983,6 +16751,14 @@
   "tentativas": 1,
   "visto": "2026-10-30"
  },
+ "e2Kiqx3h2Cw": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] e2Kiqx3h2Cw: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "e4bT4xr3nrM": {
   "canal": "UOL",
   "data": "2026-10-31",
@@ -16165,6 +16941,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-01"
+ },
+ "ecVePiQQxJ8": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] ecVePiQQxJ8: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "edfpEXJsIr4": {
   "canal": "GloboNews",
@@ -16593,6 +17377,14 @@
   "tentativas": 1,
   "visto": "2026-10-26"
  },
+ "fcYC2LAVh4c": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] fcYC2LAVh4c: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "ffPcao6ECds": {
   "canal": "CNN Brasil",
   "data": "2026-11-04",
@@ -16606,6 +17398,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-03"
+ },
+ "fiRgSU3Kd_M": {
+  "canal": "GloboNews",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] fiRgSU3Kd_M: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "fja5QlW3iGo": {
   "canal": "Jovem Pan News",
@@ -16856,10 +17656,10 @@
  "gJg5ZxqN6xw": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] gJg5ZxqN6xw: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "erro": "DownloadError: ERROR: [youtube] gJg5ZxqN6xw: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
   "status": "erro",
-  "tentativas": 6,
-  "visto": "2026-11-18"
+  "tentativas": 7,
+  "visto": "2026-11-19"
  },
  "gNZ2ogTyLVg": {
   "canal": "Reinaldo Azevedo",
@@ -17246,6 +18046,14 @@
   "tentativas": 1,
   "visto": "2026-11-01"
  },
+ "hWbpH-PmM5Q": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] hWbpH-PmM5Q: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "hXLa4s4eCt4": {
   "canal": "CNN Brasil",
   "data": "2026-10-22",
@@ -17323,12 +18131,28 @@
   "tentativas": 1,
   "visto": "2026-10-25"
  },
+ "hkxkcEoe7W0": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] hkxkcEoe7W0: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "hlD3xrEH70g": {
   "canal": "CNN Brasil",
   "data": "2026-10-23",
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-23"
+ },
+ "hmVq_6wjxTU": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] hmVq_6wjxTU: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "hmtA7q1hgig": {
   "canal": "Reinaldo Azevedo",
@@ -17413,6 +18237,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-31"
+ },
+ "hzYor1FEtJI": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] hzYor1FEtJI: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "i-fAm8s7pD4": {
   "canal": "Reinaldo Azevedo",
@@ -17554,6 +18386,14 @@
   "tentativas": 1,
   "visto": "2026-10-26"
  },
+ "iOsGF4AJVio": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] iOsGF4AJVio: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "iP5-XqAfvmA": {
   "canal": "CNN Brasil",
   "data": "2026-11-02",
@@ -17609,6 +18449,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-26"
+ },
+ "ibNYl7gpT_0": {
+  "canal": "GloboNews",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] ibNYl7gpT_0: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "icyt0CK9WC8": {
   "canal": "Jovem Pan News",
@@ -17679,6 +18527,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-25"
+ },
+ "ipz_LCm9Egg": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] ipz_LCm9Egg: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "iq7sITF7LVU": {
   "canal": "Jovem Pan News",
@@ -17821,6 +18677,14 @@
   "tentativas": 1,
   "visto": "2026-10-25"
  },
+ "jBKthEYQwGQ": {
+  "canal": "GloboNews",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] jBKthEYQwGQ: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "jCZoy7_GXpA": {
   "canal": "Jovem Pan News",
   "data": "2026-10-23",
@@ -17877,6 +18741,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-03"
+ },
+ "jKb7WJvgVG4": {
+  "canal": "GloboNews",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] jKb7WJvgVG4: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "jLd4cJ1WXZk": {
   "canal": "CNN Brasil",
@@ -18012,6 +18884,14 @@
   "tentativas": 2,
   "visto": "2026-11-03"
  },
+ "jgfDo2B7eTg": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] jgfDo2B7eTg: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "jgxylKQSJUw": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-30",
@@ -18047,6 +18927,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-11-04"
+ },
+ "jnOw4G6heQY": {
+  "canal": "GloboNews",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] jnOw4G6heQY: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "jo9PwzLbBd4": {
   "canal": "Jovem Pan News",
@@ -18168,6 +19056,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-27"
+ },
+ "kAK0YW6P6co": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] kAK0YW6P6co: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "kAO3alGnhps": {
   "canal": "Jovem Pan News",
@@ -18366,6 +19262,14 @@
   "tentativas": 1,
   "visto": "2026-11-05"
  },
+ "ke-2HiRrMCc": {
+  "canal": "GloboNews",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] ke-2HiRrMCc: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "kejNDvTHnPE": {
   "canal": "UOL",
   "data": "2026-10-22",
@@ -18401,6 +19305,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-25"
+ },
+ "klTq5ey2zDk": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] klTq5ey2zDk: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "koCVEoN_nhg": {
   "canal": "Reinaldo Azevedo",
@@ -18792,6 +19704,14 @@
   "tentativas": 1,
   "visto": "2026-10-27"
  },
+ "lnXTFz0nFOs": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] lnXTFz0nFOs: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "ln_WGH3NNqI": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-11-01",
@@ -18931,6 +19851,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-22"
+ },
+ "m7uSkOg-urI": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] m7uSkOg-urI: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "m8Sg9oj9Yq4": {
   "canal": "Reinaldo Azevedo",
@@ -19584,6 +20512,14 @@
   "tentativas": 1,
   "visto": "2026-10-23"
  },
+ "nt2XwljUR-E": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] nt2XwljUR-E: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "nuODf5E7aRo": {
   "canal": "Reinaldo Azevedo",
   "data": "",
@@ -19899,6 +20835,14 @@
   "tentativas": 1,
   "visto": "2026-10-28"
  },
+ "oYU2GvrjY_4": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] oYU2GvrjY_4: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "ob53FuD_v7w": {
   "canal": "UOL",
   "data": "2026-10-26",
@@ -20075,6 +21019,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-29"
+ },
+ "ouYhA6hhqzw": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] ouYhA6hhqzw: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "ouhj-ScJrSs": {
   "canal": "Reinaldo Azevedo",
@@ -20406,6 +21358,14 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "pi8ahGJIG38": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] pi8ahGJIG38: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "pifa-miwMlA": {
   "canal": "UOL",
   "data": "2026-10-24",
@@ -20613,10 +21573,10 @@
  "qD8yRYXiE-0": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] qD8yRYXiE-0: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "erro": "DownloadError: ERROR: [youtube] qD8yRYXiE-0: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
   "status": "erro",
-  "tentativas": 1,
-  "visto": "2026-11-18"
+  "tentativas": 2,
+  "visto": "2026-11-19"
  },
  "qDQHhyQsF3Q": {
   "canal": "Jovem Pan News",
@@ -20737,12 +21697,28 @@
   "tentativas": 1,
   "visto": "2026-11-01"
  },
+ "qWCwmad2NLs": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] qWCwmad2NLs: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "qWskYKHQY6Y": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-25",
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-25"
+ },
+ "qXSM_KpI500": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] qXSM_KpI500: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "q_swspEMoAY": {
   "canal": "Reinaldo Azevedo",
@@ -21136,6 +22112,14 @@
   "tentativas": 1,
   "visto": "2026-10-29"
  },
+ "rYxEQr4ZwxU": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] rYxEQr4ZwxU: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "r_aAkERpkqE": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-28",
@@ -21311,6 +22295,14 @@
   "tentativas": 3,
   "visto": "2026-11-01"
  },
+ "ruCyyDaoAi4": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] ruCyyDaoAi4: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "rv2C0vloO7g": {
   "canal": "GloboNews",
   "data": "2026-10-28",
@@ -21367,6 +22359,14 @@
   "tentativas": 1,
   "visto": "2026-10-28"
  },
+ "s-mWb_Byjlk": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] s-mWb_Byjlk: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "s1YU5aUfvzA": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-30",
@@ -21417,6 +22417,14 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "s7QjKpAdh48": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] s7QjKpAdh48: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "s9-WVYF4A7I": {
   "canal": "CNN Brasil",
   "data": "2026-10-30",
@@ -21437,6 +22445,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-31"
+ },
+ "sAYj5XLpU-E": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] sAYj5XLpU-E: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "sAm0DEGCLp0": {
   "canal": "Reinaldo Azevedo",
@@ -21601,6 +22617,14 @@
   "tentativas": 1,
   "visto": "2026-11-01"
  },
+ "sfXhYVpR7OI": {
+  "canal": "GloboNews",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] sfXhYVpR7OI: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "sg0UYYN-oqc": {
   "canal": "Jovem Pan News",
   "data": "2026-10-26",
@@ -21720,6 +22744,14 @@
   "tentativas": 1,
   "visto": "2026-10-29"
  },
+ "sti8KoWxsfk": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] sti8KoWxsfk: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "suYHEQ6ppsM": {
   "canal": "GloboNews",
   "data": "2026-10-21",
@@ -21740,6 +22772,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-26"
+ },
+ "sz-gjZtvGzA": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] sz-gjZtvGzA: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "t0vg9pzfbWE": {
   "canal": "Reinaldo Azevedo",
@@ -21796,6 +22836,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-25"
+ },
+ "tB4MttGeEdc": {
+  "canal": "GloboNews",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] tB4MttGeEdc: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "tBL6HUNWxQA": {
   "canal": "Jovem Pan News",
@@ -21873,6 +22921,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-24"
+ },
+ "tMumQSWUSuw": {
+  "canal": "GloboNews",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] tMumQSWUSuw: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "tNtKUXaMJjg": {
   "canal": "Jovem Pan News",
@@ -22175,6 +23231,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-27"
+ },
+ "u20HAgzf8SM": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] u20HAgzf8SM: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "u23ZZ37Oovs": {
   "canal": "Jovem Pan News",
@@ -22501,10 +23565,10 @@
  "uw-ijAXaydA": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] uw-ijAXaydA: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "erro": "DownloadError: ERROR: [youtube] uw-ijAXaydA: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
   "status": "erro",
-  "tentativas": 4,
-  "visto": "2026-11-12"
+  "tentativas": 5,
+  "visto": "2026-11-19"
  },
  "uyUIzdr3W3E": {
   "canal": "UOL",
@@ -22801,6 +23865,14 @@
   "tentativas": 1,
   "visto": "2026-10-26"
  },
+ "vhKxvx2pUVY": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] vhKxvx2pUVY: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "viTAabCPBT0": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-30",
@@ -22846,9 +23918,10 @@
  "vs8THCaUMNg": {
   "canal": "ICL Notícias",
   "data": "",
-  "status": "agendado",
-  "tentativas": 0,
-  "visto": "2026-11-18"
+  "erro": "DownloadError: ERROR: [youtube] vs8THCaUMNg: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "vsdwzG_kmzI": {
   "canal": "CNN Brasil",
@@ -23157,6 +24230,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-26"
+ },
+ "wix4XrMmJNo": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] wix4XrMmJNo: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "wj_RzbFj3KA": {
   "canal": "GloboNews",
@@ -23551,6 +24632,14 @@
   "status": "ok",
   "tentativas": 2,
   "visto": "2026-11-04"
+ },
+ "xn65OmDq2jM": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] xn65OmDq2jM: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "xon30M0fnT0": {
   "canal": "UOL",
@@ -24120,6 +25209,14 @@
   "tentativas": 1,
   "visto": "2026-11-01"
  },
+ "zIMzqk4Bc04": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] zIMzqk4Bc04: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "zK538os1R40": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-23",
@@ -24154,6 +25251,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-25"
+ },
+ "zPEOk0-hkeU": {
+  "canal": "CNN Brasil",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] zPEOk0-hkeU: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "zR9ZBxvWqlU": {
   "canal": "Jovem Pan News",
@@ -24317,6 +25422,14 @@
   "tentativas": 1,
   "visto": "2026-10-24"
  },
+ "zj_xt9A7M28": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] zj_xt9A7M28: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
+ },
  "zk_T_Hz-IWc": {
   "canal": "CNN Brasil",
   "data": "2026-10-31",
@@ -24344,6 +25457,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-26"
+ },
+ "zrfwHhiOIoc": {
+  "canal": "Jovem Pan News",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] zrfwHhiOIoc: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-19"
  },
  "zuMGHiPEOr4": {
   "canal": "CNN Brasil",
