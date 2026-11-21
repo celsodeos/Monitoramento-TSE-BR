@@ -1851,7 +1851,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] 3Vm1gSldz2c: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 6,
+  "tentativas": 7,
   "visto": "2026-11-21"
  },
  "3VvFDuUpNMg": {
@@ -3337,7 +3337,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] 7Mxr6jCG3v4: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 5,
+  "tentativas": 6,
   "visto": "2026-11-21"
  },
  "7NOSd40gRnE": {
@@ -6681,7 +6681,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] G-soN3MXn-g: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 4,
+  "tentativas": 5,
   "visto": "2026-11-21"
  },
  "G2C0Fss4cWI": {
@@ -11139,10 +11139,10 @@
  "R06U9Nj9cd4": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] R06U9Nj9cd4: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "erro": "DownloadError: ERROR: [youtube] R06U9Nj9cd4: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 4,
-  "visto": "2026-11-19"
+  "tentativas": 5,
+  "visto": "2026-11-21"
  },
  "R0C9r72dztA": {
   "canal": "Reinaldo Azevedo",
@@ -21590,7 +21590,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] qD8yRYXiE-0: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 6,
+  "tentativas": 7,
   "visto": "2026-11-21"
  },
  "qDQHhyQsF3Q": {
