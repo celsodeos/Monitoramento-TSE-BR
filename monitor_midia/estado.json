@@ -1851,8 +1851,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] 3Vm1gSldz2c: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 5,
-  "visto": "2026-11-20"
+  "tentativas": 6,
+  "visto": "2026-11-21"
  },
  "3VvFDuUpNMg": {
   "canal": "Jovem Pan News",
@@ -3337,8 +3337,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] 7Mxr6jCG3v4: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 4,
-  "visto": "2026-11-20"
+  "tentativas": 5,
+  "visto": "2026-11-21"
  },
  "7NOSd40gRnE": {
   "canal": "UOL",
@@ -6681,8 +6681,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] G-soN3MXn-g: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 3,
-  "visto": "2026-11-20"
+  "tentativas": 4,
+  "visto": "2026-11-21"
  },
  "G2C0Fss4cWI": {
   "canal": "UOL",
@@ -7153,8 +7153,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] HE69fj61bAg: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 7,
-  "visto": "2026-11-20"
+  "tentativas": 8,
+  "visto": "2026-11-21"
  },
  "HEzqZTKQvfg": {
   "canal": "UOL",
@@ -8022,7 +8022,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-20"
+  "visto": "2026-11-21"
  },
  "JJ1_ZzilM4E": {
   "canal": "CNN Brasil",
@@ -21590,8 +21590,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] qD8yRYXiE-0: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 5,
-  "visto": "2026-11-20"
+  "tentativas": 6,
+  "visto": "2026-11-21"
  },
  "qDQHhyQsF3Q": {
   "canal": "Jovem Pan News",
@@ -23935,7 +23935,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 1,
-  "visto": "2026-11-20"
+  "visto": "2026-11-21"
  },
  "vsdwzG_kmzI": {
   "canal": "CNN Brasil",
