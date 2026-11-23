@@ -2684,10 +2684,10 @@
  "5PvA_wQpHyQ": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] 5PvA_wQpHyQ: Vídeo indisponível. O conteúdo não está disponível.",
+  "erro": "DownloadError: ERROR: [youtube] 5PvA_wQpHyQ: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 5,
-  "visto": "2026-11-22"
+  "tentativas": 6,
+  "visto": "2026-11-23"
  },
  "5Q4kxr3ND3o": {
   "canal": "ICL Notícias",
@@ -6929,8 +6929,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] G-soN3MXn-g: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 7,
-  "visto": "2026-11-22"
+  "tentativas": 8,
+  "visto": "2026-11-23"
  },
  "G2C0Fss4cWI": {
   "canal": "UOL",
@@ -7928,8 +7928,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] IUwlUBq_N8w: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 7,
-  "visto": "2026-11-22"
+  "tentativas": 8,
+  "visto": "2026-11-23"
  },
  "IVYfOjyo2qA": {
   "canal": "Reinaldo Azevedo",
@@ -8331,7 +8331,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-22"
+  "visto": "2026-11-23"
  },
  "JJ1_ZzilM4E": {
   "canal": "CNN Brasil",
@@ -11548,8 +11548,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] R06U9Nj9cd4: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 7,
-  "visto": "2026-11-22"
+  "tentativas": 8,
+  "visto": "2026-11-23"
  },
  "R0C9r72dztA": {
   "canal": "Reinaldo Azevedo",
@@ -24505,10 +24505,10 @@
  "uw-ijAXaydA": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] uw-ijAXaydA: Vídeo indisponível. O conteúdo não está disponível.",
+  "erro": "DownloadError: ERROR: [youtube] uw-ijAXaydA: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 6,
-  "visto": "2026-11-22"
+  "tentativas": 7,
+  "visto": "2026-11-23"
  },
  "uyUIzdr3W3E": {
   "canal": "UOL",
@@ -24875,7 +24875,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 1,
-  "visto": "2026-11-22"
+  "visto": "2026-11-23"
  },
  "vsdwzG_kmzI": {
   "canal": "CNN Brasil",
