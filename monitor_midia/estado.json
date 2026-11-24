@@ -2757,10 +2757,10 @@
  "5PvA_wQpHyQ": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] 5PvA_wQpHyQ: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "erro": "DownloadError: ERROR: [youtube] 5PvA_wQpHyQ: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 7,
-  "visto": "2026-11-23"
+  "tentativas": 8,
+  "visto": "2026-11-24"
  },
  "5Q4kxr3ND3o": {
   "canal": "ICL Notícias",
@@ -8568,10 +8568,10 @@
  "JIDnAeuti1A": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] JIDnAeuti1A: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "erro": "DownloadError: ERROR: [youtube] JIDnAeuti1A: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
-  "visto": "2026-11-23"
+  "tentativas": 2,
+  "visto": "2026-11-24"
  },
  "JJ1_ZzilM4E": {
   "canal": "CNN Brasil",
@@ -11345,10 +11345,10 @@
  "PdlCXUkfI-g": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] PdlCXUkfI-g: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+  "erro": "DownloadError: ERROR: [youtube] PdlCXUkfI-g: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
-  "visto": "2026-11-23"
+  "tentativas": 2,
+  "visto": "2026-11-24"
  },
  "PdvZZq4LjcI": {
   "canal": "UOL",
@@ -13861,6 +13861,14 @@
   "status": "erro",
   "tentativas": 1,
   "visto": "2026-11-19"
+ },
+ "VKyn8nnXDkk": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] VKyn8nnXDkk: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-24"
  },
  "VL-w2tEdVZ8": {
   "canal": "Jovem Pan News",
@@ -19216,6 +19224,14 @@
   "status": "ok",
   "tentativas": 1,
   "visto": "2026-10-23"
+ },
+ "hFvkf32Bbyg": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] hFvkf32Bbyg: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-24"
  },
  "hJgbEdQ6gjk": {
   "canal": "UOL",
@@ -25559,10 +25575,9 @@
  "vs8THCaUMNg": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] vs8THCaUMNg: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
-  "status": "erro",
+  "status": "agendado",
   "tentativas": 2,
-  "visto": "2026-11-23"
+  "visto": "2026-11-24"
  },
  "vsdwzG_kmzI": {
   "canal": "CNN Brasil",
@@ -27118,10 +27133,9 @@
  "zh__V46Tzo0": {
   "canal": "ICL Notícias",
   "data": "",
-  "erro": "DownloadError: ERROR: [youtube] zh__V46Tzo0: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
-  "status": "erro",
+  "status": "agendado",
   "tentativas": 1,
-  "visto": "2026-11-23"
+  "visto": "2026-11-24"
  },
  "ziHL09JUVxg": {
   "canal": "UOL",
