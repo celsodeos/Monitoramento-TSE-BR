@@ -5325,6 +5325,13 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "BX4aae_7fWg": {
+  "canal": "ICL Notícias",
+  "data": "",
+  "status": "agendado",
+  "tentativas": 0,
+  "visto": "2026-11-24"
+ },
  "BZA6x-LfhnQ": {
   "canal": "CNN Brasil",
   "data": "2026-10-26",
@@ -8570,7 +8577,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] JIDnAeuti1A: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 2,
+  "tentativas": 3,
   "visto": "2026-11-24"
  },
  "JJ1_ZzilM4E": {
@@ -11347,7 +11354,7 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] PdlCXUkfI-g: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 2,
+  "tentativas": 3,
   "visto": "2026-11-24"
  },
  "PdvZZq4LjcI": {
@@ -22285,6 +22292,14 @@
   "tentativas": 1,
   "visto": "2026-11-19"
  },
+ "oaXvZFRQGGU": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] oaXvZFRQGGU: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-24"
+ },
  "ob53FuD_v7w": {
   "canal": "UOL",
   "data": "2026-10-26",
@@ -23261,6 +23276,14 @@
   "status": "erro",
   "tentativas": 1,
   "visto": "2026-11-22"
+ },
+ "qf9ZsgpiRLY": {
+  "canal": "ICL Notícias",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] qf9ZsgpiRLY: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-24"
  },
  "qg-CMo-XQ7I": {
   "canal": "UOL",
@@ -27133,8 +27156,9 @@
  "zh__V46Tzo0": {
   "canal": "ICL Notícias",
   "data": "",
-  "status": "agendado",
-  "tentativas": 1,
+  "erro": "DownloadError: ERROR: [youtube] zh__V46Tzo0: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 2,
   "visto": "2026-11-24"
  },
  "ziHL09JUVxg": {
