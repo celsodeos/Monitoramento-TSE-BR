@@ -5330,7 +5330,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 0,
-  "visto": "2026-11-24"
+  "visto": "2026-11-25"
  },
  "BZA6x-LfhnQ": {
   "canal": "CNN Brasil",
@@ -8577,8 +8577,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] JIDnAeuti1A: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 3,
-  "visto": "2026-11-24"
+  "tentativas": 4,
+  "visto": "2026-11-25"
  },
  "JJ1_ZzilM4E": {
   "canal": "CNN Brasil",
@@ -11354,8 +11354,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] PdlCXUkfI-g: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 3,
-  "visto": "2026-11-24"
+  "tentativas": 4,
+  "visto": "2026-11-25"
  },
  "PdvZZq4LjcI": {
   "canal": "UOL",
@@ -22670,6 +22670,14 @@
   "tentativas": 1,
   "visto": "2026-10-22"
  },
+ "pEqlfN-MjwE": {
+  "canal": "UOL",
+  "data": "",
+  "erro": "DownloadError: ERROR: [youtube] pEqlfN-MjwE: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 1,
+  "visto": "2026-11-25"
+ },
  "pFtDxjTOcDI": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-25",
@@ -23282,8 +23290,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] qf9ZsgpiRLY: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
-  "visto": "2026-11-24"
+  "tentativas": 2,
+  "visto": "2026-11-25"
  },
  "qg-CMo-XQ7I": {
   "canal": "UOL",
@@ -25600,7 +25608,7 @@
   "data": "",
   "status": "agendado",
   "tentativas": 2,
-  "visto": "2026-11-24"
+  "visto": "2026-11-25"
  },
  "vsdwzG_kmzI": {
   "canal": "CNN Brasil",
@@ -27158,8 +27166,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] zh__V46Tzo0: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 2,
-  "visto": "2026-11-24"
+  "tentativas": 3,
+  "visto": "2026-11-25"
  },
  "ziHL09JUVxg": {
   "canal": "UOL",
