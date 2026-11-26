@@ -1,5 +1,5 @@
 id,ano,presidente_tse,autor,processos,no_datajud,liminar_decidida,liminar_concedida,pct_decidida,p_fisher,p_mh
-2022-bol,2022,Alexandre de Moraes,Bolsonaro / Flávio,25,16,9,7,0.5625,0.743,0.701
-2022-pt,2022,Alexandre de Moraes,PT / Lula,44,22,14,6,0.6364,0.743,0.701
-2026-bol,2026,Nunes Marques,Bolsonaro / Flávio,193,98,29,6,0.2959,0.00016,0.004
-2026-pt,2026,Nunes Marques,PT / Lula,191,89,7,0,0.0787,0.00016,0.004
+2022-bol,2022,Alexandre de Moraes,Bolsonaro / Flávio,25,14,8,6,0.5714,0.283,0.652
+2022-pt,2022,Alexandre de Moraes,PT / Lula,44,21,16,7,0.7619,0.283,0.652
+2026-bol,2026,Nunes Marques,Bolsonaro / Flávio,193,103,32,5,0.3107,0.00026,0.048
+2026-pt,2026,Nunes Marques,PT / Lula,191,107,11,1,0.1028,0.00026,0.048
