@@ -4099,8 +4099,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] 8mEaklerA7I: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
-  "visto": "2026-11-26"
+  "tentativas": 2,
+  "visto": "2026-11-27"
  },
  "8o1x_Du8rio": {
   "canal": "Jovem Pan News",
@@ -9840,6 +9840,13 @@
   "tentativas": 1,
   "visto": "2026-11-03"
  },
+ "M29IW0kn1Yw": {
+  "canal": "ICL Notícias",
+  "data": "",
+  "status": "agendado",
+  "tentativas": 0,
+  "visto": "2026-11-27"
+ },
  "M3QE1XUj2Ws": {
   "canal": "Reinaldo Azevedo",
   "data": "2026-10-31",
@@ -11590,8 +11597,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] Q8F_f6O0akc: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 3,
-  "visto": "2026-11-26"
+  "tentativas": 4,
+  "visto": "2026-11-27"
  },
  "QAqaea8rnFw": {
   "canal": "UOL",
@@ -18055,8 +18062,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] eKSUKWQftug: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 3,
-  "visto": "2026-11-26"
+  "tentativas": 4,
+  "visto": "2026-11-27"
  },
  "eKh9a1fpj0Y": {
   "canal": "UOL",
@@ -20500,8 +20507,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] kMzNH3AqUFE: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
-  "visto": "2026-11-26"
+  "tentativas": 2,
+  "visto": "2026-11-27"
  },
  "kN0tLKgihn8": {
   "canal": "Jovem Pan News",
@@ -25639,9 +25646,10 @@
  "vs8THCaUMNg": {
   "canal": "ICL Notícias",
   "data": "",
-  "status": "agendado",
-  "tentativas": 2,
-  "visto": "2026-11-26"
+  "erro": "DownloadError: ERROR: [youtube] vs8THCaUMNg: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
+  "status": "erro",
+  "tentativas": 3,
+  "visto": "2026-11-27"
  },
  "vsdwzG_kmzI": {
   "canal": "CNN Brasil",
