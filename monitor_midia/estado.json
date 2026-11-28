@@ -702,8 +702,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] 0Xf2Qz8at6g: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
-  "visto": "2026-11-27"
+  "tentativas": 2,
+  "visto": "2026-11-28"
  },
  "0XilO2AH0Zo": {
   "canal": "Jovem Pan News",
@@ -4107,8 +4107,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] 8mEaklerA7I: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 3,
-  "visto": "2026-11-27"
+  "tentativas": 4,
+  "visto": "2026-11-28"
  },
  "8o1x_Du8rio": {
   "canal": "Jovem Pan News",
@@ -9853,8 +9853,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] M29IW0kn1Yw: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 1,
-  "visto": "2026-11-27"
+  "tentativas": 2,
+  "visto": "2026-11-28"
  },
  "M3QE1XUj2Ws": {
   "canal": "Reinaldo Azevedo",
@@ -11606,8 +11606,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] Q8F_f6O0akc: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 5,
-  "visto": "2026-11-27"
+  "tentativas": 6,
+  "visto": "2026-11-28"
  },
  "QAqaea8rnFw": {
   "canal": "UOL",
@@ -25197,6 +25197,13 @@
   "tentativas": 1,
   "visto": "2026-10-27"
  },
+ "ucIWBnSUyAc": {
+  "canal": "ICL Notícias",
+  "data": "",
+  "status": "agendado",
+  "tentativas": 0,
+  "visto": "2026-11-28"
+ },
  "ucR2sPWZdAA": {
   "canal": "CNN Brasil",
   "data": "2026-10-28",
@@ -25657,8 +25664,8 @@
   "data": "",
   "erro": "DownloadError: ERROR: [youtube] vs8THCaUMNg: Faça login para confirmar que você não é um bot. Isso ajuda a proteger nossa comunidade",
   "status": "erro",
-  "tentativas": 4,
-  "visto": "2026-11-27"
+  "tentativas": 5,
+  "visto": "2026-11-28"
  },
  "vsdwzG_kmzI": {
   "canal": "CNN Brasil",
